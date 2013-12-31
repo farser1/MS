@@ -98,6 +98,7 @@ p {
 .callout {
   font-family: Open Sans;
   font-size: 52px;
+  line-height: 62px;
   font-weight: 600;
 }
 .cta {
@@ -326,7 +327,7 @@ p {
   }
   .callout {
     font-size: 24px;
-    line-height: 25px;
+    line-height: 28px;
   }
   .btn {
     padding-top: 6px;
