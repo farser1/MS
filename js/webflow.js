@@ -667,18 +667,23 @@ Webflow.define('webflow-forms', function ($) {
   // Runs after the AJAX request completes
   function _afterSubmit(form, btn, wait, err) {
     var wrap = form.closest('div.w-form');
+    var redirect = form.data('redirect');
     var stat = ['fail', 'done'][err ? 0 : 1];
 
-    if (!err) {
+    if (!err && !redirect) {
       form.addClass('w-hidden');
     }
 
     btn.prop('disabled', false);
-    if (wait) {
+    if (wait && !redirect) {
       btn.val(btn.data('w-txt')).removeData('w-txt');
     }
 
-    wrap.find('> div.w-form-' + stat).addClass('w-form-' + stat + '-show');
+    if (!err && redirect) {
+      window.location = redirect;
+    } else {
+      wrap.find('> div.w-form-' + stat).addClass('w-form-' + stat + '-show');
+    }
   }
   
   // Export module
