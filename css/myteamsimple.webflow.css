@@ -62,6 +62,11 @@ p {
   text-align: center;
   text-decoration: none;
 }
+.button.tooltip {
+  padding: 2px 10px;
+  border-radius: 200px;
+  font-size: 14px;
+}
 .header {
   position: fixed;
   left: 0px;
@@ -203,7 +208,7 @@ p {
   text-align: left;
 }
 .right {
-  margin-top: 20px;
+  margin-top: 0px;
   text-align: center;
 }
 .trainer-summary {
@@ -230,6 +235,7 @@ p {
 .text-guarantee {
   color: white;
   font-size: 14px;
+  text-align: center;
 }
 .trainer-intro {
   float: left;
@@ -302,6 +308,26 @@ p {
 .goal-button-text {
   font-size: 12px;
   font-weight: 300;
+}
+.tooltip {
+  position: absolute;
+  top: 86px;
+  right: 68px;
+  bottom: 26px;
+  float: right;
+}
+.pricing {
+  margin-top: 20px;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+.launching-soon {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: white;
+  text-align: center;
 }
 @media (max-width: 991px) {
   h1 {
