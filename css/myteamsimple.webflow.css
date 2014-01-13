@@ -346,7 +346,7 @@ p {
 }
 .goal-buttons {
   margin-top: -75px;
-  padding-bottom: 126px;
+  padding-bottom: 200px;
   background-color: white;
 }
 .goal-button-text {
@@ -399,14 +399,11 @@ p {
   text-decoration: none;
 }
 .foot {
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
   background-color: #38383a;
 }
 .foot-text {
-  margin-top: 10px;
+  margin-top: 0px;
+  padding-top: 10px;
   color: white;
   text-align: center;
 }
@@ -633,8 +630,9 @@ p {
 }
 @media (max-width: 479px) {
   h1 {
+    margin-top: 20px;
     font-size: 31px;
-    line-height: 50px;
+    line-height: 35px;
   }
   h3 {
     margin-bottom: 15px;
@@ -649,12 +647,16 @@ p {
   .call {
     padding-top: 20px;
   }
+  .footer {
+    margin-top: 10px;
+  }
   .logo {
     width: 120px;
   }
   .callout {
+    margin-top: 0px;
     font-size: 28px;
-    line-height: 45px;
+    line-height: 35px;
   }
   .btn {
     padding-top: 6px;
@@ -680,9 +682,22 @@ p {
     margin-left: 48px;
   }
   .trainer-intro-text {
+    margin-top: 30px;
     margin-right: auto;
   }
   .goal-buttons {
     padding-bottom: 60px;
+  }
+  .pricing {
+    margin-top: 40px;
+  }
+  .launching-soon {
+    margin-top: 0px;
+  }
+  .phone {
+    width: 45%;
+  }
+  .foot-text {
+    margin-top: 20px;
   }
 }
