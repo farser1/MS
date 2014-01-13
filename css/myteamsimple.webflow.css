@@ -56,9 +56,13 @@ p {
 }
 .button {
   display: inline-block;
-  padding: 4px 15px;
-  background-color: black;
-  color: white;
+  width: 226px;
+  height: 41px;
+  padding: 11px 15px 4px;
+  border-radius: 5px;
+  background-color: white;
+  color: #00ccd9;
+  font-size: 19px;
   text-align: center;
   text-decoration: none;
 }
@@ -66,6 +70,19 @@ p {
   padding: 2px 10px;
   border-radius: 200px;
   font-size: 14px;
+}
+.button.active {
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #00ccd9;
+}
+.button.inactive {
+  height: auto;
+  padding: 8px 5px;
+  background-color: rgba(255, 255, 255, 0.29);
+  color: white;
+  font-weight: 300;
 }
 .header {
   position: fixed;
@@ -97,10 +114,16 @@ p {
   text-align: left;
 }
 .footer {
-  margin-bottom: 0px;
+  margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #38383a;
+}
+.footer.notmain {
+  position: static;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
 }
 .logo {
   display: block;
@@ -111,33 +134,46 @@ p {
   padding-bottom: 20px;
 }
 .callout {
-  width: 835.5px;
-  margin-top: 33px;
+  width: auto;
+  margin-top: 69px;
   font-family:'Open Sans', sans-serif;
-  font-size: 52px;
-  line-height: 63px;
-  font-weight: 600;
+  color: white;
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: 400;
   text-align: left;
 }
 .btn {
   margin-bottom: 5px;
   padding: 5% 10%;
   border-radius: 5px;
-  background-color: #21cfdb;
+  background-color: #ffa600;
+  color: white;
   font-size: 20px;
   font-weight: 600;
 }
 .text-sub-home {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-family:'Open Sans', sans-serif;
-  font-size: 30px;
+  font-size: 21px;
   line-height: 48px;
-  font-weight: 400;
+  font-weight: 300;
 }
 .text-sub-home.sub {
   margin-bottom: 20px;
   font-size: 14px;
+}
+.text-sub-home.choose {
+  margin-top: 31px;
+  color: white;
+  font-size: 21px;
+}
+.text-sub-home.twitter {
+  margin-top: 30px;
+  padding-left: 7px;
+  color: #00ccd9;
+  font-size: 14px;
+  font-weight: 400;
 }
 .center {
   left: 0px;
@@ -149,8 +185,10 @@ p {
   text-align: center;
 }
 .footer-text {
+  margin-bottom: 20px;
   color: white;
   line-height: 22px;
+  font-weight: 300;
   text-align: center;
 }
 .sub-footer {
@@ -159,7 +197,9 @@ p {
   text-align: center;
 }
 .footer-link {
+  margin-top: 20px;
   color: white;
+  text-align: center;
   text-decoration: underline;
 }
 .course {
@@ -178,24 +218,28 @@ p {
 }
 .course-blocks {
   display: block;
-  width: 309px;
-  height: 70px;
-  margin-bottom: 11px;
-  padding-top: 3px;
+  width: 225px;
+  height: 40px;
   border-radius: 5px;
-  background-color: #00ccd9;
+  background-color: white;
   font-size: 30px;
   font-weight: 300;
 }
 .course-blocks.cs {
-  background-color: rgba(0, 204, 217, 0.29);
+  width: 225px;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 .course-block-text {
   width: auto;
-  font-size: 25px;
+  color: #00ccd9;
+  font-size: 19px;
   line-height: 64px;
   font-weight: 400;
   text-align: center;
+}
+.course-block-text.coming {
+  color: white;
+  font-weight: 300;
 }
 .course-block-space {
   margin-top: 200px;
@@ -261,7 +305,7 @@ p {
   background-color: #e6e6e6;
 }
 .intro-section.base {
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 .benefits-section {
   padding-top: 60px;
@@ -273,7 +317,7 @@ p {
 }
 .goal-blocks {
   width: auto;
-  height: 81px;
+  height: auto;
   color: white;
   text-decoration: none;
 }
@@ -301,9 +345,9 @@ p {
   background-image: linear-gradient(to right, #00ccd9 13%, #008bad);
 }
 .goal-buttons {
-  margin-top: 100px;
-  padding-bottom: 30px;
-  background-color: rgba(1, 104, 130, 0.4);
+  margin-top: -75px;
+  padding-bottom: 126px;
+  background-color: white;
 }
 .goal-button-text {
   font-size: 12px;
@@ -320,13 +364,49 @@ p {
   margin-top: 20px;
   color: white;
   font-size: 24px;
-  font-weight: 600;
   line-height: 30px;
+  font-weight: 600;
   text-align: center;
 }
 .launching-soon {
   margin-top: 20px;
   margin-bottom: 5px;
+  color: white;
+  text-align: center;
+}
+.phone {
+  width: auto;
+  height: auto;
+  padding-top: 36px;
+}
+.twitterbird {
+  width: 35px;
+  padding-top: 5px;
+  float: left;
+}
+.twitter-link {
+  margin-left: 50px;
+  float: none;
+  color: #00ccd9;
+}
+.second-bottom {
+  padding-top: 7px;
+}
+.twitter-row-1 {
+  padding-top: 35px;
+}
+.twitter-link-noline {
+  text-decoration: none;
+}
+.foot {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #38383a;
+}
+.foot-text {
+  margin-top: 10px;
   color: white;
   text-align: center;
 }
@@ -339,7 +419,16 @@ p {
     font-size: 26px;
     line-height: 41px;
   }
+  .button.active {
+    width: 170px;
+    font-size: 15px;
+  }
+  .button.inactive {
+    width: 170px;
+    font-size: 15px;
+  }
   .footer {
+    margin-top: 83px;
     padding-bottom: 0px;
   }
   .logo {
@@ -347,15 +436,20 @@ p {
   }
   .callout {
     width: auto;
-    font-size: 48px;
-    line-height: 77px;
+    margin-top: 30px;
+    font-size: 36px;
+    line-height: 48px;
   }
   .btn {
     display: block;
+    width: auto;
     height: auto;
     margin-right: auto;
     margin-left: auto;
     font-size: 18px;
+  }
+  .text-sub-home.choose {
+    margin-top: 0px;
   }
   .course-blocks {
     width: auto;
@@ -380,7 +474,7 @@ p {
     margin-bottom: 0px;
   }
   .course-column {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
   }
   .course-title-section {
@@ -388,6 +482,12 @@ p {
   }
   .benefit-image {
     margin-top: 20px;
+  }
+  .pricing {
+    line-height: 35px;
+  }
+  .foot {
+    background-color: #38383a;
   }
 }
 @media (max-width: 767px) {
@@ -423,7 +523,7 @@ p {
     padding-bottom: 7px;
   }
   .callout {
-    margin-top: 38px;
+    margin-top: -20px;
     font-size: 28px;
     line-height: 45px;
     text-align: center;
@@ -436,12 +536,15 @@ p {
   }
   .text-sub-home {
     margin-top: 20px;
-    font-size: 18px;
     line-height: 22px;
   }
   .text-sub-home.sub {
     margin-top: 3px;
     font-size: 14px;
+  }
+  .text-sub-home.choose {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .course-blocks {
     padding-top: 0px;
@@ -515,7 +618,17 @@ p {
     margin-top: 0px;
   }
   .goal-buttons {
-    margin-top: 20px;
+    margin-top: -60px;
+    padding-bottom: 60px;
+  }
+  .phone {
+    padding-top: 46px;
+  }
+  .second-bottom {
+    padding-top: 0px;
+  }
+  .twitter-row-1 {
+    margin-top: 0px;
   }
 }
 @media (max-width: 479px) {
@@ -549,7 +662,6 @@ p {
     font-size: 16px;
   }
   .text-sub-home {
-    font-size: 18px;
     line-height: 28px;
   }
   .text-sub-home.sub {
@@ -569,5 +681,8 @@ p {
   }
   .trainer-intro-text {
     margin-right: auto;
+  }
+  .goal-buttons {
+    padding-bottom: 60px;
   }
 }
