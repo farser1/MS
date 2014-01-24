@@ -24,7 +24,6 @@
   </script>
   <link rel="shortcut icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
   <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
- <?php include_once("mixpanel.php") ?>
 </head>
 <body>
   <?php include_once("analyticstracking.php") ?>

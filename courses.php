@@ -34,7 +34,7 @@ for<br>every ambition</h1>
                   </div>
                 </div>
                 <div class="blk_coursedetail">
-                  <div class="txt_coursesummary">For anyone wanting to lose weight and keep it off.</div><a class="button btn_grey btn_learnmore" href="weight-loss-made-simple.php">Learn more</a>
+                  <div class="txt_coursesummary">For anyone wanting to lose weight and keep it off.</div><a class="button btn_grey btn_learnmore" href="weight-loss-made-simple.php" onclick="ga('send', 'event', 'button', 'click', 'wlms learn more courses');">Learn more</a>
                 </div>
               </div>
             </div>
@@ -49,7 +49,7 @@ for<br>every ambition</h1>
                   <h5>Coming in March</h5>
                 </div>
                 <div class="blk_coursedetail">
-                  <div class="txt_coursesummary">A high intensity course to shed fat whilst getting seriously fit.</div><a class="button btn_grey btn_joinwaitlist" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1">Join the wait list</a>
+                  <div class="txt_coursesummary">A high intensity course to shed fat whilst getting seriously fit.</div><a class="button btn_grey btn_joinwaitlist" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'waiting list');">Join the wait list</a>
                 </div>
               </div>
             </div>
@@ -64,7 +64,7 @@ for<br>every ambition</h1>
                   <h5>Coming in March</h5>
                 </div>
                 <div class="blk_coursedetail">
-                  <div class="txt_coursesummary">For mums who want to tone &amp; energise their post-baby body.</div><a class="button btn_grey btn_joinwaitlist" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1">Join the wait list</a>
+                  <div class="txt_coursesummary">For mums who want to tone &amp; energise their post-baby body.</div><a class="button btn_grey btn_joinwaitlist" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'waiting list');">Join the wait list</a>
                 </div>
               </div>
             </div>
@@ -88,7 +88,7 @@ for<br>every ambition</h1>
                   </div>
                 </div>
                 <div class="blk_coursedetail blk_grey">
-                  <div class="txt_coursesummary">For women who want to have the ultimate beach body.</div><a class="button btn_grey btn_joinwaitlist" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1">Join the wait list</a>
+                  <div class="txt_coursesummary">For women who want to have the ultimate beach body.</div><a class="button btn_grey btn_joinwaitlist" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'waiting list');">Join the wait list</a>
                 </div>
               </div>
             </div>
@@ -111,7 +111,7 @@ for<br>every ambition</h1>
                   </div>
                 </div>
                 <div class="blk_coursedetail blk_grey">
-                  <div class="txt_coursesummary">A strength and power course which builds size and shape.</div><a class="button btn_grey btn_learnmore" href="strength-size.php">Learn more</a>
+                  <div class="txt_coursesummary">A strength and power course which builds size and shape.</div><a class="button btn_grey btn_learnmore" href="strength-size.php" onclick="ga('send', 'event', 'button', 'click', 'ss learn more courses');">Learn more</a>
                 </div>
               </div>
             </div>
@@ -128,7 +128,7 @@ for<br>every ambition</h1>
                   </div>
                 </div>
                 <div class="blk_coursedetail blk_grey">
-                  <div class="txt_coursesummary">A unisex bodybuilding course for achieving maximum size.</div><a class="button btn_grey btn_joinwaitlist" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1">Join the wait list</a>
+                  <div class="txt_coursesummary">A unisex bodybuilding course for achieving maximum size.</div><a class="button btn_grey btn_joinwaitlist" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" oonclick="ga('send', 'event', 'button', 'click', 'waiting list');">Join the wait list</a>
                 </div>
               </div>
             </div>
@@ -152,7 +152,7 @@ for<br>every ambition</h1>
                   </div>
                 </div>
                 <div class="blk_coursedetail">
-                  <div class="txt_coursesummary">For anyone wanting to take running to the next level.</div><a class="button btn_grey btn_joinwaitlist" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1">Join the wait list</a>
+                  <div class="txt_coursesummary">For anyone wanting to take running to the next level.</div><a class="button btn_grey btn_joinwaitlist" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'waiting list');">Join the wait list</a>
                 </div>
               </div>
             </div>
@@ -169,7 +169,7 @@ for<br>every ambition</h1>
                   </div>
                 </div>
                 <div class="blk_coursedetail">
-                  <div class="txt_coursesummary">Intensive preparation for any triathlon competition.</div><a class="button btn_grey btn_joinwaitlist" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1">Join the wait list</a>
+                  <div class="txt_coursesummary">Intensive preparation for any triathlon competition.</div><a class="button btn_grey btn_joinwaitlist" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'waiting list');">Join the wait list</a>
                 </div>
               </div>
             </div>
@@ -186,7 +186,7 @@ for<br>every ambition</h1>
                   </div>
                 </div>
                 <div class="blk_coursedetail">
-                  <div class="txt_coursesummary">The ultimate training for the infamous Tough Mudder.</div><a class="button btn_grey btn_joinwaitlist" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1">Join the wait list</a>
+                  <div class="txt_coursesummary">The ultimate training for the infamous Tough Mudder.</div><a class="button btn_grey btn_joinwaitlist" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'waiting list');">Join the wait list</a>
                 </div>
               </div>
             </div>

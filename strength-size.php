@@ -19,7 +19,7 @@ include('inc/header.php'); ?>
         <div class="w-col w-col-3">
           <div class="pricing">£15 a month</div>
           <div class="launching-soon">This course is launching soon</div>
-          <div class="center"><a class="button btn_getinvited" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1">Notify me!</a>
+          <div class="center"><a class="button btn_getinvited" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'ss notify me');">Notify me!</a>
           </div>
         </div>
       </div>
@@ -76,7 +76,7 @@ include('inc/header.php'); ?>
     </div>
     <div class="w-container ctn_courseoutline">
       <div class="overlay">
-        <h3 class="h3_courseoutline">Course outline revealing soon...</h3><a class="button btn_getinvited" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1">Notify me!</a>
+        <h3 class="h3_courseoutline">Course outline revealing soon...</h3><a class="button btn_getinvited" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'ss notify me');">Notify me!</a>
       </div>
     </div>
   </div>

@@ -9,6 +9,7 @@ include('inc/header.php'); ?>
         <div class="w-row">
           <div class="w-col w-col-8 clm_intro">
             <h1 class="callout">Reach your 2014&nbsp;fitness goals with&nbsp;online trainers</h1>
+          
             <div class="text-sub-home">12 week coached courses for £15 a month</div><a class="button home" href="#benefits">Learn more</a>
           </div>
           <div class="w-col w-col-4">
@@ -39,7 +40,7 @@ include('inc/header.php'); ?>
                   </div>
                 </div>
                 <div class="blk_coursedetail">
-                  <div class="txt_coursesummary">For anyone wanting to lose weight and keep it off.</div><a class="button btn_grey btn_learnmore" href="weight-loss-made-simple.php">Learn more</a>
+                  <div class="txt_coursesummary">For anyone wanting to lose weight and keep it off.</div><a class="button btn_grey btn_learnmore" href="weight-loss-made-simple.php" onclick="ga('send', 'event', 'button', 'click', 'wlms learn more home');">Learn more</a>
                 </div>
               </div>
             </div>
@@ -64,7 +65,7 @@ include('inc/header.php'); ?>
                   </div>
                 </div>
                 <div class="blk_coursedetail">
-                  <div class="txt_coursesummary">A strength and power course which builds size and shape.</div><a class="button btn_grey btn_learnmore" href="strength-size.php">Learn more</a>
+                  <div class="txt_coursesummary">A strength and power course which builds size and shape.</div><a class="button btn_grey btn_learnmore" href="strength-size.php" onclick="ga('send', 'event', 'button', 'click', 'ss learn more home');">Learn more</a>
                 </div>
               </div>
             </div>
@@ -79,7 +80,7 @@ include('inc/header.php'); ?>
                   <h5>Coming in March</h5>
                 </div>
                 <div class="blk_coursedetail">
-                  <div class="txt_coursesummary">For mums who want their body and energy back.</div><a class="button btn_grey btn_joinwaitlist" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1">Join the wait list</a>
+                  <div class="txt_coursesummary">For mums who want their body and energy back.</div><a class="button btn_grey btn_joinwaitlist" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'waiting list');">Join the wait list</a>
                 </div>
               </div>
             </div>
