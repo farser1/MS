@@ -75,6 +75,7 @@ Webflow.init = function () {
     if (!mode) return inApp;
     if (mode == 'design') return inApp && designFlag;
     if (mode == 'preview') return inApp && !designFlag;
+    if (mode == 'slug') return inApp && window.__wf_slug;
   };
   
   // Feature detects + browser sniffs  ಠ_ಠ
@@ -127,14 +128,24 @@ Webflow.init = function () {
     return resize;
   }();
   
-  // Designer-only DOM redraw helper
+  // Wrap window.location in api
+  api.location = function (url) {
+    window.location = url;
+  };
+  
+  // Designer-specific methods
   if (api.env()) {
+    // Trigger redraw for specific elements
     var Event = window.Event;
     var redraw = new Event('__wf_redraw');
     $.fn.redraw = function () {
       return this.each(function () {
         this.dispatchEvent(redraw);
       });
+    };
+    // Trigger event instead of changing location
+    api.location = function (url) {
+      window.dispatchEvent(new CustomEvent('__wf_location', { detail: url }));
     };
   }
   
@@ -159,6 +170,8 @@ Webflow.init = function () {
    * _.defer
    * _.throttle (webflow)
    * _.debounce
+   * _.keys
+   * _.has
    * 
    * http://underscorejs.org
    * (c) 2009-2013 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -330,6 +343,24 @@ Webflow.init = function () {
         if (callNow) result = func.apply(context, args);
         return result;
       };
+    };
+    
+    // Object Functions
+    // ----------------
+
+    // Retrieve the names of an object's properties.
+    // Delegates to **ECMAScript 5**'s native `Object.keys`
+    _.keys = nativeKeys || function(obj) {
+      if (obj !== Object(obj)) throw new TypeError('Invalid object');
+      var keys = [];
+      for (var key in obj) if (_.has(obj, key)) keys.push(key);
+      return keys;
+    };
+    
+    // Shortcut function for checking if an object has a given property directly
+    // on itself (in other words, not on a prototype).
+    _.has = function(obj, key) {
+      return hasOwnProperty.call(obj, key);
     };
     
     // Export underscore
@@ -582,112 +613,265 @@ Webflow.define('webflow-touch', function ($, _) {
  * ----------------------------------------------------------------------
  * Webflow: Forms
  */
-Webflow.define('webflow-forms', function ($) {
+Webflow.define('webflow-forms', function ($, _) {
   'use strict';
   
+  var api = {};
   var $doc = $(document);
-  var win = window;
+  var $forms;
   var loc = window.location;
   var retro = window.XDomainRequest && !window.atob;
+  var namespace = '.w-form';
+  var siteId;
+  var emailField = /e(\-)?mail/i;
+  var emailValue = /^\S+@\S+$/;
   
-  function ready() {
+  // MailChimp domains: list-manage.com + mirrors
+  var chimpRegex = /list-manage[1-9]?.com/i;
+  
+  api.ready = function () {
+    // Init forms
+    init();
+    
+    // Wire events
+    listen && listen();
+    listen = null;
+  };
+  
+  api.preview = api.design = function () {
+    init();
+  };
+  
+  function init() {
+    siteId = $('html').attr('data-wf-site');
+    
+    $forms = $(namespace + ' form');
+    $forms.each(build);
+  }
+  
+  function build(i, el) {
+    // Store form state using namespace
+    var $el = $(el);
+    var data = $.data(el, namespace);
+    if (!data) data = $.data(el, namespace, { form: $el }); // data.form
+    
+    reset(data);
+    var wrap = $el.closest('div.w-form');
+    data.done = wrap.find('> .w-form-done');
+    data.fail = wrap.find('> .w-form-fail');
+    
+    var action = data.action = $el.attr('action');
+    data.handler = null;
+    data.redirect = $el.attr('data-redirect');
+    
+    // MailChimp form
+    if (chimpRegex.test(action)) { data.handler = submitMailChimp; return; }
+    
+    // Custom form action
+    if (action) return;
+    
+    // Webflow form
+    if (siteId) { data.handler = submitWebflow; return; }
+    
+    // Alert for disconnected Webflow forms
+    disconnected();
+  }
+  
+  function listen() {
     // Handle form submission for Webflow forms
-    $doc.on('submit', 'div.w-form form', function(e) {
-      _submitForm($(this), e);
+    $doc.on('submit', namespace + ' form', function(evt) {
+      var data = $.data(this, namespace);
+      if (data.handler) {
+        data.evt = evt;
+        data.handler(data);
+      }
     });
-
-    // Alert for disconnected forms
-    if ($('div.w-form form').length > 0 && !$('html').data('wf-site')) {
-      win.setTimeout(function() {
-        window.alert('Oops! This page has a form that is powered by Webflow, but important code was removed that is required to make the form work. Please contact support@webflow.com to fix this issue.');
-      });
+  }
+  
+  // Reset data common to all submit handlers
+  function reset(data) {
+    var btn = data.btn = data.form.find(':input[type="submit"]');
+    data.wait = data.btn.attr('data-wait') || null;
+    data.success = false;
+    btn.prop('disabled', false);
+    data.label && btn.val(data.label);
+  }
+  
+  // Disable submit button
+  function disableBtn(data) {
+    var btn = data.btn;
+    var wait = data.wait;
+    btn.prop('disabled', true);
+    // Show wait text and store previous label
+    if (wait) {
+      data.label = btn.val();
+      btn.val(wait);
     }
+  }
+  
+  // Find form fields, validate, and set value pairs
+  function findFields(form, result) {
+    var status = null;
+    result = result || {};
+    form.find(':input:not([type="submit"])').each(function(i, el) {
+      var field = $(el);
+      var name = field.attr('data-name') || field.attr('name') || ('Field ' + (i + 1));
+      var value = field.val();
+      if (typeof value == 'string') value = $.trim(value);
+      result[name] = value;
+      status = status || getStatus(field, name, value);
+    });
+    return status;
+  }
+  
+  function getStatus(field, name, value) {
+    var status = null;
+    if (!field.attr('required')) return null;
+    if (!value) status = 'Please fill out the required field: ' + name;
+    else if (emailField.test(name) || emailField.test(field.attr('type'))) {
+      if (!emailValue.test(value)) status = 'Please enter a valid email address for: ' + name;
+    }
+    return status;
   }
   
   // Submit form to Webflow
-  function _submitForm(form, e) {
-    var btn = form.find(':input[type="submit"]');
-    var wait = btn.data('wait') || 0;
-    var test = Webflow.env();
-    var data = {
-      name: form.data('name') || form.attr('name') || 'Untitled Form',
+  function submitWebflow(data) {
+    reset(data);
+    
+    var form = data.form;
+    var payload = {
+      name: form.attr('data-name') || form.attr('name') || 'Untitled Form',
       source: loc.href,
-      test: test,
+      test: Webflow.env(),
       fields: {}
     };
-
-    if ($.trim(form.attr('action')) !== '') {
-      return;
-    }
-
-    e.preventDefault();
-
-    // Find all form fields
-    form.find(':input:not([type="submit"])').each(function(i) {
-      var fld = $(this);
-      var name = fld.data('name') || fld.attr('name') || ('Field ' + (i + 1));
-
-      data.fields[name] = fld.val();
-    });
-
-    // Disable the submit button
-    btn.prop('disabled', true);
-    if (wait) {
-      btn.data('w-txt', btn.val()).val(wait);
-    }
+    
+    preventDefault(data);
+    
+    // Find & populate all fields
+    var status = findFields(form, payload.fields);
+    if (status) return alert(status);
+    
+    // Disable submit button
+    disableBtn(data);
 
     // Read site ID
     // NOTE: If this site is exported, the HTML tag must retain the data-wf-site attribute for forms to work
-    var siteId = $('html').data('wf-site');
+    if (!siteId) { afterSubmit(data); return; }
+    var url = 'https://webflow.com/api/v1/form/' + siteId;
 
-    if (siteId) {
-      var url = 'https://webflow.com/api/v1/form/' + siteId;
-
-      // Work around same-protocol IE XDR limitation
-      if (retro && url.indexOf('https://webflow.com') >= 0) {
-        url = url.replace('https://webflow.com/', 'http://data.webflow.com/');
-      }
-
-      $.ajax({
-        url: url,
-        type: 'POST',
-        data: data,
-        dataType: 'json',
-        crossDomain: true
-      }).done(function(data) {
-        _afterSubmit(form, btn, wait);
-      }).fail(function(xhr, status, err) {
-        _afterSubmit(form, btn, wait, 1);
-      });
-    } else {
-      _afterSubmit(form, btn, wait, 1);
+    // Work around same-protocol IE XDR limitation
+    if (retro && url.indexOf('https://webflow.com') >= 0) {
+      url = url.replace('https://webflow.com/', 'http://data.webflow.com/');
     }
-  }
-
-  // Runs after the AJAX request completes
-  function _afterSubmit(form, btn, wait, err) {
-    var wrap = form.closest('div.w-form');
-    var redirect = form.data('redirect');
-    var stat = ['fail', 'done'][err ? 0 : 1];
-
-    if (!err && !redirect) {
-      form.addClass('w-hidden');
-    }
-
-    btn.prop('disabled', false);
-    if (wait && !redirect) {
-      btn.val(btn.data('w-txt')).removeData('w-txt');
-    }
-
-    if (!err && redirect) {
-      window.location = redirect;
-    } else {
-      wrap.find('> div.w-form-' + stat).addClass('w-form-' + stat + '-show');
-    }
+    
+    $.ajax({
+      url: url,
+      type: 'POST',
+      data: payload,
+      dataType: 'json',
+      crossDomain: true
+    }).done(function () {
+      data.success = true;
+      afterSubmit(data);
+    }).fail(function () {
+      afterSubmit(data);
+    });
   }
   
+  // Submit form to MailChimp
+  function submitMailChimp(data) {
+    reset(data);
+    
+    var form = data.form;
+    var payload = {};
+    
+    // Skip Ajax submission if http/s mismatch, fallback to POST instead
+    if (/^https/.test(loc.href) && !/^https/.test(data.action)) {
+      form.attr('method', 'post');
+      return;
+    }
+    
+    preventDefault(data);
+    
+    // Find & populate all fields
+    var status = findFields(form, payload);
+    if (status) return alert(status);
+    
+    // Disable submit button
+    disableBtn(data);
+    
+    // Use special format for MailChimp params
+    var fullName;
+    _.each(payload, function (value, key) {
+      if (emailField.test(key)) payload.EMAIL = value;
+      if (/^(name|full(\-)?name)$/i.test(key)) fullName = value;
+      if (/^(first(\-)?name)$/i.test(key)) payload.FNAME = value;
+      if (/^(last(\-)?name)$/i.test(key)) payload.LNAME = value;
+    });
+    if (fullName && !payload.FNAME) {
+      fullName = fullName.split(' ');
+      payload.FNAME = fullName[0];
+      payload.LNAME = payload.LNAME || fullName[1];
+    }
+    
+    // Use the (undocumented) MailChimp jsonp api
+    var url = data.action.replace('/post?', '/post-json?') + '&c=?';
+    // Add special param to prevent bot signups
+    var userId = url.indexOf('u=')+2;
+    userId = url.substring(userId, url.indexOf('&', userId));
+    var listId = url.indexOf('id=')+3;
+    listId = url.substring(listId, url.indexOf('&', listId));
+    payload['b_' + userId + '_' + listId] = '';
+    
+    $.ajax({
+      url: url,
+      data: payload,
+      dataType: 'jsonp'
+    }).done(function (resp) {
+      data.success = (resp.result == 'success' || /already/.test(resp.msg));
+      if (!data.success) console.info('MailChimp error: ' + resp.msg);
+      afterSubmit(data);
+    }).fail(function () {
+      afterSubmit(data);
+    });
+  }
+  
+  // Common callback which runs after all Ajax submissions
+  function afterSubmit(data) {
+    var form = data.form;
+    var wrap = form.closest('div.w-form');
+    var redirect = data.redirect;
+    var success = data.success;
+    
+    // Redirect to a success url if defined
+    if (success && redirect) {
+      Webflow.location(redirect);
+      return;
+    }
+    
+    // Show or hide status divs
+    data.done.toggleClass('w-form-done-show', success);
+    data.fail.toggleClass('w-form-fail-show', !success);
+    
+    // Hide form on success
+    success && form.addClass('w-hidden');
+    
+    // Reset data and enable submit button
+    reset(data);
+  }
+  
+  function preventDefault(data) {
+    data.evt && data.evt.preventDefault();
+    data.evt = null;
+  }
+  
+  var disconnected = _.debounce(function () {
+    window.alert('Oops! This page has a form that is powered by Webflow, but important code was removed that is required to make the form work. Please contact support@webflow.com to fix this issue.');
+  }, 100);
+  
   // Export module
-  return { ready: ready };
+  return api;
 });
 /**
  * ----------------------------------------------------------------------
@@ -832,6 +1016,7 @@ Webflow.define('webflow-maps', function ($, _) {
       if (offsetX || offsetY) {
         state.map.panBy(offsetX, offsetY);
       }
+      $el.css('position', ''); // Remove injected position
     };
     
     // Fix position after first tiles have loaded
@@ -953,7 +1138,7 @@ Webflow.define('webflow-scroll', function ($) {
     }
 
     // If a fixed header exists, offset for the height
-    var header = $('header, body > .header, body > div:first-child');
+    var header = $('header, body > .header, body > .w-nav, body > div:first-child');
     var offset = header.css('position') === 'fixed' ? header.outerHeight() : 0;
 
     win.setTimeout(function() {
@@ -1009,11 +1194,11 @@ Webflow.define('webflow-slider', function ($, _) {
   var designer;
   var inApp = Webflow.env();
   var namespace = '.w-slider';
-  var dot = '<div class=w-slider-dot />';
+  var dot = '<div class="w-slider-dot" data-wf-ignore />';
   var fallback;
   
   // -----------------------------------
-  // App events
+  // Module methods
   
   api.ready = function () {
     init();
@@ -1030,11 +1215,11 @@ Webflow.define('webflow-slider', function ($, _) {
   };
   
   // -----------------------------------
-  // Slider methods
+  // Private methods
   
   function init() {
     // Find all sliders on the page
-    $sliders = $doc.find('.w-slider');
+    $sliders = $doc.find(namespace);
     $sliders.each(build);
     if (fallback) return;
     
@@ -1458,6 +1643,332 @@ Webflow.define('webflow-slider', function ($, _) {
         tram.config.hideBackface = false;
       }
     });
+  }
+  
+  // Export module
+  return api;
+});
+/**
+ * ----------------------------------------------------------------------
+ * Webflow: Navbar widget
+ */
+Webflow.define('webflow-navbar', function ($, _) {
+  'use strict';
+  
+  var api = {};
+  var tram = window.tram;
+  var $win = $(window);
+  var $doc = $(document);
+  var $body;
+  var $navbars;
+  var designer;
+  var inApp = Webflow.env();
+  var overlay = '<div class="w-nav-overlay" data-wf-ignore />';
+  var namespace = '.w-nav';
+  var buttonOpen = 'w--open';
+  var menuOpen = 'w--nav-menu-open';
+  var linkOpen = 'w--nav-link-open';
+  var linkCurrent = 'w--current';
+  
+  // -----------------------------------
+  // Module methods
+  
+  api.ready = function () {
+    init();
+  };
+  
+  api.design = function () {
+    designer = true;
+    init();
+  };
+  
+  api.preview = function () {
+    designer = false;
+    init();
+  };
+  
+  // -----------------------------------
+  // Private methods
+  
+  function init() {
+    $body = $(document.body);
+    
+    // Find all instances on the page
+    $navbars = $doc.find(namespace);
+    $navbars.each(build);
+    
+    // Wire events
+    listen && listen();
+    listen = null;
+  }
+  
+  function listen() {
+    Webflow.resize.on(function () {
+      $navbars.each(resize);
+    });
+  }
+  
+  function build(i, el) {
+    var $el = $(el);
+    
+    // Store state in data
+    var data = $.data(el, namespace);
+    if (!data) data = $.data(el, namespace, { open: false, el: $el, config: {} });
+    data.menu = $el.find('.w-nav-menu');
+    data.links = data.menu.find('.w-nav-link');
+    data.button = $el.find('.w-nav-button');
+    data.container = $el.find('.w-container');
+    data.outside = outside(data);
+    
+    // Remove old events
+    data.button.off(namespace);
+    data.menu.off(namespace);
+    
+    // Set config from data attributes
+    configure(data);
+    
+    // Add events based on mode
+    if (designer) {
+      removeOverlay(data);
+      $el.on('setting' + namespace, handler(data));
+    } else {
+      addOverlay(data);
+      data.button.on('tap' + namespace, toggle(data));
+      data.menu.on('click' + namespace, '> a', navigate(data));
+    }
+    
+    // Select current section
+    data.links.each(select);
+    
+    // Trigger initial resize
+    resize(i, el);
+  }
+  
+  function select(i, el) {
+    el = $(el);
+    var slug = (inApp ? Webflow.env('slug') : window.location.pathname) || '';
+    var href = el.attr('href');
+    el.toggleClass(linkCurrent, slug === href || slug.indexOf(href, slug.length - href.length) !== -1);
+  }
+  
+  function removeOverlay(data) {
+    if (!data.overlay) return;
+    close(data, true);
+    data.overlay.remove();
+    data.overlay = null;
+  }
+  
+  function addOverlay(data) {
+    if (data.overlay) return;
+    data.overlay = $(overlay).appendTo(data.el);
+    data.parent = data.menu.parent();
+    close(data, true);
+  }
+  
+  function configure(data) {
+    var config = {};
+    var old = data.config || {};
+    
+    // Set config options from data attributes
+    config.animation = data.el.attr('data-animation') || 'default';
+    
+    // Re-open menu if the animation type changed
+    if (old.animation != config.animation) {
+      data.open && _.defer(reopen, data);
+    }
+    
+    config.easing = data.el.attr('data-easing') || 'ease';
+    config.easing2 = data.el.attr('data-easing2') || 'ease';
+    
+    var duration = data.el.attr('data-duration');
+    config.duration = duration != null ? +duration : 400;
+    
+    // Store config in data
+    data.config = config;
+  }
+  
+  function handler(data) {
+    return function (evt, options) {
+      options = options || {};
+      
+      // Designer settings
+      if (designer && evt.type == 'setting') {
+        var winWidth = $win.width();
+        configure(data);
+        options.open === true && open(data, true);
+        options.open === false && close(data, true);
+        // Reopen if media query changed after setting
+        data.open && _.defer(function () {
+          if (winWidth != $win.width()) reopen(data);
+        });
+        return;
+      }
+    };
+  }
+  
+  function closeEach(i, el) {
+    var data = $.data(el, namespace);
+    data.open && close(data);
+  }
+  
+  function reopen(data) {
+    if (!data.open) return;
+    close(data, true);
+    open(data, true);
+  }
+  
+  function toggle(data) {
+    return _.debounce(function (evt) {
+      data.open ? close(data) : open(data);
+    });
+  }
+
+  function navigate(data) {
+    return function (evt) {
+      var link = $(this);
+      var href = link.attr('href');
+
+      // Close when navigating to an in-page anchor
+      if (href && href.indexOf('#') === 0 && data.open) {
+        close(data);
+      }
+    };
+  }
+  
+  function outside(data) {
+    return function (evt) {
+      var target = evt.target;
+      // Close navbars when tapped outside
+      var isOutside = !data.el.has(target).length && !data.el.is(target);
+      if (isOutside || /close/i.test(evt.target.className)) close(data);
+    };
+  }
+  
+  function resize(i, el) {
+    var data = $.data(el, namespace);
+    // Check for collapsed state based on button display
+    var collapsed = data.collapsed = data.button.css('display') != 'none';
+    // Close menu if button is no longer visible (and not in designer)
+    if (data.open && !collapsed && !designer) close(data, true);
+    // Set max-width of links to match container
+    data.container.length && data.links.each(maxLink(data));
+  }
+  
+  var maxWidth = 'max-width';
+  function maxLink(data) {
+    // Set max-width of each link (unless it has an upstream value)
+    var containMax = data.container.css(maxWidth);
+    if (containMax == 'none') containMax = '';
+    return function (i, link) {
+      link = $(link);
+      link.css(maxWidth, '');
+      if (link.css(maxWidth) == 'none') link.css(maxWidth, containMax);
+    };
+  }
+  
+  function open(data, immediate) {
+    if (data.open) return;
+    data.open = true;
+    data.menu.addClass(menuOpen);
+    data.links.addClass(linkOpen);
+    data.button.addClass(buttonOpen);
+    var config = data.config;
+    var animation = config.animation;
+    if (animation == 'none' || !tram.support.transform) immediate = true;
+    var animOver = /^over/.test(animation);
+    var navFixed = data.el.css('position') == 'fixed';
+    var bodyHeight = $body.height();
+    var menuHeight = data.menu.outerHeight(true);
+    var menuWidth = data.menu.outerWidth(true);
+    var navHeight = data.el.height();
+    var direction = /left$/.test(animation) ? -1 : 1;
+    resize(0, data.el[0]);
+    
+    // Listen for tap outside events
+    if (!designer) $doc.on('tap' + namespace, data.outside);
+    
+    // Update menu height for Over state
+    if (animOver) {
+      if (!navFixed) bodyHeight -= data.el.offset().top;
+      data.menu.height(bodyHeight);
+    }
+    
+    // No transition for immediate
+    if (immediate) return;
+    
+    var transConfig = 'transform ' + config.duration + 'ms ' + config.easing;
+    
+    // Add menu to overlay
+    if (data.overlay) {
+      data.overlay.show()
+        .append(data.menu)
+        .height(menuHeight);
+    }
+    
+    // Over left/right
+    if (animOver) {
+      tram(data.menu)
+        .add(transConfig)
+        .set({ x: direction * menuWidth, height: bodyHeight }).start({ x: 0 });
+      data.overlay && data.overlay.css({ width: menuWidth, height: bodyHeight });
+      return;
+    }
+    
+    // Drop Down
+    var offsetY = navHeight + menuHeight;
+    tram(data.menu)
+      .add(transConfig)
+      .set({ y: -offsetY }).start({ y: 0 });
+  }
+  
+  function close(data, immediate) {
+    data.open = false;
+    data.button.removeClass(buttonOpen);
+    var config = data.config;
+    if (config.animation == 'none' || !tram.support.transform) immediate = true;
+    var animation = config.animation;
+    
+    // Stop listening for tap outside events
+    $doc.off('tap' + namespace, data.outside);
+    
+    if (immediate) {
+      tram(data.menu).stop();
+      complete();
+      return;
+    }
+    
+    var transConfig = 'transform ' + config.duration + 'ms ' + config.easing2;
+    var menuHeight = data.menu.outerHeight(true);
+    var menuWidth = data.menu.outerWidth(true);
+    var navHeight = data.el.height();
+    var direction = /left$/.test(animation) ? -1 : 1;
+    var animOver = /^over/.test(animation);
+    
+    // Over left/right
+    if (animOver) {
+      tram(data.menu)
+        .add(transConfig)
+        .start({ x: menuWidth * direction }).then(complete);
+      return;
+    }
+    
+    // Drop Down
+    var offsetY = navHeight + menuHeight;
+    tram(data.menu)
+      .add(transConfig)
+      .start({ y: -offsetY }).then(complete);
+    
+    function complete() {
+      data.menu.height('');
+      tram(data.menu).set({ x: 0, y: 0 });
+      data.menu.removeClass(menuOpen);
+      data.links.removeClass(linkOpen);
+      if (data.overlay && data.overlay.children().length) {
+        // Move menu back to parent
+        data.menu.appendTo(data.parent);
+        data.overlay.attr('style', '').hide();
+      }
+    }
   }
   
   // Export module

@@ -1,6 +1,6 @@
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www\.myteamactive\.com [NC]
-RewriteRule (.*) http://myteamactive.com/$1 [R=301,L]   
+RewriteCond %{HTTP_HOST} ^www\.joinmyteam\.co [NC]
+RewriteRule (.*) http://joinmyteam.co/$1 [R=301,L]   
 
 #Themato soup
 

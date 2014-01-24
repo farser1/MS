@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Mon Jan 13 2014 21:41:25 GMT+0000 (UTC) -->
+<!-- Last Published: Thu Jan 23 2014 13:01:03 GMT+0000 (UTC) -->
 <html data-wf-site="52c2a99786cae7086200012d">
 <head>
   <meta charset="utf-8">
@@ -22,6 +22,7 @@
     if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
   </script>
   <link rel="shortcut icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-46021809-1']);
@@ -37,58 +38,212 @@
   </script>
 </head>
 <body>
-  <div class="header">
-    <div class="logo">
-      <img src="images/MyTeam%20Home%20Page%20S2-04.png" alt="52c2ace286cae70862000160_MyTeam%20Home%20Page%20S2-04.png">
-    </div>
-  </div>
-  <div class="call">
+  <header class="w-nav header" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
     <div class="w-container">
-      <div class="w-container">
+      <a class="w-nav-brand" href="index.html">
+        <div class="logo">
+          <img src="images/MyTeam%20Home%20Page%20S2-04.png" alt="52c2ace286cae70862000160_MyTeam%20Home%20Page%20S2-04.png">
+        </div>
+      </a>
+      <nav class="w-nav-menu" role="navigation"><a class="w-nav-link color" href="index.html">Home</a><a class="w-nav-link color" href="courses.html">Courses</a><a class="w-nav-link color" href="http://joinmyteam.co/blog">Blog</a>
+      </nav>
+      <div class="w-nav-button nav_menu">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </header>
+  <div class="scn_intro">
+    <div class="w-container">
+      <div class="w-container ctr_intro">
         <div class="w-row">
-          <div class="w-col w-col-3">
-            <img class="phone" src="images/V4_iPhone.png" alt="52d454ca3bc46fcc61000186_V4_iPhone.png">
+          <div class="w-col w-col-8 clm_intro">
+            <h1 class="callout">Reach your 2014&nbsp;fitness goals with&nbsp;online trainers</h1>
+            <div class="text-sub-home">12 week coached courses for £15 a month</div><a class="button home" href="#benefits">Learn more</a>
           </div>
-          <div class="w-col w-col-9">
-            <h1 class="callout">Reach your 2014 fitness goals with dedicated trainers</h1>
-            <div class="text-sub-home">12 week coached courses for £15 a month</div>
-            <div class="w-container">
-              <div class="text-sub-home choose">Choose your goal</div>
-              <div class="w-row">
-                <div class="w-col w-col-4 course-column"><a class="button active" href="lose-weight.html">Lose Weight</a>
+          <div class="w-col w-col-4">
+            <img class="w-hidden-small w-hidden-tiny iphone" src="images/MT_V5_iPhone.png" width="230" alt="52e0e733b37adb5912000866_MT_V5_iPhone.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scn_popularcourses home_overlap">
+      <div class="w-container ctr_popularcourses">
+        <h1>Most popular courses</h1>
+        <div class="w-row row_popularcourses">
+          <div class="w-col w-col-4">
+            <div class="blk_course">
+              <img src="images/MT_V5_Img_WeightLoss.jpg" width="286" alt="52e1000675a811542d000b2f_MT_V5_Img_WeightLoss.jpg">
+              <div class="blk_coursetitle">
+                <h3 class="h3_coursetitle">Weight Loss<br>Made Simple</h3>
+                <h4 class="h4_explevel">Beginner &nbsp;</h4>
+                <div class="blk_trainer">
+                  <div class="w-row">
+                    <div class="w-col w-col-3 w-col-small-6 w-col-tiny-6 w-clearfix">
+                      <img class="img_trainermini" src="images/MT_TrainerMini_Paul.png" width="50" height="50" alt="52e1015cece65a5a12000af7_MT_TrainerMini_Paul.png">
+                    </div>
+                    <div class="w-col w-col-9 w-col-small-6 w-col-tiny-6">
+                      <div class="txt_trainerbio1">By Paul Rayner
+                        <br>Weight Loss Specialist</div>
+                    </div>
+                  </div>
                 </div>
-                <div class="w-col w-col-4 course-column"><a class="button active" href="get-toned.html">Get Toned</a>
-                </div>
-                <div class="w-col w-col-4 course-column"><a class="button inactive" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1">Run 5k</a>
-                </div>
-              </div>
-              <div class="w-row second-bottom">
-                <div class="w-col w-col-4 course-column"><a class="button active" href="stronger-by-summer.html">Stronger by Summer</a>
-                </div>
-                <div class="w-col w-col-4 course-column"><a class="button active" href="ultimate-muscle-gainer.html">Ultimate Muscle Gainer</a>
-                </div>
-                <div class="w-col w-col-4 course-column"><a class="button inactive" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1">Post Pregnancy</a>
+                <div class="blk_coursedetail">
+                  <div class="txt_coursesummary">For anyone wanting to lose weight and keep it off.</div><a class="button btn_grey btn_learnmore" href="lose-weight.html">Learn more</a>
                 </div>
               </div>
             </div>
-            <a class="w-inline-block twitter-link-noline" href="http://twitter.com/myteamactive">
-              <div class="w-clearfix twitter-row-1">
-                <img class="twitterbird" src="images/Twitter_Bird_Teal.png" alt="52d44a5a020acdcb610000ca_Twitter_Bird_Teal.png">
-                <div class="twitter-link">Follow @myteamactive
-                  <br>for insider health tips and news</div>
+          </div>
+          <div class="w-col w-col-4">
+            <div class="blk_course">
+              <div class="image">
+                <img src="images/MT_V5_Img_Strength.jpg" width="286" alt="52e1000e75a811542d000b30_MT_V5_Img_Strength.jpg">
+              </div>
+              <div class="blk_coursetitle">
+                <h3 class="h3_coursetitle">Strength<br>and Size</h3>
+                <h4 class="h4_explevel">Beginner - Intermediate</h4>
+                <div class="blk_trainer">
+                  <div class="w-row">
+                    <div class="w-col w-col-3 w-col-small-6 w-col-tiny-6 w-clearfix">
+                      <img class="img_trainermini" src="images/MT_TrainerMini_Josh.png" height="50" alt="52e10101ece65a5a12000aec_MT_TrainerMini_Josh.png">
+                    </div>
+                    <div class="w-col w-col-9 w-col-small-6 w-col-tiny-6">
+                      <div class="txt_trainerbio1">By Joshua O'Leary
+                        <br>Strength Coach</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blk_coursedetail">
+                  <div class="txt_coursesummary">A strength and power course which builds size and shape.</div><a class="button btn_grey btn_learnmore" href="strength-size.html">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-col w-col-4 clm_popular3">
+            <div class="blk_course">
+              <img src="images/MT_V5_Img_Mum.jpg" width="286" alt="52e100191fd16d522d000ac0_MT_V5_Img_Mum.jpg">
+              <div class="blk_coursetitle">
+                <h3 class="h3_coursetitle">Yummy Mummy<br>Boot Camp</h3>
+                <h4 class="h4_explevel">Beginner - Intermediate</h4>
+                <div class="blk_trainer blk_trainerlight">
+                  <h5>Coming in March</h5>
+                </div>
+                <div class="blk_coursedetail">
+                  <div class="txt_coursesummary">For mums who want their body and energy back.</div><a class="button btn_grey btn_joinwaitlist" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1">Join the wait list</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><a class="button btn_teal" href="courses.html">See all courses</a>
+      </div>
+      <div class="scn_benefits" id="benefits">
+        <div class="w-container ctr_benefits">
+          <h1 class="hdr_benefits">MyTeam simplifies your success</h1>
+        </div>
+        <div class="w-container ctn_benefits">
+          <div class="w-row benefits-time-efficient">
+            <div class="w-col w-col-5">
+              <div class="benefit-image">
+                <img src="images/MT_V5_Benefits_Easy.jpg" width="350" height="200" alt="52deb1ee1b42bfc243000a71_MT_V5_Benefits_Easy.jpg">
+              </div>
+            </div>
+            <div class="w-col w-col-7 height">
+              <h4>Time efficient&nbsp;</h4>
+              <div class="description">Easy to follow <strong>exercise and nutritional plans</strong> guide you to your goal.</div>
+            </div>
+          </div>
+          <div class="w-row benefits-time-efficient">
+            <div class="w-col w-col-5 benefit-image">
+              <img src="images/MT_V5_Benefits_Community.jpg" alt="52e017fba13e8ef533000153_MT_V5_Benefits_Community.jpg">
+            </div>
+            <div class="w-col w-col-7 height">
+              <h4>A supportive community</h4>
+              <div class="description">Every MyTeam course has it's own<strong> private&nbsp;</strong><strong>community</strong>. Here you can ask questions and get support from people doing the same program as you.</div>
+            </div>
+          </div>
+          <div class="w-row benefits-time-efficient">
+            <div class="w-col w-col-5">
+              <div class="benefit-image">
+                <img src="images/MT_V5_Benefits_Actions.jpg" alt="52deb20d1b42bfc243000a72_MT_V5_Benefits_Actions.jpg">
+              </div>
+            </div>
+            <div class="w-col w-col-7 height">
+              <h4>Steps &amp; Milestones</h4>
+              <div class="description">MyTeam gives you&nbsp;<strong>weekly steps and milestones</strong>&nbsp;to make progress more manageable with your lifestyle.</div>
+            </div>
+          </div>
+          <div class="w-row benefits-time-efficient">
+            <div class="w-col w-col-5">
+              <div class="benefit-image">
+                <div class="benefit-image">
+                  <img src="images/MT_V5_Benefits_Answers.jpg" alt="52dfcc1061794670770006c5_MT_V5_Benefits_Answers.jpg">
+                </div>
+              </div>
+            </div>
+            <div class="w-col w-col-7 height">
+              <h4>Expert answers to your questions</h4>
+              <div class="description">Have a question? Need an expert opinion? Just ask the private&nbsp;community where your&nbsp;<strong>course trainer</strong>&nbsp;will make sure everyone is looked after.</div>
+            </div>
+          </div>
+          <div class="w-row benefits-time-efficient">
+            <div class="w-col w-col-5 benefit-image">
+              <img src="images/MT_V5_Benefits_Track.jpg" alt="52deb21a1b42bfc243000a74_MT_V5_Benefits_Track.jpg">
+            </div>
+            <div class="w-col w-col-7 height">
+              <h4>Daily Motivation</h4>
+              <div class="description">With coaching and <strong>progress tracking</strong>, MyTeam helps you stay focused and stick with it.</div>
+            </div>
+          </div>
+          <div class="w-row benefits-time-efficient">
+            <div class="w-col w-col-5">
+              <div class="benefit-image">
+                <img src="images/MT_V5_Benefits_Videos.jpg" alt="52deb2251b42bfc243000a76_MT_V5_Benefits_Videos.jpg">
+              </div>
+            </div>
+            <div class="w-col w-col-7 height">
+              <h4>Perfect your form</h4>
+              <div class="description"><strong>Instructional videos</strong> demonstrate exercises&nbsp;clearly.&nbsp;For feedback from your trainer, <strong>upload a video of yourself</strong>.&nbsp;</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scn_getstarted">
+        <div class="w-container ctr_getstarted">
+          <h1 class="h1_white">Ready to get started?</h1><a class="button" href="courses.html">Choose your course</a>
+        </div>
+      </div>
+    </div>
+    <div class="scn_foot">
+      <div class="w-container ctn_base">
+        <div class="w-row">
+          <div class="w-col w-col-6 w-clearfix cln_twitter">
+            <a class="w-inline-block left" href="mailto:hello@joinmyteam.co">
+              <div class="left">
+                <img class="img_icon" src="images/MT_V5_Icon_Mail.png" alt="52e024c7f69b00700a00031f_MT_V5_Icon_Mail.png">
+                <div class="txt_basecopy">Have a question or just want to say hi?
+                  <br>Reach us at hello@joinmyteam.co</div>
+              </div>
+            </a>
+          </div>
+          <div class="w-col w-col-6 w-clearfix cln_twitter">
+            <a class="w-clearfix w-inline-block right" href="http://twitter.com/join_myteam">
+              <div class="right">
+                <img class="img_icon" src="images/MT_V5_Icon_Twitter.png" alt="52e024e18abfef6e0a0002d4_MT_V5_Icon_Twitter.png">
+                <div class="txt_basecopy">Follow us @joinmyteam.co
+                  <br>for the latest news &amp; fitness tips</div>
               </div>
             </a>
           </div>
         </div>
       </div>
+      <div class="scn_base">
+        <div class="w-container">
+          <a class="w-inline-block footer-link" href="privacy-policy.html">
+            <div class="footer-link">Privacy policy</div>
+          </a>
+          <div class="sub-footer">©2014 MyTeam</div>
+        </div>
+      </div>
     </div>
-    <div class="goal-buttons"></div>
-  </div>
-  <div class="foot">
-    <div class="foot-text">Have a question or want to say hi?
-      <br>Reach us at hello@myteamactive.com</div>
-    <div class="footer-link">Privacy policy</div>
-    <div class="sub-footer">©2014 MyTeam</div>
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
