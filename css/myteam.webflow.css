@@ -77,19 +77,6 @@ p {
   text-align: center;
   text-decoration: none;
 }
-.button.active {
-  height: auto;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  color: #00ccd9;
-}
-.button.inactive {
-  height: auto;
-  padding: 8px 5px;
-  background-color: rgba(255, 255, 255, 0.29);
-  color: white;
-  font-weight: 300;
-}
 .button.btn_grey {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -147,11 +134,6 @@ p {
   border-color: transparent;
   background-color: #ffa600;
 }
-.button.requestbtn {
-  margin-top: -13px;
-  padding-bottom: 11px;
-  line-height: 3px;
-}
 .button.home {
   margin-top: 0px;
 }
@@ -179,12 +161,6 @@ p {
   margin-top: 1px;
   padding-bottom: 1px;
 }
-.footer {
-  margin-top: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #38383a;
-}
 .logo {
   display: block;
   width: 160px;
@@ -205,15 +181,6 @@ p {
   font-weight: 400;
   text-align: center;
 }
-.btn {
-  margin-bottom: 5px;
-  padding: 5% 10%;
-  border-radius: 5px;
-  background-color: #ffa600;
-  color: white;
-  font-size: 20px;
-  font-weight: 600;
-}
 .text-sub-home {
   margin-bottom: 25px;
   font-family:'Open Sans', sans-serif;
@@ -221,11 +188,6 @@ p {
   line-height: 28px;
   font-weight: 300;
   text-align: center;
-}
-.text-sub-home.choose {
-  margin-top: 31px;
-  color: white;
-  font-size: 21px;
 }
 .text-sub-home.txt_30px {
   margin-top: -4px;
@@ -241,13 +203,6 @@ p {
   margin-right: auto;
   margin-left: auto;
   float: none;
-  text-align: center;
-}
-.footer-text {
-  margin-bottom: 20px;
-  color: white;
-  line-height: 22px;
-  font-weight: 300;
   text-align: center;
 }
 .sub-footer {
@@ -324,9 +279,6 @@ p {
   padding-bottom: 30px;
   background-color: #e6e6e6;
 }
-.intro-section.base {
-  padding-bottom: 0px;
-}
 .benefits-section {
   padding-bottom: 60px;
 }
@@ -368,39 +320,6 @@ p {
 }
 .launching-soon {
   margin-top: 20px;
-  color: white;
-  text-align: center;
-}
-.phone {
-  width: auto;
-  height: auto;
-  padding-top: 36px;
-}
-.twitterbird {
-  width: 35px;
-  padding-top: 5px;
-  float: left;
-}
-.twitter-link {
-  margin-left: 50px;
-  float: none;
-  color: #00ccd9;
-}
-.second-bottom {
-  padding-top: 7px;
-}
-.twitter-row-1 {
-  padding-top: 35px;
-}
-.twitter-link-noline {
-  text-decoration: none;
-}
-.foot {
-  background-color: #38383a;
-}
-.foot-text {
-  margin-top: 0px;
-  padding-top: 10px;
   color: white;
   text-align: center;
 }
@@ -520,19 +439,6 @@ p {
   border-bottom: 1px solid rgba(149, 149, 158, 0.4);
   color: #667;
 }
-.nav-bg {
-  position: absolute;
-  left: 1px;
-  top: 1px;
-  right: 1px;
-  z-index: 1;
-  background-color: #333;
-}
-.course-outline {
-  height: 300px;
-  background-image: url('../images/396816_10151000665709855_991787078_n.jpg');
-  background-size: auto 300px;
-}
 .overlay {
   position: relative;
   left: 0px;
@@ -555,18 +461,9 @@ p {
   background-repeat: no-repeat;
   text-align: center;
 }
-.nav_bar {
-  background-color: transparent;
-  color: white;
-}
 .nav_menu {
   color: white;
   font-weight: 400;
-}
-.img_courseoutline {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  background-image: url('../images/MT_V5_Benefits_Track.jpg');
 }
 .h3_courseoutline {
   padding-top: 28px;
@@ -604,16 +501,6 @@ p {
 .row_courses {
   height: 64px;
 }
-.field {
-  width: 226px;
-  margin-top: -15px;
-  padding: 11px 15px;
-  border: 0px solid black;
-  border-radius: 8px;
-  color: #667;
-  font-weight: 300;
-  text-align: center;
-}
 .request-form {
   display: block;
   width: 226px;
@@ -649,6 +536,9 @@ p {
   margin-top: 20px;
   text-align: center;
 }
+.course-choice {
+  text-align: center;
+}
 @media (max-width: 991px) {
   h1 {
     font-size: 39px;
@@ -657,14 +547,6 @@ p {
     margin-top: 40px;
     font-size: 26px;
     line-height: 41px;
-  }
-  .button.active {
-    width: 170px;
-    font-size: 15px;
-  }
-  .button.inactive {
-    width: 170px;
-    font-size: 15px;
   }
   .button.btn_grey.btn_learnmore.benefits {
     width: auto;
@@ -676,26 +558,11 @@ p {
   .button.btn_getinvited {
     width: auto;
   }
-  .footer {
-    margin-top: 83px;
-    padding-bottom: 0px;
-  }
   .callout {
     width: auto;
     margin-top: 30px;
     font-size: 36px;
     line-height: 48px;
-  }
-  .btn {
-    display: block;
-    width: auto;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    font-size: 18px;
-  }
-  .text-sub-home.choose {
-    margin-top: 0px;
   }
   .text-sub-home.txt_30px {
     font-size: 30px;
@@ -709,10 +576,6 @@ p {
   .text-2 {
     padding-top: 0px;
   }
-  .course-column {
-    margin-bottom: 10px;
-    text-align: center;
-  }
   .course-title-section {
     padding-top: 70px;
   }
@@ -724,9 +587,6 @@ p {
   }
   .launching-soon {
     font-size: 12px;
-  }
-  .foot {
-    background-color: #38383a;
   }
   .h3_coursetitle {
     font-size: 26px;
@@ -780,9 +640,6 @@ p {
     line-height: 18px;
     text-align: center;
   }
-  .button.requestbtn {
-    margin-top: 15px;
-  }
   .scn_intro {
     padding-top: 10px;
     padding-bottom: 0px;
@@ -794,19 +651,9 @@ p {
     line-height: 35px;
     text-align: center;
   }
-  .btn {
-    width: auto;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    font-size: 14px;
-  }
   .text-sub-home {
     margin-top: 20px;
     line-height: 36px;
-  }
-  .text-sub-home.choose {
-    margin-top: 10px;
-    margin-bottom: 10px;
   }
   .text-sub-home.txt_30px {
     font-size: 25px;
@@ -863,9 +710,6 @@ p {
   .text-2 {
     padding-top: 10px;
   }
-  .course-column {
-    margin-bottom: 10px;
-  }
   .description {
     padding-top: 0px;
   }
@@ -888,15 +732,6 @@ p {
     margin-top: 30px;
   }
   .launching-soon {
-    margin-top: 0px;
-  }
-  .phone {
-    padding-top: 46px;
-  }
-  .second-bottom {
-    padding-top: 0px;
-  }
-  .twitter-row-1 {
     margin-top: 0px;
   }
   .ctr_getstarted {
@@ -941,11 +776,14 @@ p {
     margin-bottom: 20px;
     text-align: center;
   }
+  .nav_menu.w--open {
+    background-color: #667;
+  }
   .ctn_courseheadline {
     padding-bottom: 0px;
   }
-  .field {
-    margin-top: 15px;
+  .color {
+    background-color: #667;
   }
   .left {
     display: block;
@@ -971,27 +809,16 @@ p {
     font-size: 16px;
     line-height: 19px;
   }
-  .button.requestbtn {
-    margin-top: 1px;
-  }
   .scn_intro {
     padding-top: 20px;
   }
   .scn_intro.courses {
     padding-top: 40px;
   }
-  .footer {
-    margin-top: 10px;
-  }
   .callout {
     margin-top: 0px;
     font-size: 28px;
     line-height: 35px;
-  }
-  .btn {
-    padding-top: 6px;
-    padding-bottom: 6px;
-    font-size: 16px;
   }
   .text-sub-home {
     font-size: 21px;
@@ -1028,12 +855,6 @@ p {
   .launching-soon {
     margin-top: 0px;
   }
-  .phone {
-    width: 45%;
-  }
-  .foot-text {
-    margin-top: 20px;
-  }
   .ctr_intro {
     padding-top: 40px;
   }
@@ -1051,9 +872,6 @@ p {
     width: auto;
     margin-right: 10px;
     margin-left: 10px;
-  }
-  .field {
-    margin-top: -1px;
   }
   .ctn_privacy {
     padding-right: 10px;

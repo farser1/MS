@@ -1,57 +1,10 @@
-<!DOCTYPE html>
-<!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Thu Jan 23 2014 13:01:03 GMT+0000 (UTC) -->
-<html data-wf-site="52c2a99786cae7086200012d">
-<head>
-  <meta charset="utf-8">
-  <title>MyTeamSimple - Strength and Size</title>
-  <meta name="description" content="Reach your health and fitness goals through goal based communities powered by real coaches.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/webflow.css">
-  <link rel="stylesheet" type="text/css" href="css/myteamsimple.webflow.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-  <script>
-    WebFont.load({
-      google: {
-        families: ["Open Sans:300,400,600,700,800"]
-      }
-    });
-  </script>
-  <script>
-    if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
-  </script>
-  <link rel="shortcut icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
-  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-46021809-1']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-      var ga = document.createElement('script');
-      ga.type = 'text/javascript';
-      ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-</head>
-<body>
-  <header class="w-nav header" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
-    <div class="w-container">
-      <a class="w-nav-brand" href="#">
-        <div class="logo">
-          <img src="images/MyTeam%20Home%20Page%20S2-04.png" alt="52c2ace286cae70862000160_MyTeam%20Home%20Page%20S2-04.png">
-        </div>
-      </a>
-      <nav class="w-nav-menu" role="navigation"><a class="w-nav-link color" href="index.html">Home</a><a class="w-nav-link color" href="courses.html">Courses</a><a class="w-nav-link color" href="http://joinmyteam.co/blog">Blog</a>
-      </nav>
-      <div class="w-nav-button nav_menu">
-        <div class="w-icon-nav-menu"></div>
-      </div>
-    </div>
-  </header>
+<?php 
+$pageTitle="Strength and Size";
+$pageDesc="12 weeks program to help you gain significant muscle power and strength whilst increasing your overall fitness and conditioning.";
+include('inc/header.php'); ?>
+
+
+
   <div class="course-title-section">
     <div class="w-container ctn_courseheadline">
       <div class="w-row course-row-0">
@@ -111,7 +64,7 @@
               <li>
                 <div class="at-a-glance-txt">Lifetime access to course content</div>
               </li>
-            </ul><a class="button btn_grey btn_learnmore benefits" href="benefits.html">Why join MyTeam?</a>
+            </ul><a class="button btn_grey btn_learnmore benefits" href="benefits.php">Why join MyTeam?</a>
           </div>
         </div>
       </div>
@@ -161,39 +114,7 @@
       <div class="spacer"></div>
     </div>
   </div>
-  <div class="scn_foot">
-    <div class="w-container ctn_base">
-      <div class="w-row">
-        <div class="w-col w-col-6 w-clearfix cln_twitter">
-          <a class="w-inline-block left" href="mailto:hello@joinmyteam.co">
-            <div class="left">
-              <img class="img_icon" src="images/MT_V5_Icon_Mail.png" alt="52e024c7f69b00700a00031f_MT_V5_Icon_Mail.png">
-              <div class="txt_basecopy">Have a question or just want to say hi?
-                <br>Reach us at hello@joinmyteam.co</div>
-            </div>
-          </a>
-        </div>
-        <div class="w-col w-col-6 cln_twitter">
-          <a class="w-inline-block right" href="http://twitter.com/join_myteam">
-            <div class="right">
-              <img class="img_icon" src="images/MT_V5_Icon_Twitter.png" alt="52e024e18abfef6e0a0002d4_MT_V5_Icon_Twitter.png">
-              <div class="txt_basecopy">Follow us @joinmyteam.co
-                <br>for the latest news &amp; fitness tips</div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="scn_base">
-      <div class="w-container">
-        <a class="w-inline-block footer-link" href="privacy-policy.html">
-          <div class="footer-link">Privacy policy</div>
-        </a>
-        <div class="sub-footer">©2014 MyTeam</div>
-      </div>
-    </div>
-  </div>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script type="text/javascript" src="js/webflow.js"></script>
-</body>
-</html>
+  
+<?php 
+include('inc/footer.php');
+?>
