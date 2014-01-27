@@ -59,7 +59,7 @@ include('inc/header.php'); ?>
                 <div class="at-a-glance-txt">Video instruction</div>
               </li>
               <li class="after">
-                <div class="at-a-glance-txt">Unlimited access to trainer</div>
+                <div class="at-a-glance-txt">Ask trainer unlimited questions</div>
               </li>
               <li>
                 <div class="at-a-glance-txt">Lifetime access to course content</div>
