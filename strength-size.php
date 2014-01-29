@@ -29,15 +29,18 @@ include('inc/header.php'); ?>
     <div class="w-container">
       <div class="w-row course-row-1">
         <div class="w-col w-col-8 w-col-small-6 intro-column">
-          <div class="text-1"><strong>What you'll&nbsp;Achieve?</strong>
-            <br>By the end of 12 weeks, you'll have gained significant muscle power and strength whilst increasing your overall fitness and conditioning.&nbsp;
-            <br>Continuing beyond the course, you'll have the framework you need to maintain your results and continue to improve!&nbsp;
+          <div class="text-1"><strong>Is this course for you? </strong>
+            <br>This course is for people who are new to weight training or people with some experience looking to bring structure to their workout in order to become stronger, more powerful and athletic. 
             <br>
             <br><strong>What you'll do</strong>
-            <br>You'll be coached through a focussed exercise and nutritional program.&nbsp;
+            <br>You'll be coached through a focussed exercise and nutritional program to help you gain strength. Our focus will be on simplicity, seeking to master key exercises. With this program we maximise exercise efficiency so you will spend the minimum necessary time in the gym, and more time doing what you love.
+            <br>
+            <br><strong>What you'll achieve</strong> 
+            <br>By the end of 12 weeks you will have significantly increased your strength whilst building a defined athletic physique.  The timing and content of your meals will unleash the power of your hormones to build muscle and strength as well as giving you energy and focus in all aspects of your life. 
             <br>
             <br><strong>Pre-requisites</strong>
-            <br>Gym access required.</div>
+            <br>Gym access OR a barbell and weights set (bench and squat rack) is required. 
+</div>
         </div>
         <div class="w-col w-col-4 w-col-small-6">
           <div class="at-a-glance-bg">
