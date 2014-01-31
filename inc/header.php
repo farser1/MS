@@ -27,14 +27,14 @@
 </head>
 <body>
   <?php include_once("analyticstracking.php") ?>
-	 <header class="w-nav header" data-collapse="small" data-animation="default" data-duration="400" data-contain="1">
+<header class="w-nav header" data-collapse="small" data-animation="default" data-duration="400" data-contain="1">
     <div class="w-container">
       <a class="w-nav-brand" href="index.php">
         <div class="logo">
-          <img src="images/MyTeam%20Home%20Page%20S2-04.png" alt="52c2ace286cae70862000160_MyTeam%20Home%20Page%20S2-04.png">
+          <img src="images/MT_Logo_V6.png" alt="52eadd094a072fcd7e00002a_MT_Logo_V6.png">
         </div>
       </a>
-      <nav class="w-nav-menu" role="navigation"><a class="w-nav-link color" href="index.php">Home</a><a class="w-nav-link color" href="courses.php">Courses</a><a class="w-nav-link color" href="http://joinmyteam.co/blog">Blog</a>
+      <nav class="w-nav-menu" role="navigation"><a class="w-nav-link color" href="index.php">Home</a><a class="w-nav-link color" href="courses.php">Courses</a><a class="w-nav-link color" href="http://blog.joinmyteam.co/">Blog</a>
       </nav>
       <div class="w-nav-button nav_menu">
         <div class="w-icon-nav-menu"></div>

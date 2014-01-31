@@ -7,15 +7,15 @@ include('inc/header.php'); ?>
   <div class="course-title-section">
     <div class="w-container ctn_courseheadline">
       <div class="w-row course-row-0">
-        <div class="w-col w-col-9 padding-title">
+        <div class="w-col w-col-8 padding-title">
           <h1 class="h1_courseheadline">Weight Loss Made Simple</h1>
           <div class="trainer-summary-div">
             <img class="trainer-intro" src="images/MT_V4_TrainerMini.png" width="40" alt="52cfe7559b44096304000633_MT_V4_TrainerMini.png">
-            <div class="trainer-intro-text">Coached by <strong>Paul Rayner&nbsp;</strong>
+            <div class="trainer-intro-text">Coached by <strong>Paul Rayner</strong>
               <br>Weight Loss Specialist</div>
           </div>
         </div>
-        <div class="w-col w-col-3">
+        <div class="w-col w-col-4">
           <div class="pricing">£15 a month</div>
           <div class="launching-soon">This course is launching soon</div>
           <div class="center"><a class="button btn_getinvited" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'wlms notify me');">Notify me!</a>
@@ -68,7 +68,7 @@ include('inc/header.php'); ?>
               <li>
                 <div class="at-a-glance-txt">Lifetime access to course content</div>
               </li>
-            </ul><a class="button btn_grey btn_learnmore benefits" href="benefits.php">Why join MyTeam?</a>
+            </ul>
           </div>
         </div>
       </div>
@@ -76,17 +76,57 @@ include('inc/header.php'); ?>
   </div>
   <div class="benefits-section">
     <div class="w-container">
-      <h1>Course outline</h1>
+      <h1 class="coutseoutline">Course outline</h1>
+      <h3 class="txt_courseoutline subheadcourseout">Some of what you'll cover over your 12 week course</h3>
     </div>
-    <div class="w-container ctn_courseoutline">
-      <div class="overlay">
-        <h3 class="h3_courseoutline">Course outline revealing soon...</h3><a class="button btn_getinvited" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'wlms notify me');">Notify me!</a>
+    <div class="w-container cln_courseoutline">
+      <div class="courseoutline_cln">
+        <img src="images/MT_V6_CourseOutline_Goals-HR.jpg" width="100" alt="52eabe56791573df500000bc_MT_V6_CourseOutline_Goals-HR.jpg">
+        <h3 class="txt_courseoutline">Setting &amp;<br>achieving goals</h3>
       </div>
+      <div class="courseoutline_cln even">
+        <img src="images/MT_V6_CourseOutline_Exercise-HR.jpg" width="100" alt="52eabe5f791573df500000c1_MT_V6_CourseOutline_Exercise-HR.jpg">
+        <h3 class="txt_courseoutline">Incremental workout&nbsp;programs</h3>
+      </div>
+      <div class="courseoutline_cln _1">
+        <img src="images/MT_V6_CourseOutline_Tracking-HR.jpg" width="100" alt="52eabe68791573df500000c2_MT_V6_CourseOutline_Tracking-HR.jpg">
+        <h3 class="txt_courseoutline">Progress<br>Tracking</h3>
+      </div>
+      <div class="courseoutline_cln even">
+        <img src="images/MT_V6_CourseOutline_Habits-HR.jpg" width="100" alt="52eabe72791573df500000c3_MT_V6_CourseOutline_Habits-HR.jpg">
+        <h3 class="txt_courseoutline">Healthy<br>habit formation</h3>
+      </div>
+      <div class="courseoutline_cln">
+        <img src="images/MT_V6_CourseOutline_Recipes-HR.jpg" width="100" alt="52eabe30b5745be0500000d4_MT_V6_CourseOutline_Recipes-HR.jpg">
+        <h3 class="txt_courseoutline">Quick &amp; easy<br>recipes</h3>
+      </div>
+      <div class="courseoutline_cln">
+        <img src="images/MT_V6_CourseOutline_Shopping-HR.jpg" width="100" alt="52eabe89791573df500000c5_MT_V6_CourseOutline_Shopping-HR.jpg">
+        <h3 class="txt_courseoutline">Healthy food shopping tips</h3>
+      </div>
+      <div class="courseoutline_cln">
+        <img src="images/MT_V6_CourseOutline_Sleep-HR.jpg" width="100" alt="52eabe94791573df500000c7_MT_V6_CourseOutline_Sleep-HR.jpg">
+        <h3 class="txt_courseoutline">Improving your sleep quality</h3>
+      </div>
+      <div class="courseoutline_cln">
+        <img src="images/MT_V6_CourseOutline_Blood-HR.jpg" width="100" alt="52eabea9791573df500000c8_MT_V6_CourseOutline_Blood-HR.jpg">
+        <h3 class="txt_courseoutline">Balancing your blood sugar</h3>
+      </div>
+      <div class="courseoutline_cln">
+        <img src="images/MT_V6_CourseOutline_Stress-HR.jpg" width="100" alt="52eabeb5b5745be0500000d7_MT_V6_CourseOutline_Stress-HR.jpg">
+        <h3 class="txt_courseoutline">Stress reduction techniques</h3>
+      </div>
+      <div class="courseoutline_cln">
+        <img src="images/MT_V6_CourseOutline_Obstacles-HR.jpg" width="100" alt="52eabebdb5745be0500000d8_MT_V6_CourseOutline_Obstacles-HR.jpg">
+        <h3 class="txt_courseoutline">Overcoming obstacles</h3>
+      </div>
+    </div>
+    <div class="calltoaction_outline"><a class="button btn_grey btn_learnmore benefits" href="benefits.php">How does MyTeam work?</a>
     </div>
   </div>
   <div class="trainer-bio">
     <div class="w-container" id="trainerbio">
-      <h3 class="course-trainer">Course Trainer</h3>
+      <h1 class="coutseoutline">Course trainer</h1>
       <div class="trainer-summary">
         <div class="w-row">
           <div class="w-col w-col-4">
@@ -114,9 +154,6 @@ include('inc/header.php'); ?>
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <div class="spacer"></div>
     </div>
   </div>
 
