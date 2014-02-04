@@ -9,7 +9,8 @@ include('inc/header.php'); ?>
         <div class="w-row">
           <div class="w-col w-col-6 clm_intro">
             <h1 class="callout">Reach your fitness goals&nbsp;in 2014</h1>
-            <div class="text-sub-home">12 week coached courses&nbsp;for £15 a month</div><a class="button hero_btn" href="#benefits">Learn more</a>
+            <div class="text-sub-home">12 week coached courses , £15 a month.
+              <br>Anytime, Anywhere.</div><a class="button hero_btn" href="#benefits">Learn more</a>
           </div>
           <div class="w-col w-col-6"></div>
         </div>

@@ -391,7 +391,7 @@ p {
 }
 .ctr_popularcourses {
   padding-bottom: 60px;
-  border-bottom: 1px solid #8e8e8e;
+  border-bottom: 1px solid #c4c4c4;
   text-align: center;
 }
 .ctr_popularcourses.last {
@@ -451,7 +451,7 @@ p {
   margin-right: auto;
   margin-left: auto;
   float: none;
-  border: 1px solid #667;
+  border: 1px solid #c4c4c4;
   text-align: center;
 }
 .blk_coursedetail {
@@ -573,6 +573,7 @@ p {
   margin-top: 42px;
   margin-right: auto;
   margin-left: auto;
+  border: 0px solid transparent;
   line-height: 19px;
 }
 .spacer {
@@ -593,6 +594,7 @@ p {
 }
 .color {
   color: #667;
+  font-size: 16px;
 }
 .color.w--current {
   color: #00b5c2;
@@ -707,6 +709,12 @@ p {
 }
 .calltoaction {
   background-color: #e6e6e6;
+}
+.field {
+  margin-bottom: 33px;
+  padding-top: 11px;
+  border: 1px solid transparent;
+  border-radius: 10px;
 }
 @media (max-width: 991px) {
   h1 {
