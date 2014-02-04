@@ -35,6 +35,11 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 <!--End of Zopim Live Chat Script-->
 </head>
 <body>
+  <!-- ClickTale Top part -->
+<script type="text/javascript">
+var WRInitTime=(new Date()).getTime();
+</script>
+<!-- ClickTale end of Top part -->
   <?php include_once("analyticstracking.php") ?>
 <header class="w-nav header" data-collapse="small" data-animation="default" data-duration="400" data-contain="1">
     <div class="w-container">

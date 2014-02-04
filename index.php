@@ -89,7 +89,7 @@ include('inc/header.php'); ?>
                   <h5>Coming in March</h5>
                 </div>
                 <div class="blk_coursedetail">
-                  <div class="txt_coursesummary">For mums who want to tone &amp; energise their post-baby body.</div><a class="button btn_grey btn_joinwaitlist" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1">Join the wait list</a>
+                  <div class="txt_coursesummary">For mums who want to tone &amp; energise their post-baby body.</div><a class="button btn_grey btn_joinwaitlist" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'waiting list');">Join the wait list</a>
                 </div>
               </div>
             </div>
