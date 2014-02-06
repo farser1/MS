@@ -2,39 +2,34 @@
 $pageTitle="Strength and Size";
 $pageDesc="12 weeks program to help you gain significant muscle power and strength whilst increasing your overall fitness and conditioning.";
 include('inc/header.php'); ?>
-
-
-
- <div class="course-title-section">
+  <div class="course-title-section">
     <div class="w-container ctn_courseheadline">
       <div class="w-row course-row-0">
-        <div class="w-col w-col-9 padding-title">
+        <div class="w-col w-col-8 padding-title">
           <h1 class="h1_courseheadline">Strength and Size</h1>
-          <div class="trainer-summary-div">
-            <img class="trainer-intro" src="images/MT_TrainerMini_Josh.png" width="40" alt="52e10101ece65a5a12000aec_MT_TrainerMini_Josh.png">
+          <div class="w-clearfix trainer-summary-div">
+            <img class="trainer-intro" src="images/MT_TrainerMini_Josh.png" width="40" alt="52f279336100cf33380001b1_MT_TrainerMini_Josh.png">
             <div class="trainer-intro-text">Coached by <strong>Josh O'Leary</strong>
               <br>Strength Coach</div>
           </div>
         </div>
-        <div class="w-col w-col-3">
-          <div class="pricing">£15 a month</div>
-          <div class="launching-soon">This course is launching soon</div>
-          <div class="center"><a class="button btn_getinvited" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'ss notify me');">Notify me!</a>
+        <div class="w-col w-col-4 blk_payment">
+          <div class="blk_pay">
+            <div class="pricing">£15 a month</div>
+            <div class="launching-soon">This course is launching soon</div><a class="button btn_getinvited" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'ss notify me');">Notify me!</a>
           </div>
         </div>
       </div>
-    </div>
+    </div> 
   </div>
-  <div class="intro-section">
+<div class="intro-section">
     <div class="w-container">
       <div class="w-row course-row-1">
         <div class="w-col w-col-8 w-col-small-6 intro-column">
-          <div class="text-1"><strong>Is this course for you?&nbsp;</strong>
-            <br>This course is for people who are new to weight training or people with some experience looking to bring structure to their workout in order to become stronger, more powerful and athletic.&nbsp;
+          <div class="text-1"><strong>Is this course for you?&nbsp;<br></strong>This course is for people who are new to weight training or people with some experience looking to bring structure to their workout in order to become stronger, more powerful and athletic.&nbsp;
             <br>
-            <br><strong>What you'll do</strong>&nbsp;
-            <br>You'll be coached through a focussed exercise and nutritional program to help you gain strength. Our focus will be on simplicity, seeking to master key exercises. With this program we&nbsp;maximise exercise&nbsp;efficiency&nbsp;so&nbsp;you
-            will spend the minimum necessary time in the gym, and&nbsp;more time doing&nbsp;what you love.
+            <br><strong>What you'll do&nbsp;<br></strong>You'll be coached through a focussed exercise and nutritional program to help you gain strength. Our focus will be on simplicity, seeking to master key exercises. With this program we&nbsp;maximise
+            exercise&nbsp;efficiency&nbsp;so&nbsp;you will spend the minimum necessary time in the gym, and&nbsp;more time doing&nbsp;what you love.
             <br>
             <br><strong>What you'll achieve&nbsp;<br></strong>By the end of 12 weeks you will have significantly increased your strength whilst building a&nbsp;defined&nbsp;athletic physique.&nbsp; The timing and content of your meals will unleash the power
             of your hormones to build muscle and strength as well as giving you energy and focus in all aspects of your life.&nbsp;
@@ -72,7 +67,7 @@ include('inc/header.php'); ?>
       </div>
     </div>
   </div>
-  <div class="benefits-section">
+  <div class="benefits-section courseoutline">
     <div class="w-container">
       <h1 class="coutseoutline">Course outline</h1>
       <h3 class="txt_courseoutline subheadcourseout">Some of what you'll cover over your 12 week course</h3>
@@ -83,7 +78,7 @@ include('inc/header.php'); ?>
         <h3 class="txt_courseoutline">Setting &amp;<br>achieving goals</h3>
       </div>
       <div class="courseoutline_cln even">
-        <img src="images/MT_V6_CourseOutline_Workout-HR.jpg" width="100" alt="52eb7a80134bbcdd020002df_MT_V6_CourseOutline_Workout-HR.jpg">
+        <img src="images/MT_V6_CourseOutline_Workout-HR.jpg" width="100" alt="52f275b5fb7c535862000091_MT_V6_CourseOutline_Workout-HR.jpg">
         <h3 class="txt_courseoutline">Three phase&nbsp;<br>workout&nbsp;plan</h3>
       </div>
       <div class="courseoutline_cln _1">
@@ -95,26 +90,23 @@ include('inc/header.php'); ?>
         <h3 class="txt_courseoutline">Progress&nbsp;<br>tracking</h3>
       </div>
       <div class="courseoutline_cln">
-        <img src="images/MT_V6_CourseOutline_Supplement-HR.jpg" width="100" alt="52eb7ab75db936da020005c7_MT_V6_CourseOutline_Supplement-HR.jpg">
+        <img src="images/MT_V6_CourseOutline_Protein-HR.jpg" width="100" alt="52f275bbfb7c535862000092_MT_V6_CourseOutline_Protein-HR.jpg">
         <h3 class="txt_courseoutline">Vitamin and supplement advice</h3>
       </div>
       <div class="courseoutline_cln">
-        <img src="images/MT_V6_CourseOutline_Recipes-HR2.jpg" width="100" alt="52eb7bc4134bbcdd020002e6_MT_V6_CourseOutline_Recipes-HR2.jpg">
+        <img src="images/MT_V6_CourseOutline_Recipes-HR2.jpg" width="100" alt="52f27599941a4b5762000068_MT_V6_CourseOutline_Recipes-HR2.jpg">
         <h3 class="txt_courseoutline">Quick and easy&nbsp;<br>recipes</h3>
       </div>
       <div class="courseoutline_cln">
         <img src="images/MT_V6_CourseOutline_Protein-HR.jpg" width="100" alt="52eb7ada5db936da020005c9_MT_V6_CourseOutline_Protein-HR.jpg">
         <h3 class="txt_courseoutline">Protein&nbsp;intake&nbsp;<br>guide</h3>
-        <h3 class="txt_courseoutline"></h3>
-        <h3 class="txt_courseoutline"></h3>
       </div>
       <div class="courseoutline_cln">
         <img src="images/MT_V6_CourseOutline_Nutrition-HR.jpg" width="100" alt="52eb7ae7134bbcdd020002e1_MT_V6_CourseOutline_Nutrition-HR.jpg">
         <h3 class="txt_courseoutline">Pre and post workout nutrition</h3>
-        <h3 class="txt_courseoutline"></h3>
       </div>
       <div class="courseoutline_cln">
-        <img src="images/MT_V6_CourseOutline_Shopping-HR2.jpg" width="100" alt="52eb7bbb134bbcdd020002e4_MT_V6_CourseOutline_Shopping-HR2.jpg">
+        <img src="images/MT_V6_CourseOutline_Shopping-HR2.jpg" width="100" alt="52f275a1941a4b5762000069_MT_V6_CourseOutline_Shopping-HR2.jpg">
         <h3 class="txt_courseoutline">Healthy food shopping tips</h3>
       </div>
       <div class="courseoutline_cln">
@@ -122,12 +114,12 @@ include('inc/header.php'); ?>
         <h3 class="txt_courseoutline">Improving your sleep quality</h3>
       </div>
     </div>
-    <div class="calltoaction_outline"><a class="button btn_grey btn_learnmore benefits" href="benefits.php">How does MyTeam work?</a>
+    <div class="calltoaction_outline"><a class="button btn_grey btn_learnmore benefits" href="/benefits.php">How MyTeam courses work</a>
     </div>
   </div>
   <div class="trainer-bio">
     <div class="w-container" id="trainerbio">
-      <h3 class="course-trainer">Course Trainer</h3>
+      <h1 class="coutseoutline trainer">Course trainer</h1>
       <div class="trainer-summary">
         <div class="w-row">
           <div class="w-col w-col-4">
@@ -156,6 +148,7 @@ include('inc/header.php'); ?>
       </div>
     </div>
   </div>
+
 <?php 
 include('inc/footer.php');
 ?>

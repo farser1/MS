@@ -5,12 +5,12 @@ body {
   line-height: 20px;
 }
 h1 {
-  margin-top: 60px;
+  margin-top: 0px;
   margin-bottom: 30px;
   color: #667;
   font-size: 40px;
   line-height: 64px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 h2 {
@@ -28,7 +28,7 @@ h3 {
   color: #667;
   font-size: 30px;
   line-height: 30px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: left;
 }
 h4 {
@@ -99,7 +99,7 @@ p {
 }
 .button.btn_grey.btn_learnmore.benefits {
   display: block;
-  width: 230px;
+  width: 250px;
   margin-top: 50px;
   margin-bottom: 80px;
   padding-bottom: 12px;
@@ -122,72 +122,49 @@ p {
   font-weight: 400;
 }
 .button.btn_getinvited {
-  width: 204px;
+  width: 220px;
   height: auto;
   margin: 4px auto 0px;
   padding-bottom: 11px;
-  border: 1px solid white;
-  background-color: #f58b00;
+  background-color: #ff7b00;
   box-shadow: none;
   color: white;
   font-weight: 300;
   text-align: center;
-}
-.button.btn_getinvited.outline {
-  margin-bottom: 20px;
-  float: none;
-  border: 2px solid #ff8352;
-  background-color: transparent;
-  color: #ff8352;
 }
 .button.btn_getinvited.btn_choose {
   width: 232px;
   margin-top: -15px;
   padding-top: 12px;
   padding-bottom: 12px;
+  border-width: 2px;
+  border-color: transparent;
+  background-color: #ff7b00;
 }
 .button.btn_getinvited.btn_back2 {
-  width: 213px;
-  margin-top: 70px;
+  width: 250px;
+  margin-top: 20px;
   margin-bottom: 10px;
   padding-top: 12px;
   padding-bottom: 12px;
 }
-.button.btn_getinvited.btn_allcourses {
-  width: 262px;
-  margin-top: 50px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-.button.btn_teal {
-  width: auto;
-  height: auto;
-  margin-top: 40px;
-  padding: 15px 60px;
-  border-color: transparent;
-  background-color: #ff7842;
-  font-size: 20px;
-  font-weight: 300;
-}
-.button.btn_back {
-  width: 227px;
-  margin-top: 70px;
-  margin-bottom: 70px;
-  border-color: transparent;
-  background-color: #ffa600;
-}
-.button.home {
-  margin-top: 0px;
-  border-color: transparent;
-}
 .button.hero_btn {
+  display: inline-block;
   width: auto;
   height: auto;
-  margin-top: 0px;
+  margin: 0px auto 14px;
   padding: 12px 60px;
-  background-color: #00b5c2;
+  background-color: #00ccd9;
   font-size: 20px;
   font-weight: 300;
+}
+.button.straight {
+  display: block;
+  width: auto;
+  border-radius: 0px;
+  background-color: transparent;
+  font-size: 14px;
+  text-decoration: underline;
 }
 .header {
   position: fixed;
@@ -195,23 +172,14 @@ p {
   top: 0px;
   right: 0px;
   z-index: 1;
-  border-top: 4px solid #00b5c2;
+  border-top: 4px solid #00ccd9;
   background-color: white;
   box-shadow: rgba(52, 52, 64, 0.49) 0px 5px 16px 0px;
 }
 .scn_intro {
   padding-top: 140px;
-  background-color: #00b5c2;
+  background-color: #00ccd9;
   color: white;
-}
-.scn_intro.courses {
-  margin-top: 1px;
-  padding-bottom: 1px;
-}
-.scn_intro.img_girl {
-  background-image: url('../images/shutterstock_152625467.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 .logo {
   display: block;
@@ -222,7 +190,6 @@ p {
 }
 .callout {
   display: block;
-  width: auto;
   margin: 0px auto 20px;
   font-family:'Open Sans', sans-serif;
   color: white;
@@ -230,6 +197,11 @@ p {
   line-height: 75px;
   font-weight: 400;
   text-align: center;
+}
+.callout.courses {
+  width: auto;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 .text-sub-home {
   margin-bottom: 25px;
@@ -247,14 +219,8 @@ p {
   margin-bottom: 90px;
   font-size: 30px;
 }
-.center {
-  left: 0px;
-  right: 0px;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  float: none;
-  text-align: center;
+.text-sub-home.cantfind {
+  color: #667;
 }
 .sub-footer {
   margin-top: 4px;
@@ -322,16 +288,16 @@ p {
   padding-left: 50px;
   color: white;
 }
-.benefits-time-efficient {
-  margin-bottom: 40px;
-}
 .intro-section {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #e6e6e6;
+  background-color: #ebebf0;
 }
 .benefits-section {
   background-color: white;
+}
+.benefits-section.courseoutline {
+  padding-top: 30px;
 }
 .text-2 {
   padding-top: 0px;
@@ -345,9 +311,13 @@ p {
   line-height: 22.4px;
   font-weight: 300;
 }
+.description.txt_benefits {
+  font-size: 14px;
+  line-height: 20.4px;
+}
 .course-title-section {
   padding-top: 90px;
-  background-color: #00b5c2;
+  background-color: #00ccd9;
 }
 .scn_popularcourses {
   background-color: white;
@@ -358,38 +328,34 @@ p {
 .scn_popularcourses.home {
   margin-top: 160px;
 }
+.scn_popularcourses.about {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
 .pricing {
-  margin-top: 20px;
-  color: white;
-  font-size: 24px;
+  color: #667;
+  font-size: 25px;
   line-height: 30px;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
 }
 .launching-soon {
   margin-top: 20px;
-  color: white;
-  text-align: center;
-}
-.launching-soon.outline {
-  margin-top: auto;
-  padding-top: 30px;
   color: #667;
+  text-align: center;
 }
 .scn_benefits {
   background-color: white;
 }
-.scn_getstarted {
-  background-color: #00b5c2;
-}
 .ctr_getstarted {
-  padding-bottom: 60px;
+  padding-bottom: 100px;
   text-align: center;
 }
-.ctr_getstarted._404 {
-  padding-bottom: 100px;
+.ctr_getstarted.cantfind {
+  padding-top: 40px;
 }
 .ctr_popularcourses {
+  padding-top: 50px;
   padding-bottom: 60px;
   border-bottom: 1px solid #c4c4c4;
   text-align: center;
@@ -397,25 +363,21 @@ p {
 .ctr_popularcourses.last {
   border-bottom-style: none;
 }
-.ctr_popularcourses.last.home {
-  margin-top: 105px;
-}
 .ctr_intro {
   padding-bottom: 0px;
 }
 .row_popularcourses {
   margin-top: 40px;
 }
+.row_popularcourses.row_last {
+  margin-top: 60px;
+}
 .h1_white {
-  color: white;
+  color: #667;
+  font-weight: 400;
 }
 .blk_coursetitle {
   background-color: #00ccd9;
-}
-.blk_coursetitle.blk_blue {
-  height: 260px;
-  background-image: url('../images/MT_V5_Img_Mum.jpg');
-  background-size: 260px;
 }
 .h3_coursetitle {
   margin-bottom: -5px;
@@ -440,7 +402,7 @@ p {
 }
 .blk_trainer {
   height: 75px;
-  background-color: #00b5c2;
+  background-color: #00ccd9;
 }
 .blk_trainer.blk_trainerlight {
   background-color: #b3b3bd;
@@ -458,9 +420,6 @@ p {
   background-color: white;
   text-align: center;
 }
-.blk_coursedetail.blk_grey {
-  background-color: #e6e6e6;
-}
 .img_trainermini {
   margin-top: 7px;
   margin-bottom: 7px;
@@ -476,21 +435,24 @@ p {
   text-align: left;
 }
 .txt_coursesummary {
-  padding-top: 14px;
-  padding-right: 20px;
-  padding-left: 20px;
+  border-bottom-width: 3px;
   color: #667;
   font-size: 16px;
   line-height: 20px;
   font-weight: 300;
   text-align: left;
 }
+.txt_coursesummary.txt_coursesum_border {
+  padding-top: 8px;
+  border-top: 1px solid #c4c4c4;
+  border-bottom-style: none;
+  border-bottom-width: 1px;
+}
 .clm_intro {
   text-align: center;
 }
 .ctn_benefits {
-  margin-top: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 .hdr_benefits {
   margin-top: 80px;
@@ -498,41 +460,27 @@ p {
 .hdr_benefits.hdr_benefitspage {
   margin-top: 120px;
 }
+.hdr_benefits.hdr_benmod {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+.hdr_benefits.hdr_benmod.hdr_benmod2 {
+  margin-top: 120px;
+}
 .h1_courseheadline {
-  margin-top: 0px;
+  margin-top: 10px;
   color: white;
-  font-weight: 300;
+  font-weight: 400;
   text-align: left;
 }
 .after {
   border-bottom: 1px solid rgba(149, 149, 158, 0.4);
   color: #667;
 }
-.overlay {
-  position: relative;
-  left: 0px;
-  top: 220px;
-  right: -44px;
-  bottom: 0px;
-  display: block;
-  width: 500px;
-  height: 161px;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 10px;
-  background-color: #e6e6e6;
-}
-.ctn_courseoutline {
-  height: 615px;
-  text-align: center;
-}
 .nav_menu {
   color: white;
   font-weight: 400;
-}
-.h3_courseoutline {
-  padding-top: 28px;
-  text-align: center;
 }
 .ctn_courseheadline {
   padding-bottom: 30px;
@@ -576,50 +524,26 @@ p {
   border: 0px solid transparent;
   line-height: 19px;
 }
-.spacer {
-  height: 30px;
-}
 .trainer-bio {
   padding-bottom: 70px;
-  background-color: #e6e6e6;
-}
-.iphone {
-  display: block;
-  width: 230px;
-  margin-right: auto;
-  margin-left: auto;
+  background-color: #ebebf0;
 }
 .privacy {
   margin-bottom: 80px;
+  color: #667;
+  line-height: 22px;
 }
 .color {
   color: #667;
   font-size: 16px;
 }
 .color.w--current {
-  color: #00b5c2;
+  color: #00ccd9;
 }
 .left {
   width: 250px;
   float: right;
   text-decoration: none;
-}
-.course-trainer {
-  margin-top: 20px;
-  text-align: center;
-}
-.course-trainer.txt_headline {
-  margin-top: 45px;
-}
-.course-choice {
-  text-align: center;
-}
-.ctr_404 {
-  margin-bottom: 200px;
-  padding-top: 200px;
-  padding-right: 400px;
-  padding-bottom: 200px;
-  background-color: white;
 }
 .txt_courseoutline {
   margin-top: 7px;
@@ -632,9 +556,6 @@ p {
 .txt_courseoutline.subheadcourseout {
   margin-bottom: 30px;
 }
-.empty {
-  padding-left: 0px;
-}
 .courseoutline_cln {
   width: 20%;
   float: left;
@@ -646,13 +567,13 @@ p {
 }
 .hero {
   height: 665px;
-  padding-top: 125px;
-  background-image: url('../images/MT_V6_Girl_BG-Scaled-2.jpg');
+  padding-top: 150px;
+  background-image: url('../images/MT_V6_Girl_BG-Scaled-3.jpg');
   background-size: cover;
 }
 .courseimage {
   width: auto;
-  height: 260px;
+  height: auto;
 }
 .courseimage.weightloss {
   background-image: url('../images/MT_V6_Course_WeightLoss.jpg');
@@ -693,28 +614,80 @@ p {
 .courseoverlay {
   padding-top: 140px;
 }
-.courselinkblock {
-  text-decoration: none;
-}
 .hero_cta {
   color: white;
 }
 .coutseoutline {
   margin-bottom: 0px;
 }
+.coutseoutline.trainer {
+  padding-top: 50px;
+}
 .calltoaction_outline {
   display: block;
   margin-left: auto;
   text-align: center;
 }
-.calltoaction {
-  background-color: #e6e6e6;
+.cln_benefits {
+  text-align: center;
 }
-.field {
-  margin-bottom: 33px;
-  padding-top: 11px;
-  border: 1px solid transparent;
-  border-radius: 10px;
+.hdr_benefitsmod {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 28px;
+}
+.hdr_benefitsmod.hdr_aboutsub {
+  margin-top: -15px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.row_benefits {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.list_course {
+  padding-bottom: 9px;
+  float: none;
+  text-align: left;
+}
+.list_courses {
+  padding: 16px 20px 0px;
+}
+.scn_cantfind {
+  background-color: #ebebf0;
+}
+.blk_pay {
+  height: 145px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+}
+.cln_about {
+  padding: 40px 40px 10px;
+  text-align: center;
+}
+.straight-to-courses {
+  display: block;
+}
+.twitter_lnk {
+  padding-top: 5px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.btn_aboutus {
+  padding: 5px 8px;
+  border-radius: 3px;
+  background-color: #ebebf0;
+  color: #667;
+  font-weight: 300;
+  text-decoration: none;
+}
+.follow {
+  display: block;
+  width: 174px;
+  margin: -39px auto 60px;
 }
 @media (max-width: 991px) {
   h1 {
@@ -733,14 +706,19 @@ p {
   }
   .button.btn_getinvited {
     width: 200px;
+    box-shadow: none;
+  }
+  .scn_intro {
+    padding-top: 100px;
   }
   .callout {
     width: auto;
     margin-top: 30px;
-    font-size: 44px;
-    line-height: 48px;
+    font-size: 52px;
+    line-height: 58px;
   }
   .text-sub-home {
+    font-size: 17px;
     line-height: 28px;
   }
   .text-sub-home.txt_30px {
@@ -748,6 +726,8 @@ p {
   }
   .text-sub-home.txt_30px.choose-course-page {
     margin-bottom: 50px;
+    font-size: 28px;
+    line-height: 34px;
   }
   .at-a-glance-bg {
     padding-right: 15px;
@@ -761,9 +741,6 @@ p {
   }
   .course-title-section {
     padding-top: 70px;
-  }
-  .benefit-image {
-    margin-top: 20px;
   }
   .pricing {
     line-height: 35px;
@@ -794,8 +771,14 @@ p {
     font-size: 14px;
     font-weight: 300;
   }
+  .ctn_benefits {
+    padding-bottom: 0px;
+  }
   .hdr_benefits {
     margin-bottom: 0px;
+  }
+  .hdr_benefits.hdr_benmod {
+    line-height: 63px;
   }
   .privacy {
     margin-top: 30px;
@@ -808,6 +791,33 @@ p {
   }
   .hero {
     background-position: 54% 0%;
+  }
+  .courseimage.waistline {
+    height: auto;
+  }
+  .courseimage.toned {
+    height: auto;
+  }
+  .hdr_benefitsmod {
+    margin-bottom: 10px;
+    line-height: 31px;
+  }
+  .hdr_benefitsmod.hdr_aboutsub {
+    line-height: 35px;
+  }
+  .row_benefits {
+    margin-top: 40px;
+  }
+  .blk_pay {
+    height: auto;
+    margin-top: 15px;
+  }
+  .cln_about {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .follow {
+    margin-top: 0px;
   }
 }
 @media (max-width: 767px) {
@@ -836,6 +846,9 @@ p {
     line-height: 18px;
     text-align: center;
   }
+  .button.btn_getinvited {
+    box-shadow: none;
+  }
   .header {
     box-shadow: rgba(52, 52, 64, 0.49) 0px 2px 6px 0px;
   }
@@ -846,13 +859,13 @@ p {
   }
   .callout {
     margin-top: 88px;
-    font-size: 28px;
-    line-height: 35px;
+    font-size: 52px;
+    line-height: 58px;
     text-align: center;
   }
   .text-sub-home {
     margin-top: 20px;
-    line-height: 36px;
+    line-height: 25px;
   }
   .text-sub-home.txt_30px {
     font-size: 25px;
@@ -866,6 +879,7 @@ p {
   }
   .right {
     display: block;
+    margin-top: 13px;
     margin-right: auto;
     margin-left: auto;
     float: none;
@@ -875,7 +889,7 @@ p {
     padding-top: 23px;
   }
   .text-1 {
-    margin-left: 0px;
+    margin-left: 7px;
     text-align: left;
   }
   .at-a-glance-txt {
@@ -899,8 +913,8 @@ p {
     text-align: left;
   }
   .intro-column {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .benefits-section {
     padding-top: 0px;
@@ -916,19 +930,9 @@ p {
     padding-top: 40px;
     padding-bottom: 20px;
   }
-  .benefit-image {
-    margin-top: 60px;
-    text-align: center;
-  }
   .scn_popularcourses {
     margin-top: -60px;
     padding-bottom: 0px;
-  }
-  .scn_popularcourses.home_overlap {
-    padding-bottom: 0px;
-  }
-  .pricing {
-    margin-top: 30px;
   }
   .launching-soon {
     margin-top: 0px;
@@ -940,6 +944,9 @@ p {
   }
   .ctr_intro {
     margin-bottom: 67px;
+  }
+  .row_popularcourses.row_last {
+    margin-top: 0px;
   }
   .h1_white {
     line-height: 46px;
@@ -966,12 +973,18 @@ p {
     margin-left: -65px;
   }
   .txt_coursesummary {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
   .clm_intro {
     margin-bottom: 0px;
     padding-top: 0px;
+  }
+  .ctn_benefits {
+    padding-bottom: 0px;
+  }
+  .hdr_benefits.hdr_benmod {
+    line-height: 45px;
   }
   .h1_courseheadline {
     margin-bottom: 20px;
@@ -1016,9 +1029,28 @@ p {
   .hero {
     padding-top: 20px;
   }
-  .menu {
-    margin-top: 21px;
-    float: right;
+  .cln_benefits {
+    margin-bottom: 40px;
+  }
+  .row_benefits {
+    margin-top: 10px;
+  }
+  .list_courses {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .blk_payment {
+    padding-right: 150px;
+    padding-left: 150px;
+  }
+  .blk_pay {
+    height: auto;
+    margin-top: 26px;
+  }
+  .divblk_benefits {
+    width: auto;
+    padding-right: 80px;
+    padding-left: 80px;
   }
 }
 @media (max-width: 479px) {
@@ -1037,29 +1069,41 @@ p {
     font-size: 16px;
     line-height: 19px;
   }
+  .button.btn_getinvited {
+    box-shadow: none;
+  }
   .scn_intro {
     padding-top: 20px;
   }
-  .scn_intro.courses {
-    padding-top: 40px;
-  }
   .callout {
     margin-top: 0px;
-    font-size: 28px;
-    line-height: 35px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 44px;
+    line-height: 48px;
+  }
+  .callout.courses {
+    padding-right: 0px;
+    padding-left: 0px;
+    font-size: 41px;
   }
   .text-sub-home {
     font-size: 21px;
-    line-height: 28px;
+    line-height: 24px;
   }
   .text-sub-home.txt_30px.choose-course-page {
-    font-size: 23px;
+    font-size: 21px;
+    line-height: 28px;
   }
   .at-a-glance-bg {
     margin-top: 25px;
   }
   .text-1 {
     margin-left: 0px;
+    font-size: 14px;
+  }
+  .at-a-glance-txt {
+    font-size: 14px;
   }
   .trainer-intro {
     margin-right: -31px;
@@ -1069,25 +1113,29 @@ p {
     margin-left: 39px;
   }
   .trainer-intro-text {
-    margin-top: 30px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 60px;
   }
+  .intro-column {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .description.txt_benefits {
+    font-size: 16px;
+    line-height: 21.4px;
+  }
   .scn_popularcourses {
     padding-bottom: 0px;
   }
-  .scn_popularcourses.home_overlap {
-    padding-bottom: 0px;
-  }
-  .pricing {
-    margin-top: 40px;
-  }
   .launching-soon {
-    margin-top: 0px;
+    margin-top: 10px;
   }
   .ctr_intro {
     padding-top: 60px;
+  }
+  .h1_white {
+    font-size: 29px;
   }
   .txt_trainerbio1 {
     margin-left: -63px;
@@ -1102,14 +1150,13 @@ p {
     padding-right: 10px;
     padding-left: 10px;
   }
+  .hdr_benefits.hdr_benmod {
+    font-size: 30px;
+    line-height: 35px;
+  }
   .h1_courseheadline {
     margin-top: 30px;
-    font-weight: 300;
-  }
-  .overlay {
-    width: auto;
-    margin-right: 10px;
-    margin-left: 10px;
+    font-weight: 400;
   }
   .ctn_privacy {
     padding-right: 10px;
@@ -1128,7 +1175,25 @@ p {
   .courseoutline_cln._1 {
     float: left;
   }
-  .spacer-float {
-    float: none;
+  .courseimage.running {
+    height: auto;
+  }
+  .courseimage.triathlon {
+    height: auto;
+  }
+  .courseimage.mudder {
+    height: auto;
+  }
+  .blk_payment {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .straight-to-courses {
+    line-height: 14px;
+  }
+  .divblk_benefits {
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 14px;
   }
 }

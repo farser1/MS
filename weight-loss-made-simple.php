@@ -4,21 +4,21 @@ $pageDesc="12 week weight loss program";
 include('inc/header.php'); ?>
 
 
-  <div class="course-title-section">
+   <div class="course-title-section">
     <div class="w-container ctn_courseheadline">
       <div class="w-row course-row-0">
         <div class="w-col w-col-8 padding-title">
           <h1 class="h1_courseheadline">Weight Loss Made Simple</h1>
-          <div class="trainer-summary-div">
-            <img class="trainer-intro" src="images/MT_V4_TrainerMini.png" width="40" alt="52cfe7559b44096304000633_MT_V4_TrainerMini.png">
+          <div class="w-clearfix trainer-summary-div">
+            <img class="trainer-intro" src="images/MT_TrainerMini_Paul.png" width="40" alt="52f279496100cf33380001b2_MT_TrainerMini_Paul.png">
             <div class="trainer-intro-text">Coached by <strong>Paul Rayner</strong>
               <br>Weight Loss Specialist</div>
           </div>
         </div>
-        <div class="w-col w-col-4">
-          <div class="pricing">£15 a month</div>
-          <div class="launching-soon">This course is launching soon</div>
-          <div class="center"><a class="button btn_getinvited" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'wlms notify me');">Notify me!</a>
+        <div class="w-col w-col-4 blk_payment">
+          <div class="blk_pay">
+            <div class="pricing">£15 a month</div>
+            <div class="launching-soon">This course is launching soon</div><a class="button btn_getinvited" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'wlms notify me');">Notify me!</a>
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@ include('inc/header.php'); ?>
       </div>
     </div>
   </div>
-  <div class="benefits-section">
+  <div class="benefits-section courseoutline">
     <div class="w-container">
       <h1 class="coutseoutline">Course outline</h1>
       <h3 class="txt_courseoutline subheadcourseout">Some of what you'll cover over your 12 week course</h3>
@@ -121,16 +121,16 @@ include('inc/header.php'); ?>
         <h3 class="txt_courseoutline">Overcoming obstacles</h3>
       </div>
     </div>
-    <div class="calltoaction_outline"><a class="button btn_grey btn_learnmore benefits" href="benefits.php">How does MyTeam work?</a>
+    <div class="calltoaction_outline"><a class="button btn_grey btn_learnmore benefits" href="/benefits.php">How MyTeam courses work</a>
     </div>
   </div>
   <div class="trainer-bio">
     <div class="w-container" id="trainerbio">
-      <h1 class="coutseoutline">Course trainer</h1>
+      <h1 class="coutseoutline trainer">Course trainer</h1>
       <div class="trainer-summary">
         <div class="w-row">
           <div class="w-col w-col-4">
-            <img class="image-trainer-portrait" src="images/MT_V4_Trainer.jpg" width="283" alt="52cfe7ab9b44096304000639_MT_V4_Trainer.jpg">
+            <img class="image-trainer-portrait" src="images/MT_V4_Trainer.jpg" width="283" alt="52f2799afb7c53586200010b_MT_V4_Trainer.jpg">
             <div class="text-2">
               <br><strong>Qualifications</strong>
               <br>Sport and Exercise Science BSc

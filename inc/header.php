@@ -48,10 +48,16 @@ var WRInitTime=(new Date()).getTime();
           <img src="images/MT_Logo_V6.png" alt="52eadd094a072fcd7e00002a_MT_Logo_V6.png">
         </div>
       </a>
-      <nav class="w-nav-menu" role="navigation"><a class="w-nav-link color" href="index.php">Home</a><a class="w-nav-link color" href="courses.php">Courses</a><a class="w-nav-link color" href="http://blog.joinmyteam.co/">Blog</a>
+      <nav class="w-nav-menu" role="navigation"><a class="w-nav-link color" href="index.php">Home</a><a class="w-nav-link color" href="index.php#benefits">How it works</a><a class="w-nav-link color" href="courses.php">Our Courses</a><a class="w-nav-link color" href="about.php">About us</a>
+        <a
+        class="w-nav-link color" href="http://blog.joinmyteam.co/">Blog</a>
       </nav>
       <div class="w-nav-button nav_menu">
         <div class="w-icon-nav-menu"></div>
       </div>
     </div>
   </header>
+
+
+
+

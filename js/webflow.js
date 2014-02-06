@@ -851,11 +851,11 @@ Webflow.define('webflow-forms', function ($, _) {
     }
     
     // Show or hide status divs
-    data.done.toggleClass('w-form-done-show', success);
-    data.fail.toggleClass('w-form-fail-show', !success);
+    data.done.toggle(success);
+    data.fail.toggle(!success);
     
     // Hide form on success
-    success && form.addClass('w-hidden');
+    form.toggle(!success);
     
     // Reset data and enable submit button
     reset(data);
@@ -1095,7 +1095,6 @@ Webflow.define('webflow-scroll', function ($) {
   'use strict';
   
   var $doc = $(document);
-  var $body = $(document.body);
   var win = window;
   var loc = win.location;
   
@@ -1149,10 +1148,30 @@ Webflow.define('webflow-scroll', function ($) {
   function scroll(el, offset){
     var start = $(win).scrollTop();
     var end = el.offset().top - offset;
+
+    // If specified, scroll so that the element ends up in the middle of the viewport
+    if (el.data('scroll') == 'mid') {
+      var available = $(win).height() - offset;
+      var elHeight = el.outerHeight();
+      if (elHeight < available) {
+        end -= Math.round((available - elHeight) / 2);
+      }
+    }
+
+    var mult = 1;
+
+    // Check for custom time multiplier on the body and the element
+    $('body').add(el).each(function(i) {
+      var time = parseFloat($(this).attr('data-scroll-time'), 10);
+      if (!isNaN(time) && (time === 0 || time > 0)) {
+        mult = time;
+      }
+    });
+
     var clock = Date.now();
     var animate = win.requestAnimationFrame || win.mozRequestAnimationFrame || win.webkitRequestAnimationFrame || function(fn) { win.setTimeout(fn, 15); };
-    var duration = 472.143 * Math.log(Math.abs(start - end) +125) - 2000;
-    
+    var duration = (472.143 * Math.log(Math.abs(start - end) +125) - 2000) * mult;
+
     var step = function() {
       var elapsed = Date.now() - clock;
       win.scroll(0, getY(start, end, elapsed, duration));
