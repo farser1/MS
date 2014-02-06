@@ -23,7 +23,7 @@
       </div>
       <div class="scn_base">
         <div class="w-container">
-          <a class="w-inline-block footer-link" href="privacy-policy.html">
+          <a class="w-inline-block footer-link" href="privacy-policy.php">
             <div class="footer-link">Privacy policy</div>
           </a>
           <div class="sub-footer">©2014 MyTeam</div>
