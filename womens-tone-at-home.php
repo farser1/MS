@@ -27,7 +27,7 @@ include('inc/header.php'); ?>
     <div class="w-container">
       <div class="w-row course-row-1">
         <div class="w-col w-col-8 w-col-small-6 intro-column">
-          <div class="text-1"><strong>Is this course for you?<br></strong>If you are a women looking to burn fat, shape your waist and tighten your arms and legs then this is the course for you. Ideal for women who haven't exercised for a while (or ever), and new mums looking
+          <div class="text-1"><strong>Is this course for you?<br></strong>If you are a woman looking to burn fat, shape your waist and tighten your arms and legs then this is the course for you. Ideal for women who haven't exercised for a while (or ever), and new mums looking
             to lose their post-baby weight.&nbsp;
             <br>
             <br><strong>What you'll do<br></strong>The course includes nutritional advice, easy recipes and time effective exercises designed to be incorporated into a busy life. The main goal is to burn fat, which will be achieved through two targeted approaches:
