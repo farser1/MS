@@ -26,13 +26,36 @@
   <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
   <!--Start of Zopim Live Chat Script-->
 <script type="text/javascript">
+var ua = navigator.userAgent.toLowerCase(),
+platform = navigator.platform.toLowerCase();
+platformName = ua.match(/ip(?:ad|od|hone)/) ? 'ios' : (ua.match(/(?:webos|android)/) || platform.match(/mac|win|linux/) || ['other'])[0],
+isMobile = /ios|android|webos/.test(platformName);
+
+if (!isMobile) {
 window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
 d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
 _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
 $.src='//v2.zopim.com/?1jqBQyatzUBTaadSwrKqNkmwtPTTVrKL';z.t=+new Date;$.
 type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+}
 </script>
 <!--End of Zopim Live Chat Script-->
+  <!-- AddThis Smart Layers BEGIN -->
+<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52fa2beb3e82da2f"></script>
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent', 
+    'follow' : {
+      'services' : [
+        {'service': 'facebook', 'id': 'myteamfitness'},
+        {'service': 'twitter', 'id': 'join_myteam'},
+        {'service': 'instagram', 'id': 'myteamfitness'}
+      ]
+    }   
+  });
+</script>
+<!-- AddThis Smart Layers END -->
 </head>
 <body>
   <!-- ClickTale Top part -->
