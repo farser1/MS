@@ -17,7 +17,7 @@ include('inc/header.php'); ?>
         <div class="w-col w-col-4 blk_payment">
           <div class="blk_pay">
             <div class="pricing">£15 a month</div>
-            <div class="launching-soon">This course is launching soon</div><a class="button btn_getinvited" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'notify me');">Notify me!</a>
+            <div class="launching-soon">Course launching in March</div><a class="button btn_getinvited" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'notify me');">Notify me!</a>
           </div>
         </div>
       </div>
