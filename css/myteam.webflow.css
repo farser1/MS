@@ -381,22 +381,23 @@ p {
 }
 .h3_coursetitle {
   margin-bottom: -5px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
   color: white;
   font-size: 34px;
   line-height: 39px;
   font-weight: 400;
 }
 .h3_coursetitle.txt_3line {
-  margin-top: -39px;
+  margin-top: 0px;
 }
 .h4_explevel {
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-left: 20px;
+  padding: 20px 15px;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 20px;
   font-weight: 300;
   text-align: left;
 }
@@ -577,39 +578,39 @@ p {
 }
 .courseimage.weightloss {
   background-image: url('../images/MT_V6_Course_WeightLoss.jpg');
-  background-size: 260px;
+  background-size: cover;
 }
 .courseimage.waistline {
   background-image: url('../images/MT_V6_Course_Burn.jpg');
-  background-size: 260px;
+  background-size: cover;
 }
 .courseimage.mummy {
   background-image: url('../images/MT_V6_Course_Mums.jpg');
-  background-size: 260px;
+  background-size: cover;
 }
 .courseimage.strength {
   background-image: url('../images/MT_V6_Course_Strength.jpg');
-  background-size: 260px;
+  background-size: cover;
 }
 .courseimage.toned {
   background-image: url('../images/MT_V6_Course_Toning.jpg');
-  background-size: 260px;
+  background-size: cover;
 }
 .courseimage.bodybuilding {
   background-image: url('../images/MT_V6_Course_BodyBuilder.jpg');
-  background-size: 260px;
+  background-size: cover;
 }
 .courseimage.running {
   background-image: url('../images/MT_V6_Course_Runner.jpg');
-  background-size: 260px;
+  background-size: cover;
 }
 .courseimage.triathlon {
   background-image: url('../images/MT_V6_Course_Cyclist.jpg');
-  background-size: 260px;
+  background-size: cover;
 }
 .courseimage.mudder {
   background-image: url('../images/MT_V6_Course_Mudder.jpg');
-  background-size: 260px;
+  background-size: cover;
 }
 .courseoverlay {
   padding-top: 140px;
@@ -649,9 +650,11 @@ p {
   padding-bottom: 9px;
   float: none;
   text-align: left;
+  list-style-type: none;
 }
 .list_courses {
-  padding: 16px 20px 0px;
+  padding: 16px 15px 0px;
+  list-style-type: none;
 }
 .scn_cantfind {
   background-color: #ebebf0;
@@ -667,9 +670,6 @@ p {
 .cln_about {
   padding: 40px 40px 10px;
   text-align: center;
-}
-.straight-to-courses {
-  display: block;
 }
 .twitter_lnk {
   padding-top: 5px;
@@ -688,6 +688,16 @@ p {
   display: block;
   width: 174px;
   margin: -39px auto 60px;
+}
+.img_follow {
+  margin-right: 10px;
+  padding-top: 14px;
+}
+.img_follow.img_instagram {
+  margin-right: 0px;
+}
+.course-block {
+  list-style-type: none;
 }
 @media (max-width: 991px) {
   h1 {
@@ -755,6 +765,10 @@ p {
   }
   .h3_coursetitle.txt_3line {
     margin-top: -34px;
+  }
+  .h4_explevel {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .blk_course {
     width: 225px;
@@ -960,6 +974,7 @@ p {
   .h4_explevel {
     padding-right: 10px;
     padding-left: 10px;
+    line-height: 27px;
   }
   .blk_course {
     margin-bottom: 40px;
@@ -1028,6 +1043,9 @@ p {
   }
   .hero {
     padding-top: 20px;
+  }
+  .courseimage.toned {
+    background-size: cover;
   }
   .cln_benefits {
     margin-bottom: 40px;
@@ -1137,6 +1155,9 @@ p {
   .h1_white {
     font-size: 29px;
   }
+  .h4_explevel {
+    line-height: 27px;
+  }
   .txt_trainerbio1 {
     margin-left: -63px;
   }
@@ -1187,9 +1208,6 @@ p {
   .blk_payment {
     padding-right: 30px;
     padding-left: 30px;
-  }
-  .straight-to-courses {
-    line-height: 14px;
   }
   .divblk_benefits {
     padding-right: 10px;

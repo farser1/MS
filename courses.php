@@ -3,37 +3,7 @@ $pageTitle="MyTeam Courses";
 $pageDesc="12 week courses for weight loss, cardio performance, strength and more.";
 include('inc/header.php'); ?>  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="scn_intro">
+<div class="scn_intro">
     <div class="w-container">
       <div class="w-container ctr_intro">
         <h1 class="callout courses">Fitness courses for&nbsp;every ambition</h1>
@@ -48,7 +18,7 @@ include('inc/header.php'); ?>
               <div class="courseimage weightloss">
                 <div class="courseoverlay">
                   <h3 class="h3_coursetitle">Weight Loss<br>Made Simple</h3>
-                  <h4 class="h4_explevel">Beginner</h4>
+                  <h4 class="h4_explevel">No exercise experience required</h4>
                 </div>
               </div>
               <div class="blk_coursetitle">
@@ -68,7 +38,7 @@ include('inc/header.php'); ?>
                 <div class="blk_coursedetail">
                   <ul class="list_courses">
                     <li class="list_course">
-                  <div class="txt_coursesummary">For anyone wanting to lose weight and keep it off.</div>
+                  <div class="txt_coursesummary">For people wanting to lose serious fat and keep it off.</div>
 
 </li>
                     <li>
@@ -87,7 +57,7 @@ include('inc/header.php'); ?>
               <div class="courseimage strength">
                 <div class="courseoverlay">
                   <h3 class="h3_coursetitle">Strength<br>and Size</h3>
-                  <h4 class="h4_explevel">Beginner - Intermediate</h4>
+                  <h4 class="h4_explevel">Basic lifting experience required</h4>
                 </div>
               </div>
               <div class="blk_coursetitle">
@@ -123,7 +93,7 @@ include('inc/header.php'); ?>
               <div class="courseimage mummy">
                 <div class="courseoverlay">
                   <h3 class="h3_coursetitle txt_3line">Women's Tone at Home</h3>
-                  <h4 class="h4_explevel">Beginner - Intermediate</h4>
+                  <h4 class="h4_explevel">No exercise experience required</h4>
                 </div>
               </div>
               <div class="blk_coursetitle">
@@ -141,23 +111,12 @@ include('inc/header.php'); ?>
                 <div class="blk_coursedetail">
                   <ul class="list_courses">
                     <li class="list_course">
-                      <div class="txt_coursesummary">For women to burn fat, shape waist &amp; tighten arms and legs.&nbsp;</div>
+                      <div class="txt_coursesummary">A fat burning course to slim the waist &amp; tighten arms/legs.</div>
                     </li>
                     <li>
                       <div class="txt_coursesummary txt_coursesum_border">No gym access required</div>
                     </li>
                   </ul><a class="button btn_grey btn_learnmore" href="womens-tone-at-home.php">Learn more</a>
-
-
-
-
-
-
-
-
-
-
-               
                 </div>
               </div>
             </div>
@@ -173,8 +132,8 @@ include('inc/header.php'); ?>
             <div class="blk_course">
               <div class="courseimage toned">
                 <div class="courseoverlay">
-                  <h3 class="h3_coursetitle">Toned &amp;<br>Sculpted</h3>
-                  <h4 class="h4_explevel">Beginner - Intermediate</h4>
+                  <h3 class="h3_coursetitle">Women's Total Body Fit</h3>
+                  <h4 class="h4_explevel">Basic exercise experience required</h4>
                 </div>
               </div>
               <div class="blk_coursetitle">
@@ -184,10 +143,10 @@ include('inc/header.php'); ?>
                 <div class="blk_coursedetail">
                   <ul class="list_courses">
                     <li class="list_course">
-                      <div class="txt_coursesummary">For women who want to have the ultimate beach body.</div>
+                      <div class="txt_coursesummary">Advanced toning to achieve the ultimate beach body.</div>
                     </li>
                     <li>
-                      <div class="txt_coursesummary txt_coursesum_border">Gym or weight set required</div>
+                      <div class="txt_coursesummary txt_coursesum_border">7kg Kettlebell required</div>
                     </li>
                   </ul><a class="button btn_grey btn_joinwaitlist" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'waiting list');">Join the wait list</a>
                 </div>
@@ -199,12 +158,12 @@ include('inc/header.php'); ?>
               <div class="courseimage waistline">
                 <div class="courseoverlay">
                   <h3 class="h3_coursetitle">Waist-line<br>Burner</h3>
-                  <h4 class="h4_explevel">Intermediate</h4>
+                  <h4 class="h4_explevel">Basic exercise experience required</h4>
                 </div>
               </div>
               <div class="blk_coursetitle">
                 <div class="blk_trainer blk_trainerlight">
-                  <h5>Coming in March</h5>
+                  <h5>Coming soon</h5>
                 </div>
                 <div class="blk_coursedetail">
                   <ul class="list_courses">
@@ -224,12 +183,12 @@ include('inc/header.php'); ?>
               <div class="courseimage bodybuilding">
                 <div class="courseoverlay">
                   <h3 class="h3_coursetitle">Bulk Up<br>Shred Down</h3>
-                  <h4 class="h4_explevel">Intermediate</h4>
+                  <h4 class="h4_explevel">1+ years lifting experience required</h4>
                 </div>
               </div>
               <div class="blk_coursetitle">
                 <div class="blk_trainer blk_trainerlight">
-                  <h5>Coming in March</h5>
+                  <h5>Coming soon</h5>
                 </div>
                 <div class="blk_coursedetail">
                   <ul class="list_courses">
@@ -251,12 +210,12 @@ include('inc/header.php'); ?>
               <div class="courseimage running">
                 <div class="courseoverlay">
                   <h3 class="h3_coursetitle">My First<br>10k&nbsp;Race</h3>
-                  <h4 class="h4_explevel">Beginner</h4>
+                  <h4 class="h4_explevel">No exercise experience required</h4>
                 </div>
               </div>
               <div class="blk_coursetitle">
                 <div class="blk_trainer blk_trainerlight">
-                  <h5>Coming in March</h5>
+                  <h5>Coming soon</h5>
                 </div>
                 <div class="blk_coursedetail">
                   <ul class="list_courses">
@@ -276,12 +235,12 @@ include('inc/header.php'); ?>
               <div class="courseimage triathlon">
                 <div class="courseoverlay">
                   <h3 class="h3_coursetitle">Triathlon<br>Trainer</h3>
-                  <h4 class="h4_explevel">Intermediate</h4>
+                  <h4 class="h4_explevel">Intermediate fitness level required</h4>
                 </div>
               </div>
               <div class="blk_coursetitle">
                 <div class="blk_trainer blk_trainerlight">
-                  <h5>Coming in March</h5>
+                  <h5>Coming soon</h5>
                 </div>
                 <div class="blk_coursedetail">
                   <ul class="list_courses">
@@ -301,12 +260,12 @@ include('inc/header.php'); ?>
               <div class="courseimage mudder">
                 <div class="courseoverlay">
                   <h3 class="h3_coursetitle txt_3line">Champion<br>Mudder Maker</h3>
-                  <h4 class="h4_explevel">Intermediate</h4>
+                  <h4 class="h4_explevel">Intermediate fitness level required</h4>
                 </div>
               </div>
               <div class="blk_coursetitle">
                 <div class="blk_trainer blk_trainerlight">
-                  <h5>Coming in March</h5>
+                  <h5>Coming soon</h5>
                 </div>
                 <div class="blk_coursedetail">
                   <ul class="list_courses">

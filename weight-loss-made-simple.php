@@ -18,7 +18,7 @@ include('inc/header.php'); ?>
         <div class="w-col w-col-4 blk_payment">
           <div class="blk_pay">
             <div class="pricing">£15 a month</div>
-            <div class="launching-soon">This course is launching soon</div><a class="button btn_getinvited" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'wlms notify me');">Notify me!</a>
+            <div class="launching-soon">This course is launching soon</div><a class="button btn_getinvited" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'notify me');">Notify me!</a>
           </div>
         </div>
       </div>
@@ -29,19 +29,19 @@ include('inc/header.php'); ?>
       <div class="w-row course-row-1">
         <div class="w-col w-col-8 w-col-small-6 intro-column">
           <div class="text-1"><strong>Is this course for you?</strong>
-            <br>This course is&nbsp;perfect for people wanting to lose weight for the first time, as well as those&nbsp;who have tried&nbsp;many&nbsp;diets&nbsp;in the past&nbsp;without&nbsp;long term&nbsp;success. You'll need&nbsp;the&nbsp;commitment to
-            make healthy&nbsp;changes and&nbsp;complete&nbsp;three&nbsp;30 minute exercise sessions per week&nbsp;(all home-based bodyweight exercise).&nbsp;
-            <br>
+            <br>This course is perfect for people wanting to lose a serious amount of fat, and those who have tried many diets in the past without long term success. Eating and healthy lifestyle change is the focus of this course. You'll need the commitment complete three 30 minute exercise sessions per week (all home-based bodyweight exercise).<br>
             <br><strong>What you'll do</strong>
             <br>You'll be coached through a focussed exercise and nutritional program to help you achieve your fat loss goals. We'll cover how to make key changes to your lifestyle to achieve great results&nbsp;-&nbsp;through exercise and nutrition methods,
-            tips&nbsp;
-            <br>and coaching.&nbsp;
+            tips&nbsp;and coaching.&nbsp;
             <br>
             <br><strong>What you'll achieve</strong>
             <br>By the end of 12 weeks you will have reduced your fat&nbsp;percentage&nbsp;in a healthy way and implemented dietary and lifestyle changes that will last beyond the end of the program.
             <br>
             <br><strong>Pre-requisites</strong>
-            <br>No gym access required.</div>
+            <br>No gym access required.
+            <br>Unisex course
+            <br>No exercise experience required.
+</div>
         </div>
         <div class="w-col w-col-4 w-col-small-6">
           <div class="at-a-glance-bg">
