@@ -265,6 +265,9 @@ p {
   line-height: 23px;
   font-weight: 400;
 }
+.text-1.spam {
+  text-align: center;
+}
 .at-a-glance-txt {
   margin-top: 2px;
   margin-bottom: 2px;
@@ -321,6 +324,7 @@ p {
 }
 .scn_popularcourses {
   background-color: white;
+  text-align: right;
 }
 .scn_popularcourses.scn_white {
   background-color: white;
@@ -362,6 +366,9 @@ p {
 }
 .ctr_popularcourses.last {
   border-bottom-style: none;
+}
+.ctr_popularcourses.trial {
+  text-align: left;
 }
 .ctr_intro {
   padding-bottom: 0px;
@@ -693,11 +700,39 @@ p {
   margin-right: 10px;
   padding-top: 14px;
 }
-.img_follow.img_instagram {
-  margin-right: 0px;
+.pilot {
+  margin-bottom: 10px;
+  color: #667;
+  font-size: 16px;
+  text-align: justify;
 }
-.course-block {
-  list-style-type: none;
+.value-prop {
+  font-family:'Open Sans', sans-serif;
+  color: #667;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 600;
+  text-align: center;
+}
+.subscribe {
+  height: auto;
+  padding-bottom: 11px;
+  border: 2px solid #00ccd9;
+  background-color: transparent;
+  color: #00ccd9;
+  font-weight: 400;
+}
+
+.subscribe-section {
+  display: block;
+  width: 226px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.what_involved {
+  margin-bottom: 40px;
 }
 @media (max-width: 991px) {
   h1 {
@@ -1070,6 +1105,9 @@ p {
     padding-right: 80px;
     padding-left: 80px;
   }
+  .field {
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 479px) {
   h1 {
@@ -1213,5 +1251,17 @@ p {
     padding-right: 10px;
     padding-left: 10px;
     line-height: 14px;
+  }
+  .field {
+    margin-bottom: 30px;
+  display: inline-block;
+  width: 226px;
+  height: auto;
+  padding: 11px 15px;
+  border: 2px solid #667;
+  border-radius: 7px;
+  text-align: center;
+}
+
   }
 }
