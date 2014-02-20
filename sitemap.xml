@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://joinmyteam.co/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://joinmyteam.co/index.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://joinmyteam.co/courses.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://joinmyteam.co/about.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://joinmyteam.co/privacy-policy.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://joinmyteam.co/weight-loss-made-simple.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://joinmyteam.co/strength-size.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://joinmyteam.co/womens-tone-at-home.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://joinmyteam.co/benefits.php</loc>
+  <changefreq>weekly</changefreq>
+</url>
+</urlset>

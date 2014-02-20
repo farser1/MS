@@ -51,7 +51,7 @@ include('inc/header.php'); ?>
                 <input id="fieldEmail" class="field" placeholder="your email address" name="cm-hdft-hdft" type="email" required="">
               </p>
               <p>
-                <button type="submit" class="button subscribe">Notify me!</button>
+                <button type="submit" class="button subscribe" onclick="ga('send', 'event', 'button', 'click', 'notify me');">Notify me!</button>
               </p>
             </form>
           </div>

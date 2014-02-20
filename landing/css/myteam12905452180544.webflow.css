@@ -1,0 +1,639 @@
+body {
+  font-family:'Open Sans', sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+h1 {
+  margin-top: 0px;
+  margin-bottom: 31px;
+  color: #667;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+h2 {
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  color: #575757;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 300;
+}
+h3 {
+  margin-bottom: 15px;
+  font-family:'Open Sans', sans-serif;
+  color: #667;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: left;
+}
+h4 {
+  margin: 50px 0px 10px;
+  color: #667;
+  font-size: 29px;
+  line-height: 46px;
+  font-weight: 300;
+}
+h5 {
+  padding-top: 25px;
+  padding-left: 20px;
+  color: white;
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: 300;
+  text-align: left;
+}
+h6 {
+  margin: 10px 0px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+p {
+  margin-bottom: 30px;
+  font-family:'Open Sans', sans-serif;
+  color: #58585a;
+  font-size: 17px;
+  text-align: left;
+}
+.button {
+  display: inline-block;
+  width: 226px;
+  height: 47px;
+  margin-top: -14px;
+  margin-bottom: 30px;
+  padding: 11px 15px 4px;
+  border-radius: 7px;
+  background-color: #109c00;
+  box-shadow: none;
+  color: white;
+  font-size: 19px;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+}
+.header {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+  border-top: 4px solid #00ccd9;
+  background-color: white;
+  box-shadow: rgba(52, 52, 64, 0.49) 0px 5px 16px 0px;
+}
+.logo {
+  display: block;
+  width: 160px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+}
+.sub-footer {
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.49);
+  font-weight: 300;
+  text-align: center;
+}
+.footer-link {
+  display: block;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  color: rgba(255, 255, 255, 0.49);
+  font-weight: 300;
+  text-align: center;
+  text-decoration: underline;
+}
+.right {
+  display: block;
+  width: 250px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+}
+.trainer-summary {
+  margin-top: 30px;
+}
+.text-1 {
+  color: #667;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+}
+.text-1.top {
+  line-height: 24px;
+  font-weight: 300;
+}
+.image-trainer-portrait.top {
+  margin-top: 27px;
+  margin-right: 20px;
+}
+.intro-section {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  background-color: #ebebf0;
+}
+.benefits-section {
+  background-color: white;
+}
+.benefits-section.courseoutline {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.text-2 {
+  padding-top: 0px;
+  color: #667;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 300;
+}
+.text-2.landing {
+  font-size: 14px;
+}
+.description {
+  padding-top: 10px;
+  color: #667;
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 300;
+}
+.description.txt_benefits {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+}
+.course-title-section {
+  padding-top: 30px;
+  padding-bottom: 5px;
+  background-color: #00ccd9;
+  background-image: url('../images/MT_V6_Girl_BG-Scaled-2.jpg');
+  background-position: 50% 16%;
+  background-size: cover;
+}
+.scn_benefits {
+  padding-top: 30px;
+  background-color: white;
+}
+.ctn_benefits {
+  padding-bottom: 40px;
+}
+.hdr_benefits {
+  margin-top: 80px;
+}
+.hdr_benefits.hdr_benmod {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+.hdr_benefits.hdr_benmod.landing {
+  margin-top: 22px;
+  margin-bottom: 10px;
+  line-height: 40px;
+  text-align: left;
+}
+.hdr_benefits.hdr_benmod.landing.paul {
+  margin-top: 0px;
+  color: #667;
+  font-size: 29px;
+  line-height: 35px;
+  font-weight: 400;
+  text-align: left;
+}
+.hdr_benefits.hdr_benmod.landing.paul.readon {
+  margin-top: 8px;
+  font-size: 30px;
+  font-weight: 300;
+}
+.hdr_benefits.hdr_benmod.landing.paul.regnow {
+  margin-top: 32px;
+}
+.hdr_benefits.hdr_benmod.landing.paul.regcentre {
+  text-align: center;
+}
+.h1_courseheadline {
+  margin-bottom: -10px;
+  padding-bottom: 0px;
+  color: white;
+  font-size: 31px;
+  line-height: 37px;
+  font-weight: 300;
+  text-align: left;
+}
+.h1_courseheadline.main {
+  margin-top: 83px;
+  margin-bottom: 24px;
+  font-size: 62px;
+  line-height: 69px;
+  font-weight: 600;
+  text-align: left;
+}
+.nav_menu {
+  color: white;
+  font-weight: 400;
+}
+.ctn_courseheadline {
+  padding-bottom: 30px;
+}
+.ctn_base {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.cln_twitter {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.txt_basecopy {
+  margin-top: 15px;
+  color: rgba(255, 255, 255, 0.49);
+  font-size: 14px;
+  font-weight: 300;
+}
+.scn_base {
+  padding-bottom: 20px;
+  background-color: #232324;
+}
+.scn_foot {
+  background-color: #38383a;
+}
+.img_icon {
+  opacity: 0.5;
+  color: rgba(255, 255, 255, 0.49);
+}
+.trainer-bio {
+  padding-bottom: 70px;
+  background-color: #ebebf0;
+}
+.trainer-bio.reg {
+  padding-bottom: 0px;
+}
+.color {
+  color: #667;
+  font-size: 16px;
+}
+.color.w--current {
+  color: #00ccd9;
+}
+.left {
+  width: 250px;
+  float: right;
+  text-decoration: none;
+}
+.txt_courseoutline {
+  margin-top: 7px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+  text-align: center;
+}
+.courseoutline_cln {
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+.cln_courseoutline {
+  margin-top: 27px;
+  margin-bottom: 41px;
+}
+.cln_benefits {
+  text-align: center;
+}
+.hdr_benefitsmod {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.row_benefits {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.subscribe {
+  height: auto;
+  margin-bottom: 20px;
+  padding-bottom: 11px;
+  float: none;
+  border: 2px solid white;
+  background-color: #00ccd9;
+  color: white;
+  font-weight: 400;
+}
+.subscribe.hb {
+  width: 125px;
+  margin-top: 24px;
+  padding-top: 7px;
+  padding-bottom: 9px;
+  float: none;
+  border-color: white;
+}
+.field {
+  width: 226px;
+  padding: 11px 15px;
+  border: 2px solid #667;
+  border-radius: 7px;
+  text-align: center;
+}
+.field.h {
+  width: auto;
+  text-align: left;
+}
+.center {
+  margin-top: -9px;
+  color: white;
+  text-align: left;
+}
+.list-text {
+  padding-bottom: 10px;
+  padding-left: 0px;
+  color: #667;
+  font-size: 18px;
+  font-weight: 700;
+  list-style-type: square;
+}
+.read-more {
+  margin-top: 10px;
+  padding-left: 0px;
+  color: #333;
+  font-size: 18px;
+  text-decoration: underline;
+}
+.twitter {
+  margin-top: 15px;
+}
+.ctn_register {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: left;
+}
+.txt_trainerbio {
+  margin-top: 10px;
+  color: #667;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+}
+.txt_trainerbio.name {
+  margin-top: 13px;
+  font-weight: 700;
+}
+.register_centre {
+  text-align: center;
+}
+.ctr_trainer {
+  padding-top: 40px;
+}
+@media (max-width: 991px) {
+  h1 {
+    font-size: 39px;
+  }
+  h4 {
+    margin-top: 40px;
+    font-size: 26px;
+    line-height: 41px;
+  }
+  .text-2 {
+    padding-top: 0px;
+  }
+  .course-title-section {
+    margin-top: 20px;
+    padding-top: 70px;
+  }
+  .ctn_benefits {
+    padding-bottom: 0px;
+  }
+  .hdr_benefits {
+    margin-bottom: 0px;
+  }
+  .hdr_benefits.hdr_benmod {
+    line-height: 63px;
+  }
+  .nav_menu {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #667;
+    font-size: 51px;
+  }
+  .color {
+    color: #667;
+  }
+  .txt_courseoutline {
+    font-size: 16px;
+  }
+  .hdr_benefitsmod {
+    margin-bottom: 10px;
+    line-height: 31px;
+  }
+  .row_benefits {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    text-align: center;
+  }
+  h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+  }
+  h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  h5 {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  p {
+    margin-top: -10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .header {
+    box-shadow: rgba(52, 52, 64, 0.49) 0px 2px 6px 0px;
+  }
+  .right {
+    display: block;
+    margin-top: 13px;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+  }
+  .text-1 {
+    margin-left: 7px;
+    text-align: left;
+  }
+  .benefits-section {
+    padding-top: 0px;
+  }
+  .text-2 {
+    padding-top: 10px;
+    text-align: left;
+  }
+  .description {
+    padding-top: 0px;
+  }
+  .course-title-section {
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .ctn_benefits {
+    padding-bottom: 0px;
+  }
+  .hdr_benefits.hdr_benmod {
+    line-height: 45px;
+  }
+  .h1_courseheadline {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .h1_courseheadline.main {
+    text-align: center;
+  }
+  .nav_menu {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #667;
+    font-size: 51px;
+    font-weight: 400;
+  }
+  .nav_menu.w--open {
+    background-color: #667;
+  }
+  .ctn_courseheadline {
+    padding-bottom: 0px;
+  }
+  .trainer-bio {
+    padding-left: 10px;
+  }
+  .color {
+    background-color: #667;
+    color: white;
+  }
+  .left {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+    text-decoration: none;
+  }
+  .txt_courseoutline {
+    font-size: 14px;
+  }
+  .cln_benefits {
+    margin-bottom: 40px;
+  }
+  .row_benefits {
+    margin-top: 10px;
+  }
+  .divblk_benefits {
+    width: auto;
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+  .field {
+    margin-bottom: 30px;
+  }
+  .center {
+    text-align: center;
+  }
+  .facebook {
+    text-align: left;
+  }
+  .ctn_register {
+    text-align: center;
+  }
+}
+@media (max-width: 479px) {
+  h1 {
+    margin-top: 20px;
+    font-size: 31px;
+    line-height: 35px;
+  }
+  h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .text-1 {
+    margin-left: 0px;
+    font-size: 14px;
+  }
+  .description.txt_benefits {
+    font-size: 16px;
+    line-height: 21.4px;
+  }
+  .hdr_benefits {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .hdr_benefits.hdr_benmod {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .hdr_benefits.hdr_benmod.landing {
+    padding-left: 0px;
+  }
+  .hdr_benefits.hdr_benmod.landing.paul {
+    text-align: left;
+  }
+  .h1_courseheadline {
+    margin-top: 30px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+  .h1_courseheadline.main {
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .color {
+    color: white;
+  }
+  .courseoutline_cln {
+    width: 50%;
+    float: left;
+  }
+  .courseoutline_cln.even {
+    float: left;
+  }
+  .courseoutline_cln._1 {
+    float: left;
+  }
+  .divblk_benefits {
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 14px;
+  }
+  .field {
+    margin-bottom: 20px;
+  }
+  .list-text {
+    text-align: left;
+  }
+  .read-more {
+    padding-left: 0px;
+    text-align: left;
+  }
+}

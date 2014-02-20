@@ -56,6 +56,16 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
   });
 </script>
 <!-- AddThis Smart Layers END -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46021809-1', 'joinmyteam.co');
+  ga('send', 'pageview');
+
+</script>
 </head>
 <body>
   <!-- ClickTale Top part -->
@@ -63,7 +73,6 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 var WRInitTime=(new Date()).getTime();
 </script>
 <!-- ClickTale end of Top part -->
-  <?php include_once("analyticstracking.php") ?>
 <header class="w-nav header" data-collapse="small" data-animation="default" data-duration="400" data-contain="1">
     <div class="w-container">
       <a class="w-nav-brand" href="index.php">
