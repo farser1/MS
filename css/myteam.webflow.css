@@ -189,9 +189,9 @@ p {
 }
 .hero.hero-weight-loss {
   background-image: url('../images/MT_V6_WeightLoss_BG-Scaled-BLUR.png');
-  background-position: 92% -91px;
+  background-position: 50% 50%;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
 }
 .h1_courseheadline {
@@ -706,6 +706,13 @@ p {
   .txt_trainerbio {
     font-size: 16px;
   }
+  .video {
+    display: block;
+    max-width: 380px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 @media (max-width: 479px) {
   h1 {
@@ -788,6 +795,9 @@ p {
   .ctr_trainer {
     padding-top: 0px;
   }
+  .block_trainer {
+    margin-bottom: 20px;
+  }
   .video {
     margin-bottom: -17px;
   }
@@ -798,5 +808,8 @@ p {
   .page-title {
     font-size: 43px;
     line-height: 48px;
+  }
+  .p-course-description {
+    margin-top: 0px;
   }
 }

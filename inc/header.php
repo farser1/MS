@@ -75,10 +75,10 @@ var WRInitTime=(new Date()).getTime();
 <!-- ClickTale end of Top part -->
 <div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
     <div class="w-container">
-      <a class="w-nav-brand" href="index.html">
+      <a class="w-nav-brand" href="/">
         <img class="logo" src="images/MT_logo.png" width="160" alt="53206da2c9fb842365000dac_MT_logo.png">
       </a>
-      <nav class="w-nav-menu open-menu" role="navigation"><a class="w-nav-link nav-link" href="index.php/#how-it-works">How it Works</a><a class="w-nav-link nav-link" href="index.php#current-course">Courses</a><a class="w-nav-link nav-link" href="about.php">About Us</a><a class="w-nav-link nav-link" href="http://blog.joinmyteam.co">Blog</a>
+      <nav class="w-nav-menu open-menu" role="navigation"><a class="w-nav-link nav-link" href="http://joinmyteam.co#how-it-works">How it Works</a><a class="w-nav-link nav-link" href="http://joinmyteam.co#current-course">Courses</a><a class="w-nav-link nav-link" href="about.php">About Us</a><a class="w-nav-link nav-link" href="http://blog.joinmyteam.co">Blog</a>
       </nav>
       <div class="w-nav-button menu-button">
         <div class="w-icon-nav-menu"></div>

@@ -16,12 +16,12 @@ include('inc/header.php'); ?>
         <div class="w-col w-col-6 column-about">
           <img src="images/John.jpg" width="140" alt="52f373f573df7f296b000a15_John.jpg">
           <h3 class="h3-team-name">John Sawers</h3>
-          <p class="p-team-job">Co-Founder &amp; Squash Lover</p><a class="button button-team" href="#">@j_sawers</a>
+          <p class="p-team-job">Co-Founder &amp; Squash Lover</p><a class="button button-team" href="http://twitter.com/j_sawers">@j_sawers</a>
         </div>
         <div class="w-col w-col-6 column-about">
           <img src="images/Chris.jpg" width="140" alt="52f373e8ba5496e141000bc6_Chris.jpg">
           <h3 class="h3-team-name">Chris Baker</h3>
-          <p class="p-team-job">Co-Founder &amp; Wilderness Wanderer</p><a class="button button-team" href="#">@c_s_baker</a>
+          <p class="p-team-job">Co-Founder &amp; Wilderness Wanderer</p><a class="button button-team" href="http://twitter.com/chris_s_baker">@chris_s_baker</a>
         </div>
       </div>
       <div class="w-row">

@@ -16,7 +16,7 @@ include('inc/header.php'); ?>
           <p class="p-info-under-button p-info-under-button-white">Course begins 31st March 2014</p>
         </div>
         <div class="w-col w-col-7">
-          <div>
+          <div class="video">
             <div class="w-embed w-iframe">
               <style>
                 .embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }

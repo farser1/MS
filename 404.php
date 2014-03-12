@@ -13,8 +13,7 @@ include('inc/header.php');
     <div class="w-container">
       <p>Would these links help you?&nbsp;
         <br>
-        <br><a href="index.html">Home</a>&nbsp;
-        <br><a href="index.html">View all courses&nbsp;</a>
+        <br><a href="/">Home</a>&nbsp;
         <br><a href="http://blog.joinmyteam.co">Blog</a>&nbsp;
         <br>
         <br>
