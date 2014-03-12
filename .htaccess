@@ -8,6 +8,16 @@ RewriteRule (.*) http://joinmyteam.co/$1 [R=301,L]
 AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
 </IfModule>
 
+# Redirect old file path to new file path
+Redirect /landing/index.html http://joinmyteam.co/weight-loss-made-simple.php
+Redirect /benefits.php http://joinmyteam.co/#how-it-works
+Redirect /courses.php http://joinmyteam.co/#current-course
+Redirect /index.php http://joinmyteam.co/
+Redirect /womens-tone-at-home.php http://joinmyteam.co/
+Redirect /pilot.php http://joinmyteam.co/
+
+
+
 #Error documents list
 ErrorDocument 404 /404.php
 

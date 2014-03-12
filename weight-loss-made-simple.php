@@ -1,154 +1,217 @@
 <?php 
 $pageTitle="Weight Loss Made Simple";
-$pageDesc="12 week weight loss program";
+$pageDesc="12 week weight loss course. Includes access to trainer, supportive community and weekly actions.";
 include('inc/header.php'); ?>
-
-
-   <div class="course-title-section">
-    <div class="w-container ctn_courseheadline">
-      <div class="w-row course-row-0">
-        <div class="w-col w-col-8 padding-title">
-          <h1 class="h1_courseheadline">Weight Loss Made Simple</h1>
-          <div class="w-clearfix trainer-summary-div">
-            <img class="trainer-intro" src="images/MT_TrainerMini_Paul.png" width="40" alt="52f279496100cf33380001b2_MT_TrainerMini_Paul.png">
-            <div class="trainer-intro-text">Coached by <strong>Paul Rayner</strong>
-              <br>Weight Loss Specialist</div>
+<div class="hero hero-weight-loss" id="top">
+    <div class="w-container">
+      <div class="w-row row_courseintro">
+        <div class="w-col w-col-5 column_title">
+          <h1 class="h1_courseheadline main">Weight Loss<br>Made Simple</h1>
+          <p class="paragraph-subtitle">12 week online coached
+            <br>course&nbsp;for £3.75 a week.</p>
+          <div class="w-embed w-script"><a class="button button-hero button-hero-orange" data-shoplocket-product-token="f9dYs" href="http://www.shoplocket.com/products/f9dYs-weight-loss-made-simple/buy" onclick="ga('send', 'event', 'button', 'click', 'book your place');">Book your place</a>
+            <script src='https://d1pocdzmde73mw.cloudfront.net/assets/widgets/embed.js'
+            type='text/javascript'></script>
           </div>
+          <p class="p-info-under-button p-info-under-button-white">Course begins 31st March 2014</p>
         </div>
-        <div class="w-col w-col-4 blk_payment">
-          <div class="blk_pay">
-            <div class="pricing">£15 a month</div>
-            <div class="launching-soon">Course launching in March</div><a class="button btn_getinvited" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'notify me');">Notify me!</a>
+        <div class="w-col w-col-7">
+          <div>
+            <div class="w-embed w-iframe">
+              <style>
+                .embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+              </style>
+              <div class="embed-container">
+                <iframe src="http://www.youtube.com/embed/7NYSEQikVIY?rel=0" frameborder="0" allowfullscreen=""></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="intro-section">
+  <div class="section section-gray">
     <div class="w-container">
-      <div class="w-row course-row-1">
-        <div class="w-col w-col-8 w-col-small-6 intro-column">
-          <div class="text-1"><strong>Is this course for you?</strong>
-            <br>This course is perfect for people wanting to lose a serious amount of fat, and those who have tried many diets in the past without long term success. Eating and healthy lifestyle change is the focus of this course. You'll need the commitment complete three 30 minute exercise sessions per week (all home-based bodyweight exercise).<br>
-            <br><strong>What you'll do</strong>
-            <br>You'll be coached through a focussed exercise and nutritional program to help you achieve your fat loss goals. We'll cover how to make key changes to your lifestyle to achieve great results&nbsp;-&nbsp;through exercise and nutrition methods,
-            tips&nbsp;and coaching.&nbsp;
-            <br>
-            <br><strong>What you'll achieve</strong>
-            <br>By the end of 12 weeks you will have reduced your fat&nbsp;percentage&nbsp;in a healthy way and implemented dietary and lifestyle changes that will last beyond the end of the program.
-            <br>
-            <br><strong>Pre-requisites</strong>
-            <br>No gym access required.
-            <br>Unisex course
-            <br>No exercise experience required.
-</div>
-        </div>
-        <div class="w-col w-col-4 w-col-small-6">
-          <div class="at-a-glance-bg">
-            <h3>At a Glance</h3>
-            <ul class="w-list-unstyled lst_glance">
-              <li class="after">
-                <div class="at-a-glance-txt">Course size 20 - 40</div>
+      <div class="w-row">
+        <div class="w-col w-col-5 cln_1">
+          <div class="block_trainer keypoints">
+            <ol class="w-list-unstyled">
+              <li class="list_item">
+                <div class="txt_trainerbio teal"><strong>Course begins 31st March 2014</strong>
+                </div>
               </li>
-              <li class="after">
-                <div class="at-a-glance-txt">12 week course</div>
+              <li class="list_item">
+                <div class="txt_trainerbio"><strong>Size limited to 60 places</strong>
+                </div>
               </li>
-              <li class="after">
-                <div class="at-a-glance-txt">Weekly exercise and nutrition guide</div>
+              <li class="list_item">
+                <div class="txt_trainerbio"><strong>£3.75 a week for 12 weeks</strong>
+                </div>
               </li>
-              <li class="after">
-                <div class="at-a-glance-txt">Go at your own pace</div>
-              </li>
-              <li class="after">
-                <div class="at-a-glance-txt">Video instruction</div>
-              </li>
-              <li class="after">
-                <div class="at-a-glance-txt">Ask trainer unlimited questions</div>
+              <li class="list_item">
+                <div class="txt_trainerbio"><strong>Book now – pay nothing until March 31</strong>
+                </div>
               </li>
               <li>
-                <div class="at-a-glance-txt">Lifetime access to course content</div>
+                <div class="txt_trainerbio"><strong>30 day 100% money back guarantee</strong>
+                </div>
               </li>
-            </ul>
+            </ol>
           </div>
+          <div class="block_trainer">
+            <div>
+              <div class="w-row">
+                <div class="w-col w-col-3">
+                  <img src="images/Paul_Medium.png" width="62" height="62" alt="531e281f5fe5f2ee6d00019a_Paul_Medium.png">
+                </div>
+                <div class="w-col w-col-9">
+                  <div class="divblk_trainername">
+                    <div class="txt_trainerbio"><strong>Paul Rayner</strong>
+                      <br>Weight Loss Specialist</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="txt_trainerbio">“I’ve created this course to help you change your body and enjoy your life. We’ll work together through the whole course to make sure you get the results you want.”</div>
+            <div class="read-more"><a class="trainer_learnmore" href="#paul-bio"><span class="read-more">read more...&nbsp;</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="w-col w-col-7">
+          <p class="p-course-description"><strong>Lose fat and live well<br></strong>This course is designed for people who want to lose a serious amount of fat. You may have tried a number of diets in the past without success. Healthy lifestyle change and habit forming will be the
+            focus.&nbsp;
+            <br>
+            <br><strong>No more diets!<br></strong>You'll be coached through a weekly focussed exercise and nutritional program to achieve your fat loss goals through adopting simple healthy habits.&nbsp;
+            <br>
+            <br><strong>Sustainable fat loss<br></strong>You will reduce your fat&nbsp;percentage&nbsp;in a healthy way and implement simple lifestyle changes that will last beyond the end of the program.
+            <br>
+            <br><strong>No gym access required<br></strong>You don’t need a gym or any exercise experience to take part in this course.&nbsp;You’ll need to commit to 3x30min simple home bodyweight sessions per week (all at your own pace).&nbsp;</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="benefits-section courseoutline">
+  <div class="section section-white" id="benefits">
     <div class="w-container">
-      <h1 class="coutseoutline">Course outline</h1>
-      <h3 class="txt_courseoutline subheadcourseout">Some of what you'll cover over your 12 week course</h3>
-    </div>
-    <div class="w-container cln_courseoutline">
-      <div class="courseoutline_cln">
-        <img src="images/MT_V6_CourseOutline_Goals-HR.jpg" width="100" alt="52eabe56791573df500000bc_MT_V6_CourseOutline_Goals-HR.jpg">
-        <h3 class="txt_courseoutline">Setting &amp;<br>achieving goals</h3>
+      <h2>The Ultimate Weight Loss Program</h2>
+      <div class="w-row row_benefits_1">
+        <div class="w-col w-col-4 cln_benefits">
+          <img src="images/MT_V5_Benefits_Easy.jpg" width="220" alt="52deb1ee1b42bfc243000a71_MT_V5_Benefits_Easy.jpg">
+          <h3 class="h3-feature">Time efficient&nbsp;</h3>
+          <p class="p-feature-description">Simple exercise and nutritional plans guide you to your goal.</p>
+        </div>
+        <div class="w-col w-col-4 cln_benefits">
+          <img src="images/MT_V5_Benefits_Community.jpg" width="220" alt="52e017fba13e8ef533000153_MT_V5_Benefits_Community.jpg">
+          <h3 class="h3-feature">Supportive community</h3>
+          <p class="p-feature-description">A private&nbsp;community, for support &amp; help from anyone on your program.</p>
+        </div>
+        <div class="w-col w-col-4 cln_benefits">
+          <img src="images/MT_V5_Benefits_Actions.jpg" width="220" alt="52deb20d1b42bfc243000a72_MT_V5_Benefits_Actions.jpg">
+          <h3 class="h3-feature">Steps &amp; milestones</h3>
+          <p class="p-feature-description">Weekly steps and milestones&nbsp;make progress manageable.&nbsp;</p>
+        </div>
       </div>
-      <div class="courseoutline_cln even">
-        <img src="images/MT_V6_CourseOutline_Exercise-HR.jpg" width="100" alt="52eabe5f791573df500000c1_MT_V6_CourseOutline_Exercise-HR.jpg">
-        <h3 class="txt_courseoutline">Incremental workout&nbsp;programs</h3>
+      <div class="w-row row_benefits">
+        <div class="w-col w-col-4 cln_benefits">
+          <img src="images/MT_V5_Benefits_Answers.jpg" width="220" alt="52dfcc1061794670770006c5_MT_V5_Benefits_Answers.jpg">
+          <h3 class="h3-feature">Expert guidance</h3>
+          <p class="p-feature-description">24/7 assistance and expert advice from your course trainer.</p>
+        </div>
+        <div class="w-col w-col-4 cln_benefits">
+          <img src="images/MT_V5_Benefits_Track.jpg" width="220" alt="52deb21a1b42bfc243000a74_MT_V5_Benefits_Track.jpg">
+          <h3 class="h3-feature">Daily motivation</h3>
+          <p class="p-feature-description">Progress tracking to keep you motivated and focussed on success.</p>
+        </div>
+        <div class="w-col w-col-4 cln_benefits">
+          <img src="images/MT_V5_Benefits_Videos.jpg" width="220" alt="52deb2251b42bfc243000a76_MT_V5_Benefits_Videos.jpg">
+          <h3 class="h3-feature">Video demonstrations</h3>
+          <p class="p-feature-description">Instructional videos&nbsp;demonstrate all exercises clearly.</p>
+        </div>
       </div>
-      <div class="courseoutline_cln _1">
-        <img src="images/MT_V6_CourseOutline_Tracking-HR.jpg" width="100" alt="52eabe68791573df500000c2_MT_V6_CourseOutline_Tracking-HR.jpg">
-        <h3 class="txt_courseoutline">Progress<br>Tracking</h3>
-      </div>
-      <div class="courseoutline_cln even">
-        <img src="images/MT_V6_CourseOutline_Habits-HR.jpg" width="100" alt="52eabe72791573df500000c3_MT_V6_CourseOutline_Habits-HR.jpg">
-        <h3 class="txt_courseoutline">Healthy<br>habit formation</h3>
-      </div>
-      <div class="courseoutline_cln">
-        <img src="images/MT_V6_CourseOutline_Recipes-HR.jpg" width="100" alt="52eabe30b5745be0500000d4_MT_V6_CourseOutline_Recipes-HR.jpg">
-        <h3 class="txt_courseoutline">Quick &amp; easy<br>recipes</h3>
-      </div>
-      <div class="courseoutline_cln">
-        <img src="images/MT_V6_CourseOutline_Shopping-HR.jpg" width="100" alt="52eabe89791573df500000c5_MT_V6_CourseOutline_Shopping-HR.jpg">
-        <h3 class="txt_courseoutline">Healthy food shopping tips</h3>
-      </div>
-      <div class="courseoutline_cln">
-        <img src="images/MT_V6_CourseOutline_Sleep-HR.jpg" width="100" alt="52eabe94791573df500000c7_MT_V6_CourseOutline_Sleep-HR.jpg">
-        <h3 class="txt_courseoutline">Improving your sleep quality</h3>
-      </div>
-      <div class="courseoutline_cln">
-        <img src="images/MT_V6_CourseOutline_Blood-HR.jpg" width="100" alt="52eabea9791573df500000c8_MT_V6_CourseOutline_Blood-HR.jpg">
-        <h3 class="txt_courseoutline">Balancing your blood sugar</h3>
-      </div>
-      <div class="courseoutline_cln">
-        <img src="images/MT_V6_CourseOutline_Stress-HR.jpg" width="100" alt="52eabeb5b5745be0500000d7_MT_V6_CourseOutline_Stress-HR.jpg">
-        <h3 class="txt_courseoutline">Stress reduction techniques</h3>
-      </div>
-      <div class="courseoutline_cln">
-        <img src="images/MT_V6_CourseOutline_Obstacles-HR.jpg" width="100" alt="52eabebdb5745be0500000d8_MT_V6_CourseOutline_Obstacles-HR.jpg">
-        <h3 class="txt_courseoutline">Overcoming obstacles</h3>
-      </div>
-    </div>
-    <div class="calltoaction_outline"><a class="button btn_grey btn_learnmore benefits" href="/benefits.php">How MyTeam courses work</a>
     </div>
   </div>
-  <div class="trainer-bio">
-    <div class="w-container" id="trainerbio">
-      <h1 class="coutseoutline trainer">Course trainer</h1>
+  <div class="call-out call-out-gray">
+    <div class="w-container ctn_register" id="trainerbio">
+      <p class="p-call-to-action">Join now for just £3.75 a week</p>
+      <div class="w-embed w-script"><a class="button button-hero" data-shoplocket-product-token="f9dYs" href="http://www.shoplocket.com/products/f9dYs-weight-loss-made-simple/buy" onclick="ga('send', 'event', 'button', 'click', 'book your place');">Book your place</a>
+        <script src='https://d1pocdzmde73mw.cloudfront.net/assets/widgets/embed.js' type='text/javascript'></script>
+      </div>
+      <p class="p-info-under-button">Course begins 31st March 2014</p>
+    </div>
+  </div>
+  <div class="section section-white" id="outline">
+    <div class="w-container">
+      <h2>Course Outline</h2>
+    </div>
+    <div class="w-container ctr_courseoutline">
+      <div class="course-outline-item">
+        <img src="images/MT_V7_CourseOutline_Goals.png" width="100" alt="5320e1df475bc1a7760014c2_MT_V7_CourseOutline_Goals.png">
+        <p class="p-feature-description">Setting &amp;
+          <br>achieving goals</p>
+      </div>
+      <div class="course-outline-item even">
+        <img src="images/MT_V7_CourseOutline_Exercise_2.png" width="100" alt="5320e27db6781caa760015d0_MT_V7_CourseOutline_Exercise_2.png">
+        <p class="p-feature-description">Incremental workout&nbsp;program</p>
+      </div>
+      <div class="course-outline-item _1">
+        <img src="images/MT_V7_CourseOutline_Tracking_2.png" width="100" alt="5320e286b6781caa760015d2_MT_V7_CourseOutline_Tracking_2.png">
+        <p class="p-feature-description">Progress
+          <br>Tracking</p>
+      </div>
+      <div class="course-outline-item even">
+        <img src="images/MT_V7_CourseOutline_Habits_1.png" width="100" alt="5320e28db6781caa760015d3_MT_V7_CourseOutline_Habits_1.png">
+        <p class="p-feature-description">Healthy
+          <br>habit formation</p>
+      </div>
+      <div class="course-outline-item">
+        <img src="images/MT_V7_CourseOutline_Recipes_1.png" width="100" alt="5320e22ec4db092265001502_MT_V7_CourseOutline_Recipes_1.png">
+        <p class="p-feature-description">Quick &amp; easy
+          <br>recipes</p>
+      </div>
+      <div class="course-outline-item">
+        <img src="images/MT_V7_CourseOutline_Shopping_1.png" width="100" alt="5320e24ac9fb8423650016a3_MT_V7_CourseOutline_Shopping_1.png">
+        <p class="p-feature-description">Healthy food shopping tips</p>
+      </div>
+      <div class="course-outline-item">
+        <img src="images/MT_V7_CourseOutline_Sleeping_1.png" width="100" alt="5320e250c9fb8423650016a5_MT_V7_CourseOutline_Sleeping_1.png">
+        <p class="p-feature-description">Improving your sleep quality</p>
+      </div>
+      <div class="course-outline-item">
+        <img src="images/MT_V7_CourseOutline_Blood_1.png" width="100" alt="5320e2b6c9fb8423650016a8_MT_V7_CourseOutline_Blood_1.png">
+        <p class="p-feature-description">Balancing your blood sugar</p>
+      </div>
+      <div class="course-outline-item">
+        <img src="images/MT_V7_CourseOutline_Stress_1.png" width="100" alt="5320e2bdc4db092265001506_MT_V7_CourseOutline_Stress_1.png">
+        <p class="p-feature-description">Stress reduction techniques</p>
+      </div>
+      <div class="course-outline-item">
+        <img src="images/MT_V7_CourseOutline_Obstacles_1.png" width="100" alt="5320e2c5c4db092265001508_MT_V7_CourseOutline_Obstacles_1.png">
+        <p class="p-feature-description">Overcoming obstacles</p>
+      </div>
+    </div>
+  </div>
+  <div class="section section-gray" id="paul-bio">
+    <div class="w-container ctr_trainer">
       <div class="trainer-summary">
         <div class="w-row">
           <div class="w-col w-col-4">
-            <img class="image-trainer-portrait" src="images/MT_V4_Trainer.jpg" width="283" alt="52f2799afb7c53586200010b_MT_V4_Trainer.jpg">
-            <div class="text-2">
-              <br><strong>Qualifications</strong>
-              <br>Sport and Exercise Science BSc
-              <br>Adv Diploma Health &amp; Wellbeing Physiology
+            <img class="image-trainer-portrait" src="images/Paul_Square.jpg" width="210" alt="5320a111c9fb84236500117e_Paul_Square.jpg">
+            <div class="trainer-name"><strong>Paul Rayner</strong>
+              <br>Weight Loss Specialist</div>
+            <div class="text-2 landing">Sport and Exercise Science BSc
+              <br>Adv. Dip. Health &amp; Wellbeing Physiology
               <br>Level 3 Personal Trainer
-              <br>Level 3 Nutrition and Weight Management
-              <br>Registered Exercise Professional: R0071863</div>
+              <br>Level 3 Nutrition &amp; Weight Management
+              <br>Registered PT: R0071863</div>
           </div>
           <div class="w-col w-col-8">
-            <div class="text-2"><strong>Paul Rayner</strong>
-              <br>
-              <br>I believe personal training to be one of the most effective ways of achieving real long term results.&nbsp;My knowledge and experience gives me the confidence that I can&nbsp;offer&nbsp;the&nbsp;best for my clients.
+            <div class="text-2">I believe personal training to be one of the most effective ways of achieving real long term results.&nbsp;My knowledge and experience gives me the confidence that I can&nbsp;offer&nbsp;the&nbsp;best for my clients.&nbsp;
               <br>
               <br>After completing my degree in Sport and Exercise Science I&nbsp;started working&nbsp;in a gym, which&nbsp;gave me insight into the pitfalls of trying to lose weight in&nbsp;this environment. Namely, the lack of information, particularly
-              on nutrition, the unnecessary equipment and wasted time.
+              on nutrition, the unnecessary equipment and wasted time.&nbsp;
               <br>
-              <br>Alongside personal training I work part time as a Research Exercise Scientist at Great Ormond Street Hospital, London. This involves training young children with Cystic Fibrosis in an exercise intervention study. When I'm not training my
-              clients,&nbsp;I enjoy a number of sports&nbsp;including climbing&nbsp;which I love and practice as much as possible.
+              <br>Alongside personal training I work part time as a Research Exercise Scientist at Great Ormond Street Hospital, London. This involves training young children with Cystic Fibrosis in an exercise intervention study.
+              <br>
+              <br>When I'm not training my clients,&nbsp;I enjoy a number of sports&nbsp;including climbing&nbsp;which I love and practice as much as possible.&nbsp;
               <br>
               <br>Helping people to achieve results which transform their lives gives me immense satisfaction and I hope you can be a part of that!</div>
           </div>
@@ -156,6 +219,16 @@ include('inc/header.php'); ?>
       </div>
     </div>
   </div>
+  <div class="call-out call-out-gray">
+    <div class="w-container ctn_register" id="trainerbio">
+      <p class="p-call-to-action">Join now for just £3.75 a week</p>
+      <div class="w-embed w-script"><a class="button button-hero" data-shoplocket-product-token="f9dYs" href="http://www.shoplocket.com/products/f9dYs-weight-loss-made-simple/buy" onclick="ga('send', 'event', 'button', 'click', 'book your place');">Book your place</a>
+        <script src='https://d1pocdzmde73mw.cloudfront.net/assets/widgets/embed.js' type='text/javascript'></script>
+      </div>
+      <p class="p-info-under-button">Course begins 31st March 2014</p>
+    </div>
+  </div>
+
 
 
 <?php 
