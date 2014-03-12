@@ -2,6 +2,11 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^www\.joinmyteam\.co [NC]
 RewriteRule (.*) http://joinmyteam.co/$1 [R=301,L]   
 
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+
 #Themato soup
 
 <IfModule mod_deflate.c>
@@ -14,8 +19,6 @@ Redirect /benefits.php http://joinmyteam.co/#how-it-works
 Redirect /courses.php http://joinmyteam.co/#current-course
 Redirect /womens-tone-at-home.php http://joinmyteam.co/
 Redirect /pilot.php http://joinmyteam.co/
-
-
 
 #Error documents list
 ErrorDocument 404 /404.php

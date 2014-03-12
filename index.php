@@ -66,7 +66,7 @@ include('inc/header.php'); ?>
                 <li class="w-clearfix">
                   <div class="course-block-text grey below">No gym access required.</div>
                 </li>
-              </ol><a class="button button-outline" href="weight-loss-made-simple.php">Learn More</a>
+              </ol><a class="button button-outline" href="weight-loss-made-simple">Learn More</a>
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@ include('inc/header.php'); ?>
                 <li class="w-clearfix">
                   <div class="course-block-text grey below">Gym or weight set required</div>
                 </li>
-              </ol><a class="button button-outline" href="strength-size.php">Learn More</a>
+              </ol><a class="button button-outline" href="strength-size">Learn More</a>
             </div>
           </div>
         </div>
