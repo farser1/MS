@@ -13,7 +13,7 @@ include('inc/header.php'); ?>
             <script src='https://d1pocdzmde73mw.cloudfront.net/assets/widgets/embed.js'
             type='text/javascript'></script>
           </div>
-          <p class="p-info-under-button p-info-under-button-white">Course begins 31st March 2014</p>
+          <p class="p-info-under-button p-info-under-button-white">Course begins 24th March 2014</p>
         </div>
         <div class="w-col w-col-7">
           <div class="video">
@@ -37,7 +37,7 @@ include('inc/header.php'); ?>
           <div class="block_trainer keypoints">
             <ol class="w-list-unstyled">
               <li class="list_item">
-                <div class="txt_trainerbio teal"><strong>Course begins 31st March 2014</strong>
+                <div class="txt_trainerbio teal"><strong>Course begins 24th March 2014</strong>
                 </div>
               </li>
               <li class="list_item">
@@ -49,7 +49,7 @@ include('inc/header.php'); ?>
                 </div>
               </li>
               <li class="list_item">
-                <div class="txt_trainerbio"><strong>Book now – pay nothing until March 31</strong>
+                <div class="txt_trainerbio"><strong>Book now – pay nothing until March 24</strong>
                 </div>
               </li>
               <li>
@@ -135,7 +135,7 @@ include('inc/header.php'); ?>
       <div class="w-embed w-script"><a class="button button-hero" data-shoplocket-product-token="f9dYs" href="http://www.shoplocket.com/products/f9dYs-weight-loss-made-simple/buy" onclick="ga('send', 'event', 'button', 'click', 'book your place');">Book your place</a>
         <script src='https://d1pocdzmde73mw.cloudfront.net/assets/widgets/embed.js' type='text/javascript'></script>
       </div>
-      <p class="p-info-under-button">Course begins 31st March 2014</p>
+      <p class="p-info-under-button">Course begins 24th March 2014</p>
     </div>
   </div>
   <div class="section section-white" id="outline">
@@ -225,7 +225,7 @@ include('inc/header.php'); ?>
       <div class="w-embed w-script"><a class="button button-hero" data-shoplocket-product-token="f9dYs" href="http://www.shoplocket.com/products/f9dYs-weight-loss-made-simple/buy" onclick="ga('send', 'event', 'button', 'click', 'book your place');">Book your place</a>
         <script src='https://d1pocdzmde73mw.cloudfront.net/assets/widgets/embed.js' type='text/javascript'></script>
       </div>
-      <p class="p-info-under-button">Course begins 31st March 2014</p>
+      <p class="p-info-under-button">Course begins 24th March 2014</p>
     </div>
   </div>
 
