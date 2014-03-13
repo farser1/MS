@@ -8,7 +8,7 @@ include('inc/header.php'); ?>
         <div class="w-col w-col-5 column_title">
           <h1 class="h1_courseheadline main">Weight Loss<br>Made Simple</h1>
           <p class="paragraph-subtitle">12 week online coached
-            <br>course&nbsp;for £3.75 a week.</p>
+            <br>course&nbsp;for £3.75 a week</p>
           <div class="w-embed w-script"><a class="button button-hero button-hero-orange" data-shoplocket-product-token="f9dYs" href="http://www.shoplocket.com/products/f9dYs-weight-loss-made-simple/buy" onclick="ga('send', 'event', 'button', 'click', 'book your place');">Book your place</a>
             <script src='https://d1pocdzmde73mw.cloudfront.net/assets/widgets/embed.js'
             type='text/javascript'></script>

@@ -7,7 +7,7 @@ include('inc/header.php'); ?>
     <div class="w-container">
       <div class="w-row row_courseintro">
         <div class="w-col w-col-6 column_title">
-          <h1 class="hero-title">Become<br>the healthier,<br>fitter you.</h1>
+          <h1 class="hero-title">Become the <br>healthier,<br>fitter you.</h1>
           <p class="paragraph-subtitle">12 week online coached courses
             <br>for £3.75 a week</p><a class="button button-hero" href="#current-course">Select a course</a>
         </div>

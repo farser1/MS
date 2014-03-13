@@ -2,9 +2,13 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^www\.joinmyteam\.co [NC]
 RewriteRule (.*) http://joinmyteam.co/$1 [R=301,L]   
 
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
+# browser requests PHP
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.php
+RewriteRule ^/?(.*)\.php$ /$1 [L,R=301]
+
+# check to see if the request is for a PHP file:
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^/?(.*)$ /$1.php [L]
 
 
 #Themato soup
@@ -15,10 +19,12 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml appl
 
 # Redirect old file path to new file path
 Redirect /landing/index.html http://joinmyteam.co/weight-loss-made-simple.php
-Redirect /benefits.php http://joinmyteam.co/#how-it-works
-Redirect /courses.php http://joinmyteam.co/#current-course
-Redirect /womens-tone-at-home.php http://joinmyteam.co/
-Redirect /pilot.php http://joinmyteam.co/
+Redirect /landing/ http://joinmyteam.co/weight-loss-made-simple.php
+Redirect /landing http://joinmyteam.co/weight-loss-made-simple.php
+Redirect /benefits http://joinmyteam.co/#how-it-works
+Redirect /courses http://joinmyteam.co/#current-course
+Redirect /womens-tone-at-home http://joinmyteam.co/
+Redirect /pilot http://joinmyteam.co/
 
 #Error documents list
 ErrorDocument 404 /404.php

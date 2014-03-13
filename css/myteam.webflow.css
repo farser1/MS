@@ -425,15 +425,6 @@ p {
   font-size: 17px;
   font-weight: 600;
 }
-.nav-link:active {
-  color: #00ccd9;
-}
-.nav-link.w--current {
-  color: #00ccd9;
-}
-.nav-link.w--current:active {
-  color: #00ccd9;
-}
 .menu-button {
   margin-top: 5px;
   padding: 10px;
