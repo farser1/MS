@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/webflow.css">
-  <link rel="stylesheet" type="text/css" href="css/myteam.webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/myteamv3.webflow.css">
   <link rel="stylesheet" type="text/css" href="css/custom.css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
   <script>
@@ -23,7 +23,7 @@
     if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
   </script>
   <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
-  <!--Start of Zopim Live Chat Script
+  <!--Start of Zopim Live Chat Script -->
 <script type="text/javascript">
 var ua = navigator.userAgent.toLowerCase(),
 platform = navigator.platform.toLowerCase();
@@ -38,7 +38,7 @@ $.src='//v2.zopim.com/?1jqBQyatzUBTaadSwrKqNkmwtPTTVrKL';z.t=+new Date;$.
 type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 }
 </script>
-End of Zopim Live Chat Script-->
+<!-- End of Zopim Live Chat Script-->
   <!-- AddThis Smart Layers BEGIN -->
 <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52fa2beb3e82da2f"></script>
