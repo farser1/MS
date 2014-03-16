@@ -87,6 +87,10 @@ p {
   background-color: white;
   color: #00ccd9;
 }
+.button.button-outline.button-outline-grey {
+  border-color: #d5d5e6;
+  color: #d5d5e6;
+}
 .button.button-hero {
   display: inline-block;
   padding: 15px 40px;
@@ -325,6 +329,9 @@ p {
 .course-image.strength {
   background-image: url('../images/MT_V6_Course_Strength_L.jpg');
 }
+.course-image.womens-fit {
+  background-image: url('../images/MT_V6_Course_Toning_L.png');
+}
 .trainer-profile {
   padding-right: 5px;
   background-color: #00ccd9;
@@ -425,6 +432,9 @@ p {
   font-size: 17px;
   font-weight: 600;
 }
+.nav-link.w--current {
+  color: #00ccd9;
+}
 .menu-button {
   margin-top: 5px;
   padding: 10px;
@@ -457,10 +467,6 @@ p {
   padding-top: 120px;
   padding-bottom: 30px;
   background-color: #00ccd9;
-}
-.row-courses {
-  padding-right: 10%;
-  padding-left: 10%;
 }
 .hero-title {
   margin-bottom: 15px;

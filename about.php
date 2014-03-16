@@ -1,6 +1,6 @@
 <?php 
 $pageTitle="About MyTeam";
-$pageDesc="We are here to make healthy living simple and affordable.";
+$pageDesc="Meet the people and coaches behind MyTeam. We are here to make healthy living simple and affordable.";
 include('inc/header.php'); ?>
 
 

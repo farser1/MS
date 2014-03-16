@@ -1,6 +1,6 @@
 <?php 
-$pageTitle="Weight Loss Made Simple";
-$pageDesc="12 week weight loss course. Includes access to trainer, supportive community and weekly actions.";
+$pageTitle="Weight Loss Made Simple - 12 week program";
+$pageDesc="Join our 12 week weight loss program and get coached through simple diet changes and home workouts and access to our private weight loss forum. Two week free trial.";
 include('inc/header.php'); ?>
 <div class="hero hero-weight-loss" id="top">
     <div class="w-container">
@@ -78,7 +78,7 @@ include('inc/header.php'); ?>
           </div>
         </div>
         <div class="w-col w-col-7">
-          <p class="p-course-description"><strong>Lose fat and live well<br></strong>This course is designed for people who want to lose a serious amount of fat. You may have tried a number of diets in the past without success. Healthy lifestyle change and habit forming will be the
+          <p class="p-course-description"><strong>Lose fat and live well<br></strong>This course is designed for people who are serious about losing fat. You may have tried a number of diets in the past without success. Healthy lifestyle change and habit forming will be the
             focus.&nbsp;
             <br>
             <br><strong>No more diets!<br></strong>You'll be coached through a weekly focussed exercise and nutritional program to achieve your fat loss goals through adopting simple healthy habits.&nbsp;

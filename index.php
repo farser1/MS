@@ -1,6 +1,6 @@
 <?php 
-$pageTitle="Affordable online personal training";
-$pageDesc="Reach your health and fitness goals through goal based communities powered by real coaches.";
+$pageTitle="Become the healthier, fitter you with a MyTeam online fitness program.";
+$pageDesc="12 week online programs help you lose weight, get stronger or get toned. Get coaching, simple weekly actions and communty support for £3.75 a week.";
 include('inc/header.php'); ?>
 
   <div class="hero hero-home" id="top">
@@ -61,10 +61,10 @@ include('inc/header.php'); ?>
             <div class="course-summary">
               <ol class="w-list-unstyled">
                 <li class="w-clearfix course-list">
-                  <div class="course-block-text grey">For people wanting to lose serious fat and keep it off.</div>
+                  <div class="course-block-text grey">For people serious about losing fat and keeping it off</div>
                 </li>
                 <li class="w-clearfix">
-                  <div class="course-block-text grey below">No gym access required.</div>
+                  <div class="course-block-text grey below">No gym access required</div>
                 </li>
               </ol><a class="button button-outline" href="weight-loss-made-simple">Learn More</a>
             </div>

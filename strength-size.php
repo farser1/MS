@@ -1,6 +1,6 @@
 <?php 
-$pageTitle="Strength and Size";
-$pageDesc="12 weeks program to help you gain significant muscle power and strength whilst increasing your overall fitness and conditioning.";
+$pageTitle="Strength and Size - 12 week program";
+$pageDesc="Join our 12 week muscle strength and size program and get coached through efficient gym workouts and the nutritional tools for gaining athletic strength and size.";
 include('inc/header.php'); ?>
 
 
