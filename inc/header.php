@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/webflow.css">
-  <link rel="stylesheet" type="text/css" href="css/myteamv3.webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/myteamv4.webflow.css">
   <link rel="stylesheet" type="text/css" href="css/custom.css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
   <script>
@@ -77,7 +77,7 @@ var WRInitTime=(new Date()).getTime();
       <a class="w-nav-brand" href="/">
         <img class="logo" src="images/MT_logo.png" width="160" alt="53206da2c9fb842365000dac_MT_logo.png">
       </a>
-      <nav class="w-nav-menu open-menu" role="navigation"><a class="w-nav-link nav-link" href="http://joinmyteam.co#how-it-works">How it Works</a><a class="w-nav-link nav-link" href="http://joinmyteam.co#current-course">Courses</a><a class="w-nav-link nav-link" href="about">About Us</a><a class="w-nav-link nav-link" href="http://blog.joinmyteam.co">Blog</a>
+      <nav class="w-nav-menu open-menu" role="navigation"><a class="w-nav-link nav-link" href="http://joinmyteam.co#how-it-works">How it Works</a><a class="w-nav-link nav-link" href="http://joinmyteam.co#current-course">Programs</a><a class="w-nav-link nav-link" href="about">About Us</a><a class="w-nav-link nav-link" href="http://blog.joinmyteam.co">Blog</a>
       </nav>
       <div class="w-nav-button menu-button">
         <div class="w-icon-nav-menu"></div>

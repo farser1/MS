@@ -2,18 +2,15 @@
 $pageTitle="Weight Loss Made Simple - 12 week program";
 $pageDesc="Join our 12 week weight loss program and get coached through simple diet changes and home workouts and access to our private weight loss forum. Two week free trial.";
 include('inc/header.php'); ?>
-<div class="hero hero-weight-loss" id="top">
+
+  <div class="hero hero-weight-loss" id="top">
     <div class="w-container">
       <div class="w-row row_courseintro">
         <div class="w-col w-col-5 column_title">
           <h1 class="h1_courseheadline main">Weight Loss<br>Made Simple</h1>
           <p class="paragraph-subtitle">12 week online coached
-            <br>course&nbsp;for £3.75 a week</p>
-          <div class="w-embed w-script"><a class="button button-hero button-hero-orange" data-shoplocket-product-token="f9dYs" href="http://www.shoplocket.com/products/f9dYs-weight-loss-made-simple/buy" onclick="ga('send', 'event', 'button', 'click', 'book your place');">Book your place</a>
-            <script src='https://d1pocdzmde73mw.cloudfront.net/assets/widgets/embed.js'
-            type='text/javascript'></script>
-          </div>
-          <p class="p-info-under-button p-info-under-button-white">Course begins 24th March 2014</p>
+            <br>program&nbsp;for £3.75 a week.</p><a class="button button-hero button-hero-orange" href="/start">14 Day Free Trial</a>
+          <p class="p-info-under-button p-info-under-button-white">Program begins 24th March 2014</p>
         </div>
         <div class="w-col w-col-7">
           <div class="video">
@@ -30,30 +27,26 @@ include('inc/header.php'); ?>
       </div>
     </div>
   </div>
-  <div class="section section-gray">
+   <div class="section section-gray">
     <div class="w-container">
       <div class="w-row">
         <div class="w-col w-col-5 cln_1">
           <div class="block_trainer keypoints">
             <ol class="w-list-unstyled">
               <li class="list_item">
-                <div class="txt_trainerbio teal"><strong>Course begins 24th March 2014</strong>
+                <div class="txt_trainerbio teal"><strong>Program begins 24th March 2014</strong>
                 </div>
               </li>
               <li class="list_item">
-                <div class="txt_trainerbio"><strong>Size limited to 60 places</strong>
+                <div class="txt_trainerbio"><strong>15 places remaining</strong>
                 </div>
               </li>
               <li class="list_item">
                 <div class="txt_trainerbio"><strong>£3.75 a week for 12 weeks</strong>
                 </div>
               </li>
-              <li class="list_item">
-                <div class="txt_trainerbio"><strong>Book now – pay nothing until March 24</strong>
-                </div>
-              </li>
-              <li>
-                <div class="txt_trainerbio"><strong>30 day 100% money back guarantee</strong>
+              <li class="list_item list-no-border">
+                <div class="txt_trainerbio"><strong>14 day free trial</strong>
                 </div>
               </li>
             </ol>
@@ -78,69 +71,21 @@ include('inc/header.php'); ?>
           </div>
         </div>
         <div class="w-col w-col-7">
-          <p class="p-course-description"><strong>Lose fat and live well<br></strong>This course is designed for people who are serious about losing fat. You may have tried a number of diets in the past without success. Healthy lifestyle change and habit forming will be the
-            focus.&nbsp;
+          <p class="p-course-description"><strong>Lose fat and live well<br></strong>This program is designed for anyone who is serious about losing stubborn fat and feeling great! You may have tried a number of diets in the past without success. Healthy lifestyle change and habit forming
+            will be our focus.&nbsp;
             <br>
-            <br><strong>No more diets!<br></strong>You'll be coached through a weekly focussed exercise and nutritional program to achieve your fat loss goals through adopting simple healthy habits.&nbsp;
+            <br><strong>No more diets!<br></strong>You'll be coached through a weekly exercise and nutritional program to achieve your fat loss goals through adopting simple healthy habits.&nbsp;
             <br>
-            <br><strong>Sustainable fat loss<br></strong>You will reduce your fat&nbsp;percentage&nbsp;in a healthy way and implement simple lifestyle changes that will last beyond the end of the program.
+            <br><strong>Sustainable fat loss<br></strong>You will reduce your fat&nbsp;percentage&nbsp;in a healthy way and implement lifestyle changes that will last beyond the end of the program.
             <br>
-            <br><strong>No gym access required<br></strong>You don’t need a gym or any exercise experience to take part in this course.&nbsp;You’ll need to commit to 3x30min simple home bodyweight sessions per week (all at your own pace).&nbsp;</p>
+            <br><strong>No gym access required<br></strong>You don’t need a gym or any exercise experience to take part.&nbsp;You’ll need to commit to 3 x 30 minute simple home bodyweight sessions per week (all at your own pace).&nbsp;</p>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="section section-white" id="benefits">
-    <div class="w-container">
-      <h2>The Ultimate Weight Loss Program</h2>
-      <div class="w-row row_benefits_1">
-        <div class="w-col w-col-4 cln_benefits">
-          <img src="images/MT_V5_Benefits_Easy.jpg" width="220" alt="52deb1ee1b42bfc243000a71_MT_V5_Benefits_Easy.jpg">
-          <h3 class="h3-feature">Time efficient&nbsp;</h3>
-          <p class="p-feature-description">Simple exercise and nutritional plans guide you to your goal.</p>
-        </div>
-        <div class="w-col w-col-4 cln_benefits">
-          <img src="images/MT_V5_Benefits_Community.jpg" width="220" alt="52e017fba13e8ef533000153_MT_V5_Benefits_Community.jpg">
-          <h3 class="h3-feature">Supportive community</h3>
-          <p class="p-feature-description">A private&nbsp;community, for support &amp; help from anyone on your program.</p>
-        </div>
-        <div class="w-col w-col-4 cln_benefits">
-          <img src="images/MT_V5_Benefits_Actions.jpg" width="220" alt="52deb20d1b42bfc243000a72_MT_V5_Benefits_Actions.jpg">
-          <h3 class="h3-feature">Steps &amp; milestones</h3>
-          <p class="p-feature-description">Weekly steps and milestones&nbsp;make progress manageable.&nbsp;</p>
-        </div>
-      </div>
-      <div class="w-row row_benefits">
-        <div class="w-col w-col-4 cln_benefits">
-          <img src="images/MT_V5_Benefits_Answers.jpg" width="220" alt="52dfcc1061794670770006c5_MT_V5_Benefits_Answers.jpg">
-          <h3 class="h3-feature">Expert guidance</h3>
-          <p class="p-feature-description">24/7 assistance and expert advice from your course trainer.</p>
-        </div>
-        <div class="w-col w-col-4 cln_benefits">
-          <img src="images/MT_V5_Benefits_Track.jpg" width="220" alt="52deb21a1b42bfc243000a74_MT_V5_Benefits_Track.jpg">
-          <h3 class="h3-feature">Daily motivation</h3>
-          <p class="p-feature-description">Progress tracking to keep you motivated and focussed on success.</p>
-        </div>
-        <div class="w-col w-col-4 cln_benefits">
-          <img src="images/MT_V5_Benefits_Videos.jpg" width="220" alt="52deb2251b42bfc243000a76_MT_V5_Benefits_Videos.jpg">
-          <h3 class="h3-feature">Video demonstrations</h3>
-          <p class="p-feature-description">Instructional videos&nbsp;demonstrate all exercises clearly.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="call-out call-out-gray">
-    <div class="w-container ctn_register" id="trainerbio">
-      <p class="p-call-to-action">Join now for just £3.75 a week</p>
-      <div class="w-embed w-script"><a class="button button-hero" data-shoplocket-product-token="f9dYs" href="http://www.shoplocket.com/products/f9dYs-weight-loss-made-simple/buy" onclick="ga('send', 'event', 'button', 'click', 'book your place');">Book your place</a>
-        <script src='https://d1pocdzmde73mw.cloudfront.net/assets/widgets/embed.js' type='text/javascript'></script>
-      </div>
-      <p class="p-info-under-button">Course begins 24th March 2014</p>
     </div>
   </div>
   <div class="section section-white" id="outline">
     <div class="w-container">
-      <h2>Course Outline</h2>
+      <h2>Program Outline</h2>
     </div>
     <div class="w-container ctr_courseoutline">
       <div class="course-outline-item">
@@ -169,15 +114,18 @@ include('inc/header.php'); ?>
       </div>
       <div class="course-outline-item">
         <img src="images/MT_V7_CourseOutline_Shopping_1.png" width="100" alt="5320e24ac9fb8423650016a3_MT_V7_CourseOutline_Shopping_1.png">
-        <p class="p-feature-description">Healthy food shopping tips</p>
+        <p class="p-feature-description">Healthy food
+          <br>shopping tips</p>
       </div>
       <div class="course-outline-item">
         <img src="images/MT_V7_CourseOutline_Sleeping_1.png" width="100" alt="5320e250c9fb8423650016a5_MT_V7_CourseOutline_Sleeping_1.png">
-        <p class="p-feature-description">Improving your sleep quality</p>
+        <p class="p-feature-description">Improving your
+          <br>sleep quality</p>
       </div>
       <div class="course-outline-item">
         <img src="images/MT_V7_CourseOutline_Blood_1.png" width="100" alt="5320e2b6c9fb8423650016a8_MT_V7_CourseOutline_Blood_1.png">
-        <p class="p-feature-description">Balancing your blood sugar</p>
+        <p class="p-feature-description">Balancing your
+          <br>blood sugar</p>
       </div>
       <div class="course-outline-item">
         <img src="images/MT_V7_CourseOutline_Stress_1.png" width="100" alt="5320e2bdc4db092265001506_MT_V7_CourseOutline_Stress_1.png">
@@ -186,6 +134,51 @@ include('inc/header.php'); ?>
       <div class="course-outline-item">
         <img src="images/MT_V7_CourseOutline_Obstacles_1.png" width="100" alt="5320e2c5c4db092265001508_MT_V7_CourseOutline_Obstacles_1.png">
         <p class="p-feature-description">Overcoming obstacles</p>
+      </div>
+    </div>
+  </div>
+  <div class="call-out call-out-gray">
+    <div class="w-container ctn_register" id="trainerbio">
+      <p class="p-call-to-action">Get your 14 day free trial, then just £3.75 a week</p><a class="button button-hero" href="/start">14 Day Free Trial</a>
+      <p class="p-info-under-button">Program opens 24th March 2014</p>
+    </div>
+  </div>
+  <div class="section section-white" id="benefits">
+    <div class="w-container">
+      <h2>The Ultimate Weight Loss Program</h2>
+      <div class="w-row row_benefits_1">
+        <div class="w-col w-col-4 cln_benefits">
+          <img src="images/Time-2.png" width="220" alt="532775dc02cb4e943300021b_Time-2.png">
+          <h3 class="h3-feature">Time efficient&nbsp;</h3>
+          <p class="p-feature-description">Simple exercise and nutritional plans guide you to your goal.</p>
+        </div>
+        <div class="w-col w-col-4 cln_benefits">
+          <img class="features-images" src="images/Community-2.png" width="220" alt="5327392f1f306e86130001b8_Community-2.png">
+          <h3 class="h3-feature">Supportive community</h3>
+          <p class="p-feature-description">A private&nbsp;community, for support &amp; help from anyone on your program.</p>
+        </div>
+        <div class="w-col w-col-4 cln_benefits">
+          <img class="features-images" src="images/Actions.png" width="220" alt="5327393865ce23851300016e_Actions.png">
+          <h3 class="h3-feature">Steps &amp; milestones</h3>
+          <p class="p-feature-description">Weekly steps and milestones&nbsp;make progress manageable.&nbsp;</p>
+        </div>
+      </div>
+      <div class="w-row row_benefits">
+        <div class="w-col w-col-4 cln_benefits">
+          <img class="features-images" src="images/Coaching.png" width="220" alt="532739486f1d03b22d000112_Coaching.png">
+          <h3 class="h3-feature">Expert guidance</h3>
+          <p class="p-feature-description">24/7 assistance and expert advice from your course trainer.</p>
+        </div>
+        <div class="w-col w-col-4 cln_benefits">
+          <img class="features-images" src="images/Tracking-2.png" width="220" alt="532775bc40a8d6d518000223_Tracking-2.png">
+          <h3 class="h3-feature">Daily motivation</h3>
+          <p class="p-feature-description">Progress tracking to keep you motivated and focussed on success.</p>
+        </div>
+        <div class="w-col w-col-4 cln_benefits">
+          <img class="features-images" src="images/Videos-2.png" width="220" alt="532735b40899c9b32d0000e0_Videos-2.png">
+          <h3 class="h3-feature">Video demos</h3>
+          <p class="p-feature-description">Instructional videos&nbsp;demonstrate all exercises clearly.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -211,7 +204,7 @@ include('inc/header.php'); ?>
               <br>
               <br>Alongside personal training I work part time as a Research Exercise Scientist at Great Ormond Street Hospital, London. This involves training young children with Cystic Fibrosis in an exercise intervention study.
               <br>
-              <br>When I'm not training my clients,&nbsp;I enjoy a number of sports&nbsp;including climbing&nbsp;which I love and practice as much as possible.&nbsp;
+              <br>When I'm not training my clients,&nbsp;I enjoy a number of sports&nbsp;including rock climbing&nbsp;which I love and practice as much as possible.&nbsp;
               <br>
               <br>Helping people to achieve results which transform their lives gives me immense satisfaction and I hope you can be a part of that!</div>
           </div>
@@ -221,15 +214,10 @@ include('inc/header.php'); ?>
   </div>
   <div class="call-out call-out-gray">
     <div class="w-container ctn_register" id="trainerbio">
-      <p class="p-call-to-action">Join now for just £3.75 a week</p>
-      <div class="w-embed w-script"><a class="button button-hero" data-shoplocket-product-token="f9dYs" href="http://www.shoplocket.com/products/f9dYs-weight-loss-made-simple/buy" onclick="ga('send', 'event', 'button', 'click', 'book your place');">Book your place</a>
-        <script src='https://d1pocdzmde73mw.cloudfront.net/assets/widgets/embed.js' type='text/javascript'></script>
-      </div>
-      <p class="p-info-under-button">Course begins 24th March 2014</p>
+      <p class="p-call-to-action">Get your 14 day free trial, then just £3.75 a week</p><a class="button button-hero" href="/start">14 Day Free Trial</a>
+      <p class="p-info-under-button">Program begins 24th March 2014</p>
     </div>
   </div>
-
-
 
 <?php 
 include('inc/footer.php');

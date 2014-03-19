@@ -16,7 +16,7 @@ h1 {
 h2 {
   margin-right: 0px;
   margin-left: 0px;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 40px;
   color: #667;
   font-size: 33px;
@@ -88,20 +88,22 @@ p {
   color: #00ccd9;
 }
 .button.button-outline.button-outline-grey {
-  border-color: #d5d5e6;
-  color: #d5d5e6;
+  border-color: #bdbdc9;
+  color: #bdbdc9;
 }
 .button.button-hero {
   display: inline-block;
   padding: 15px 40px;
   border-style: none;
   font-size: 24px;
+  font-weight: 400;
 }
 .button.button-hero.button-hero-orange {
   background-color: #ffbd42;
 }
 .button.button-subscribe {
-  border-color: white;
+  margin-top: 0px;
+  border-color: #00ccd9;
   background-color: #00ccd9;
 }
 .button.button-team {
@@ -111,6 +113,9 @@ p {
   color: #667;
   font-size: 14px;
   font-weight: 300;
+}
+.button.button-forced-width {
+  width: 230px;
 }
 .logo {
   display: block;
@@ -130,6 +135,8 @@ p {
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
   color: rgba(255, 255, 255, 0.49);
   font-weight: 400;
   text-align: center;
@@ -300,6 +307,10 @@ p {
   padding-bottom: 7px;
   border-bottom: 1px solid #d9d9d9;
 }
+.list_item.list-no-border {
+  padding-bottom: 5px;
+  border-bottom-style: none;
+}
 .column_title {
   text-align: center;
 }
@@ -322,7 +333,7 @@ p {
   padding-left: 20px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  background-image: url('../images/MT_V6_Course_WeightLoss_L.jpg');
+  background-image: url('../images/MT_V6_Course_WeightLoss2_L.jpg');
   background-size: 270px;
   background-attachment: scroll;
 }
@@ -333,7 +344,7 @@ p {
   background-image: url('../images/MT_V6_Course_Toning_L.png');
 }
 .trainer-profile {
-  padding-right: 5px;
+  height: 75px;
   background-color: #00ccd9;
 }
 .course-summary {
@@ -400,6 +411,9 @@ p {
   line-height: 25px;
   text-align: center;
 }
+.support-copy.extra-space {
+  margin-bottom: 10px;
+}
 .h3-onteal {
   margin-bottom: 10px;
   padding-top: 0px;
@@ -434,6 +448,7 @@ p {
 }
 .nav-link.w--current {
   color: #00ccd9;
+  font-weight: 600;
 }
 .menu-button {
   margin-top: 5px;
@@ -524,12 +539,13 @@ p {
   color: white;
 }
 .input-text {
+  width: 100%;
   height: auto;
   padding: 12px 15px;
-  border: 2px solid white;
+  border: 2px solid #9e9ead;
   border-radius: 7px;
   background-color: white;
-  color: white;
+  color: #667;
   font-size: 17px;
 }
 .column-about {
@@ -555,11 +571,31 @@ p {
 }
 .trainer-name-title {
   display: block;
-  margin-top: 16px;
+  margin-top: 15px;
   color: white;
   font-size: 17px;
   line-height: 22px;
   text-align: left;
+}
+.p-about-us {
+  margin-bottom: 60px;
+  line-height: 25px;
+  text-align: center;
+}
+.p-faq-text {
+  margin-bottom: 20px;
+  padding: 26px;
+  border-radius: 7px;
+  background-color: white;
+  line-height: 25px;
+}
+.coming-soon-title {
+  padding-top: 25px;
+  color: white;
+  font-size: 26px;
+}
+.features-images {
+  margin-bottom: 10px;
 }
 @media (max-width: 991px) {
   h1 {
@@ -618,11 +654,48 @@ p {
   .trainer-name {
     font-size: 21px;
   }
+  .course-image {
+    width: 243px;
+    height: 243px;
+    padding-top: 112px;
+    background-size: 243px;
+  }
+  .course-image.strength {
+    background-size: 243px;
+  }
+  .course-image.womens-fit {
+    background-size: 243px;
+  }
+  .trainer-profile {
+    height: 71px;
+  }
+  .course-boundary {
+    width: 243px;
+  }
+  .course-block-text.grey {
+    clear: none;
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .course-block-text.descriptor {
+    font-size: 13px;
+  }
+  .trainer-image-mini {
+    margin-left: 12px;
+  }
+  .h3-course-name {
+    font-size: 32px;
+  }
   .menu-button {
     margin-top: 5px;
     padding: 10px;
     color: #667;
     font-size: 46px;
+  }
+  .trainer-name-title {
+    margin-top: 17px;
+    font-size: 15px;
+    line-height: 19px;
   }
 }
 @media (max-width: 767px) {
@@ -710,6 +783,9 @@ p {
     margin-right: auto;
     margin-left: auto;
   }
+  .input-text {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 479px) {
   h1 {
@@ -726,6 +802,9 @@ p {
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 19px;
+  }
+  .button.button-hero {
+    font-weight: 400;
   }
   .text-1 {
     margin-left: 0px;
@@ -798,6 +877,12 @@ p {
   .video {
     margin-bottom: -17px;
   }
+  .support-copy.extra-space {
+    display: block;
+    width: 277px;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .hero-title {
     font-size: 43px;
     line-height: 48px;
@@ -805,6 +890,12 @@ p {
   .page-title {
     font-size: 43px;
     line-height: 48px;
+  }
+  .p-call-to-action.p-call-to-action-on-teal {
+    display: block;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .p-course-description {
     margin-top: 0px;
