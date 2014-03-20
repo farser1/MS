@@ -3,13 +3,14 @@ $pageTitle="Weight Loss Made Simple - 12 week program";
 $pageDesc="Join our 12 week weight loss program and get coached through simple diet changes and home workouts and access to our private weight loss forum. Two week free trial.";
 include('inc/header.php'); ?>
 
+
   <div class="hero hero-weight-loss" id="top">
     <div class="w-container">
       <div class="w-row row_courseintro">
         <div class="w-col w-col-5 column_title">
           <h1 class="h1_courseheadline main">Weight Loss<br>Made Simple</h1>
           <p class="paragraph-subtitle">12 week online coached
-            <br>program&nbsp;for £3.75 a week.</p><a class="button button-hero button-hero-orange" href="/start">14 Day Free Trial</a>
+            <br>program&nbsp;for £3.75 a week.</p><a class="button button-hero button-hero-orange" href="#">14 Day Free Trial</a>
           <p class="p-info-under-button p-info-under-button-white">Program begins 24th March 2014</p>
         </div>
         <div class="w-col w-col-7">
@@ -27,7 +28,7 @@ include('inc/header.php'); ?>
       </div>
     </div>
   </div>
-   <div class="section section-gray">
+  <div class="section section-gray">
     <div class="w-container">
       <div class="w-row">
         <div class="w-col w-col-5 cln_1">
@@ -38,7 +39,7 @@ include('inc/header.php'); ?>
                 </div>
               </li>
               <li class="list_item">
-                <div class="txt_trainerbio"><strong>15 places remaining</strong>
+                <div class="txt_trainerbio teal"><strong>Only 10 places remaining (out of 60)</strong>
                 </div>
               </li>
               <li class="list_item">
@@ -55,7 +56,7 @@ include('inc/header.php'); ?>
             <div>
               <div class="w-row">
                 <div class="w-col w-col-3">
-                  <img src="images/Paul_Medium.png" width="62" height="62" alt="531e281f5fe5f2ee6d00019a_Paul_Medium.png">
+                  <img class="image-small-circle-62" src="images/Paul_Square.jpg" width="62" height="62" alt="5320a111c9fb84236500117e_Paul_Square.jpg">
                 </div>
                 <div class="w-col w-col-9">
                   <div class="divblk_trainername">
@@ -138,43 +139,43 @@ include('inc/header.php'); ?>
     </div>
   </div>
   <div class="call-out call-out-gray">
-    <div class="w-container ctn_register" id="trainerbio">
-      <p class="p-call-to-action">Get your 14 day free trial, then just £3.75 a week</p><a class="button button-hero" href="/start">14 Day Free Trial</a>
-      <p class="p-info-under-button">Program opens 24th March 2014</p>
+    <div class="w-container" id="trainerbio">
+      <p class="p-call-to-action">Get your 14 day free trial, then just £3.75 a week</p><a class="button button-hero button-hero-orange" href="#">14 Day Free Trial</a>
+      <p class="p-info-under-button">Program begins 24th March 2014</p>
     </div>
   </div>
   <div class="section section-white" id="benefits">
     <div class="w-container">
       <h2>The Ultimate Weight Loss Program</h2>
       <div class="w-row row_benefits_1">
-        <div class="w-col w-col-4 cln_benefits">
-          <img src="images/Time-2.png" width="220" alt="532775dc02cb4e943300021b_Time-2.png">
+        <div class="w-col w-col-4">
+          <img class="features-images" src="images/Time-2.png" width="220" alt="532775dc02cb4e943300021b_Time-2.png">
           <h3 class="h3-feature">Time efficient&nbsp;</h3>
           <p class="p-feature-description">Simple exercise and nutritional plans guide you to your goal.</p>
         </div>
-        <div class="w-col w-col-4 cln_benefits">
+        <div class="w-col w-col-4">
           <img class="features-images" src="images/Community-2.png" width="220" alt="5327392f1f306e86130001b8_Community-2.png">
           <h3 class="h3-feature">Supportive community</h3>
           <p class="p-feature-description">A private&nbsp;community, for support &amp; help from anyone on your program.</p>
         </div>
-        <div class="w-col w-col-4 cln_benefits">
+        <div class="w-col w-col-4">
           <img class="features-images" src="images/Actions.png" width="220" alt="5327393865ce23851300016e_Actions.png">
           <h3 class="h3-feature">Steps &amp; milestones</h3>
           <p class="p-feature-description">Weekly steps and milestones&nbsp;make progress manageable.&nbsp;</p>
         </div>
       </div>
       <div class="w-row row_benefits">
-        <div class="w-col w-col-4 cln_benefits">
+        <div class="w-col w-col-4">
           <img class="features-images" src="images/Coaching.png" width="220" alt="532739486f1d03b22d000112_Coaching.png">
           <h3 class="h3-feature">Expert guidance</h3>
           <p class="p-feature-description">24/7 assistance and expert advice from your course trainer.</p>
         </div>
-        <div class="w-col w-col-4 cln_benefits">
-          <img class="features-images" src="images/Tracking-2.png" width="220" alt="532775bc40a8d6d518000223_Tracking-2.png">
+        <div class="w-col w-col-4">
+          <img class="features-images" src="images/Tracking_WeightLoss.png" width="220" alt="53299c1f9642b2bf49000562_Tracking_WeightLoss.png">
           <h3 class="h3-feature">Daily motivation</h3>
           <p class="p-feature-description">Progress tracking to keep you motivated and focussed on success.</p>
         </div>
-        <div class="w-col w-col-4 cln_benefits">
+        <div class="w-col w-col-4">
           <img class="features-images" src="images/Videos-2.png" width="220" alt="532735b40899c9b32d0000e0_Videos-2.png">
           <h3 class="h3-feature">Video demos</h3>
           <p class="p-feature-description">Instructional videos&nbsp;demonstrate all exercises clearly.</p>
@@ -213,11 +214,12 @@ include('inc/header.php'); ?>
     </div>
   </div>
   <div class="call-out call-out-gray">
-    <div class="w-container ctn_register" id="trainerbio">
-      <p class="p-call-to-action">Get your 14 day free trial, then just £3.75 a week</p><a class="button button-hero" href="/start">14 Day Free Trial</a>
+    <div class="w-container" id="trainerbio">
+      <p class="p-call-to-action">Get your 14 day free trial, then just £3.75 a week</p><a class="button button-hero button-hero-orange" href="#">14 Day Free Trial</a>
       <p class="p-info-under-button">Program begins 24th March 2014</p>
     </div>
   </div>
+
 
 <?php 
 include('inc/footer.php');

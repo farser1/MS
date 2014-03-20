@@ -60,7 +60,7 @@ p {
   font-family:'Open Sans', sans-serif;
   color: #667;
   font-size: 17px;
-  text-align: left;
+  line-height: 25px;
 }
 .button {
   display: inline-block;
@@ -71,10 +71,10 @@ p {
   border: 2px solid white;
   border-radius: 7px;
   background-color: #00ccd9;
-  box-shadow: none;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 4px 0px -1px;
   color: white;
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
   text-decoration: none;
 }
@@ -82,14 +82,23 @@ p {
   display: block;
   padding-top: 12px;
   padding-bottom: 12px;
-  border: 2px solid #00ccd9;
+  border-style: solid;
+  border-color: #00ccd9;
   border-radius: 7px;
+  color: white;
+  font-weight: 400;
+}
+.button.button-outline:hover {
+  background-color: #1adae8;
+}
+.button.button-outline.button-outline-grey {
+  border-style: solid;
+  border-color: #00ccd9;
   background-color: white;
   color: #00ccd9;
 }
-.button.button-outline.button-outline-grey {
-  border-color: #bdbdc9;
-  color: #bdbdc9;
+.button.button-outline.button-outline-grey:hover {
+  background-color: rgba(242, 242, 247, 0.93);
 }
 .button.button-hero {
   display: inline-block;
@@ -98,8 +107,14 @@ p {
   font-size: 24px;
   font-weight: 400;
 }
+.button.button-hero:hover {
+  background-color: #1adae8;
+}
 .button.button-hero.button-hero-orange {
   background-color: #ffbd42;
+}
+.button.button-hero.button-hero-orange:hover {
+  background-color: #fcc868;
 }
 .button.button-subscribe {
   margin-top: 0px;
@@ -109,6 +124,7 @@ p {
 .button.button-team {
   margin-top: 20px;
   padding: 5px 10px;
+  border-style: none;
   background-color: #ebebf0;
   color: #667;
   font-size: 14px;
@@ -117,6 +133,9 @@ p {
 .button.button-forced-width {
   width: 230px;
 }
+.button.button-forced-width:hover {
+  background-color: rgba(255, 255, 255, 0.24);
+}
 .logo {
   display: block;
   width: 160px;
@@ -124,42 +143,8 @@ p {
   padding-bottom: 15px;
   padding-left: 0px;
 }
-.sub-footer {
-  margin-top: 4px;
-  color: rgba(255, 255, 255, 0.49);
-  font-weight: 400;
-  text-align: center;
-}
-.footer-link {
-  display: block;
-  margin-top: 20px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 20px;
-  padding-left: 20px;
-  color: rgba(255, 255, 255, 0.49);
-  font-weight: 400;
-  text-align: center;
-  text-decoration: underline;
-}
-.right {
-  display: block;
-  width: 250px;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-left: auto;
-  float: left;
-  text-align: center;
-  text-decoration: none;
-}
 .trainer-summary {
-  padding-top: 40px;
-}
-.text-1 {
-  color: #667;
-  font-size: 18px;
-  line-height: 23px;
-  font-weight: 400;
+  padding-top: 20px;
 }
 .image-trainer-portrait {
   width: 235px;
@@ -182,27 +167,24 @@ p {
   padding-bottom: 0px;
   background-color: #00ccd9;
 }
-.hero.hero-course {
-  background-color: #00ccd9;
-  color: white;
-}
 .hero.hero-home {
-  background-image: url('../images/MT_V6_Girl_BG-Scaled-2.jpg');
+  background-image: url('../images/MT_Home_BG.jpg');
+  background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 .hero.hero-strength {
-  background-image: url('../images/MT_V6_SquatGuy_BG-Scaled.png');
+  background-image: url('../images/MT_Strength_BG.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 .hero.hero-weight-loss {
-  background-image: url('../images/MT_V6_WeightLoss_BG-Scaled-BLUR.png');
+  background-image: url('../images/MT_WeightLoss_BG_BLUR.jpg');
   background-position: 50% 50%;
   background-size: cover;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 .h1_courseheadline {
@@ -221,34 +203,6 @@ p {
   font-weight: 600;
   text-align: center;
 }
-.ctn_base {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
-}
-.cln_twitter {
-  margin-bottom: 10px;
-  text-align: center;
-}
-.txt_basecopy {
-  margin-top: 15px;
-  color: rgba(255, 255, 255, 0.49);
-  font-size: 14px;
-  font-weight: 400;
-}
-.scn_foot {
-  background-color: #38383a;
-  font-weight: 400;
-}
-.img_icon {
-  opacity: 0.5;
-  color: rgba(255, 255, 255, 0.49);
-}
-.left {
-  width: 250px;
-  float: right;
-  text-decoration: none;
-}
 .course-outline-item {
   width: 20%;
   margin-top: 40px;
@@ -258,26 +212,20 @@ p {
 .ctr_courseoutline {
   margin-top: -40px;
 }
-.cln_benefits {
-  text-align: center;
-}
 .row_benefits {
   margin-top: 60px;
+  text-align: center;
 }
 .read-more {
   margin-top: 10px;
   padding-left: 0px;
-  color: #333;
+  color: #667;
   font-size: 16px;
   text-decoration: underline;
 }
-.ctn_register {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  text-align: center;
-}
 .txt_trainerbio {
   margin-top: 5px;
+  border-radius: 0px;
   color: #667;
   font-size: 17px;
   line-height: 25px;
@@ -322,13 +270,16 @@ p {
   line-height: 30px;
   font-weight: 400;
 }
+.row_benefits_1 {
+  text-align: center;
+}
 .images_howitworks {
   margin-bottom: 13px;
 }
 .course-image {
   width: 270px;
   height: 270px;
-  padding-top: 138px;
+  padding-top: 144px;
   padding-right: 20px;
   padding-left: 20px;
   border-top-left-radius: 4px;
@@ -341,11 +292,12 @@ p {
   background-image: url('../images/MT_V6_Course_Strength_L.jpg');
 }
 .course-image.womens-fit {
-  background-image: url('../images/MT_V6_Course_Toning_L.png');
+  background-image: url('../images/MT_V6_Course_Toning_L.jpg');
 }
 .trainer-profile {
   height: 75px;
-  background-color: #00ccd9;
+  border-bottom: 2px none #e6edf2;
+  background-color: #dfdfe8;
 }
 .course-summary {
   display: block;
@@ -396,37 +348,25 @@ p {
 }
 .trainer-image-mini {
   display: block;
-  margin-right: 10px;
-  margin-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin: 13px 10px 10px 19px;
   float: left;
+  border-radius: 200px;
 }
 .course-list {
-  border-bottom: 1px solid #d1d1eb;
+  border-bottom: 1px solid #d5d5e3;
 }
 .support-copy {
+  margin-bottom: 10px;
   color: white;
   font-size: 17px;
   line-height: 25px;
-  text-align: center;
-}
-.support-copy.extra-space {
-  margin-bottom: 10px;
-}
-.h3-onteal {
-  margin-bottom: 10px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  color: white;
-  font-size: 30px;
   text-align: center;
 }
 .h3-course-name {
   margin-bottom: 0px;
   color: white;
   font-size: 35px;
-  line-height: 44px;
+  line-height: 42px;
   font-weight: 600;
   text-align: left;
 }
@@ -438,17 +378,16 @@ p {
   z-index: 1;
   border-top: 5px solid #00ccd9;
   background-color: white;
-  box-shadow: #667 0px 0px 6px 0px;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 3px 0px 0px;
 }
 .nav-link {
   margin-top: 5px;
   color: #667;
   font-size: 17px;
-  font-weight: 600;
 }
 .nav-link.w--current {
   color: #00ccd9;
-  font-weight: 600;
+  font-weight: 400;
 }
 .menu-button {
   margin-top: 5px;
@@ -460,11 +399,17 @@ p {
   background-color: white;
   color: #00ccd9;
 }
+.call-out {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
 .call-out.call-out-teal {
   background-color: #00ccd9;
+  text-align: center;
 }
 .call-out.call-out-gray {
-  background-color: #f0f3f5;
+  background-color: #ededf2;
   color: #667;
 }
 .section {
@@ -475,7 +420,7 @@ p {
   background-color: white;
 }
 .section.section-gray {
-  background-color: #f0f3f5;
+  background-color: #ededf2;
   color: #333;
 }
 .section.section-title {
@@ -488,10 +433,6 @@ p {
   font-size: 58px;
   line-height: 66px;
   text-align: center;
-}
-.subscribe-form {
-  margin-top: 12px;
-  font-size: 17px;
 }
 .page-title {
   margin-bottom: 20px;
@@ -556,10 +497,11 @@ p {
 .h3-team-name {
   margin-top: 15px;
   margin-bottom: 8px;
+  font-size: 30px;
   text-align: center;
 }
 .p-team-job {
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   text-align: center;
 }
 .p-course-description {
@@ -572,15 +514,10 @@ p {
 .trainer-name-title {
   display: block;
   margin-top: 15px;
-  color: white;
+  color: #667;
   font-size: 17px;
   line-height: 22px;
   text-align: left;
-}
-.p-about-us {
-  margin-bottom: 60px;
-  line-height: 25px;
-  text-align: center;
 }
 .p-faq-text {
   margin-bottom: 20px;
@@ -591,11 +528,51 @@ p {
 }
 .coming-soon-title {
   padding-top: 25px;
-  color: white;
+  color: #667;
   font-size: 26px;
+  font-weight: 400;
 }
 .features-images {
   margin-bottom: 10px;
+}
+.team-row {
+  margin-top: -20px;
+  padding-top: 0px;
+}
+.container-max-770 {
+  display: block;
+  max-width: 770px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: justify;
+}
+.container-thanks {
+  text-align: center;
+}
+.footer {
+  background-color: #38383a;
+  text-align: left;
+}
+.p-footer {
+  margin-bottom: 0px;
+  color: rgba(255, 255, 255, 0.49);
+  font-size: 14px;
+  line-height: 18px;
+}
+.a-footer {
+  padding-right: 10px;
+  color: rgba(255, 255, 255, 0.49);
+}
+.column-links {
+  text-align: center;
+}
+.image-team {
+  border-radius: 200px;
+}
+.image-small-circle-62 {
+  border-radius: 200px;
 }
 @media (max-width: 991px) {
   h1 {
@@ -605,6 +582,10 @@ p {
     margin-top: 40px;
     font-size: 26px;
     line-height: 41px;
+  }
+  .button.button-hero {
+    padding-top: 14px;
+    padding-bottom: 16px;
   }
   .button.button-subscribe {
     margin-top: 15px;
@@ -724,17 +705,6 @@ p {
     line-height: 18px;
     text-align: center;
   }
-  .right {
-    display: block;
-    margin-top: 13px;
-    margin-right: auto;
-    margin-left: auto;
-    float: none;
-  }
-  .text-1 {
-    margin-left: 7px;
-    text-align: left;
-  }
   .text-2 {
     padding-top: 10px;
     text-align: left;
@@ -751,16 +721,6 @@ p {
   .h1_courseheadline.main {
     text-align: center;
   }
-  .left {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    float: none;
-    text-decoration: none;
-  }
-  .cln_benefits {
-    margin-bottom: 40px;
-  }
   .row_benefits {
     margin-top: 10px;
   }
@@ -769,9 +729,6 @@ p {
     margin-right: auto;
     margin-left: auto;
     font-size: 16px;
-  }
-  .ctn_register {
-    text-align: center;
   }
   .txt_trainerbio {
     font-size: 16px;
@@ -805,10 +762,6 @@ p {
   }
   .button.button-hero {
     font-weight: 400;
-  }
-  .text-1 {
-    margin-left: 0px;
-    font-size: 14px;
   }
   .text-2 {
     font-size: 15px;
@@ -858,11 +811,6 @@ p {
     font-size: 15px;
     text-align: center;
   }
-  .ctn_register {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-  }
   .txt_trainerbio {
     font-size: 15px;
     line-height: 20px;
@@ -876,12 +824,6 @@ p {
   }
   .video {
     margin-bottom: -17px;
-  }
-  .support-copy.extra-space {
-    display: block;
-    width: 277px;
-    margin-right: auto;
-    margin-left: auto;
   }
   .hero-title {
     font-size: 43px;

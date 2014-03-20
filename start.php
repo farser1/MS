@@ -4,8 +4,6 @@ $pageDesc="Get a 14 day free trial of your MyTeam program. Then only £3.75 a we
 include('inc/header.php'); ?>
 
 
-
- 
   <div class="section section-title" id="top">
     <div class="w-container">
       <h1 class="page-title">Sign up for MyTeam</h1>

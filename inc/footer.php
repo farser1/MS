@@ -1,27 +1,19 @@
-  <div class="scn_foot">
-    <div class="w-container ctn_base">
+  <div class="footer section">
+    <div class="w-container">
       <div class="w-row">
-        <div class="w-col w-col-6 w-clearfix cln_twitter">
-          <a class="w-clearfix w-inline-block left" href="mailto:hello@joinmyteam.co">
-            <div class="left">
-              <img class="img_icon" src="images/MT_V6_Icon_Mail.png" width="43" alt="52f38a01593f6edf41000d28_MT_V6_Icon_Mail.png">
-              <div class="txt_basecopy">Got questions or want to say hi? Email us at hello@joinmyteam.co</div>
-            </div>
+        <div class="w-col w-col-4"></div>
+        <div class="w-col w-col-4 column-links">
+          <a class="w-inline-block a-footer" href="privacy-policy">
+            <div>Privacy Policy</div>
           </a>
-        </div>
-        <div class="w-col w-col-6 w-clearfix cln_twitter">
-          <a class="w-clearfix w-inline-block right" href="http://twitter.com/join_myteam">
-            <div class="right">
-              <img class="img_icon" src="images/MT_V6_Icon_Twitter.png" width="33" alt="52f38a0f593f6edf41000d2b_MT_V6_Icon_Twitter.png">
-              <div class="txt_basecopy">Follow us @join_myteam&nbsp;for the latest news &amp; fitness tips</div>
-            </div>
+          <a class="w-inline-block a-footer" href="about#contact">
+            <div>Contact Us</div>
           </a>
+          <p class="p-footer">
+            <br>©2014 MyTeam</p>
         </div>
+        <div class="w-col w-col-4"></div>
       </div>
-      <a class="w-inline-block" href="privacy-policy.php">
-        <div class="footer-link">Privacy policy</div>
-      </a>
-      <div class="sub-footer">©2014 MyTeam</div>
     </div>
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

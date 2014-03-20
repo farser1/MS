@@ -3,15 +3,15 @@ $pageTitle="Strength and Size - 12 week program";
 $pageDesc="Join our 12 week muscle strength and size program and get coached through efficient gym workouts and the nutritional tools for gaining athletic strength and size.";
 include('inc/header.php'); ?>
 
-
   <div class="hero hero-strength" id="top">
     <div class="w-container">
       <div class="w-row row_courseintro">
         <div class="w-col w-col-5 column_title">
           <h1 class="h1_courseheadline main">Strength &amp;&nbsp;Size</h1>
           <p class="paragraph-subtitle">12 week online coached
-            <br>course&nbsp;for £3.75 a week</p><a class="button button-hero button-hero-orange" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'notify me');">Notify Me!</a>
-          <p class="p-info-under-button p-info-under-button-white">Course launching in April</p>
+            <br>program&nbsp;for £3.75 a week</p><a class="button button-hero button-hero-orange" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga(&apos;send&apos;, &apos;event&apos;, &apos;button&apos;, &apos;click&apos;, &apos;notify me&apos;);">Notify Me!</a>
+          <p
+          class="p-info-under-button p-info-under-button-white">Course launching in April</p>
         </div>
         <div class="w-col w-col-7">
           <div></div>
@@ -26,23 +26,19 @@ include('inc/header.php'); ?>
           <div class="block_trainer keypoints">
             <ol class="w-list-unstyled">
               <li class="list_item">
-                <div class="txt_trainerbio teal"><strong>Course launches April 2014</strong>
+                <div class="txt_trainerbio teal"><strong>Program launches April 2014</strong>
                 </div>
               </li>
               <li class="list_item">
-                <div class="txt_trainerbio"><strong>Size limited to 60 places</strong>
+                <div class="txt_trainerbio teal"><strong>Only 60 places available</strong>
                 </div>
               </li>
               <li class="list_item">
                 <div class="txt_trainerbio"><strong>£3.75 a week for 12 weeks</strong>
                 </div>
               </li>
-              <li class="list_item">
-                <div class="txt_trainerbio"><strong>Register interest with just your email</strong>
-                </div>
-              </li>
-              <li>
-                <div class="txt_trainerbio"><strong>30 day 100% money back guarantee</strong>
+              <li class="list_item list-no-border">
+                <div class="txt_trainerbio"><strong>14 day free trial</strong>
                 </div>
               </li>
             </ol>
@@ -51,7 +47,7 @@ include('inc/header.php'); ?>
             <div>
               <div class="w-row">
                 <div class="w-col w-col-3">
-                  <img src="images/Josh_Medium.png" width="62" height="62" alt="5320951f475bc1a77600100b_Josh_Medium.png">
+                  <img class="image-small-circle-62" src="images/Josh_Square.jpg" width="62" height="62" alt="5320a0f2475bc1a7760010fc_Josh_Square.jpg">
                 </div>
                 <div class="w-col w-col-9">
                   <div class="divblk_trainername">
@@ -66,7 +62,7 @@ include('inc/header.php'); ?>
           </div>
         </div>
         <div class="w-col w-col-7">
-          <p class="p-course-description"><strong>For beginner and intermediate strength trainers<br></strong>This course is for those new to weight training or anyone unsatisfied with their current results. You’ll learn the principles of strength and muscle building through a structured
+          <p class="p-course-description"><strong>For beginner and intermediate strength trainers<br></strong>This program is for those new to weight training or anyone unsatisfied with their current results. You’ll learn the principles of strength and muscle building through a structured
             series of progressive workouts.
             <br>
             <br><strong>Simplicty and key exercises<br></strong>You'll be coached through a focused program to master all key exercises. This program&nbsp;maximises&nbsp;efficiency, so&nbsp;you spend the minimum time in the gym, and&nbsp;more time doing&nbsp;what
@@ -80,54 +76,9 @@ include('inc/header.php'); ?>
       </div>
     </div>
   </div>
-  <div class="section section-white" id="benefits">
-    <div class="w-container">
-      <h2>The Ultimate Strength Program</h2>
-      <div class="w-row row_benefits_1">
-        <div class="w-col w-col-4 cln_benefits">
-          <img src="images/MT_V5_Benefits_Easy.jpg" width="220" alt="52deb1ee1b42bfc243000a71_MT_V5_Benefits_Easy.jpg">
-          <h3 class="h3-feature">Time efficient&nbsp;</h3>
-          <p class="p-feature-description">Simple exercise and nutritional plans guide you to your goal.</p>
-        </div>
-        <div class="w-col w-col-4 cln_benefits">
-          <img src="images/MT_V5_Benefits_Community.jpg" width="220" alt="52e017fba13e8ef533000153_MT_V5_Benefits_Community.jpg">
-          <h3 class="h3-feature">Supportive community</h3>
-          <p class="p-feature-description">A private&nbsp;community, for support &amp; help from anyone on your program.</p>
-        </div>
-        <div class="w-col w-col-4 cln_benefits">
-          <img src="images/MT_V5_Benefits_Actions.jpg" width="220" alt="52deb20d1b42bfc243000a72_MT_V5_Benefits_Actions.jpg">
-          <h3 class="h3-feature">Steps &amp; milestones</h3>
-          <p class="p-feature-description">Weekly steps and milestones&nbsp;make progress manageable.&nbsp;</p>
-        </div>
-      </div>
-      <div class="w-row row_benefits">
-        <div class="w-col w-col-4 cln_benefits">
-          <img src="images/MT_V5_Benefits_Answers.jpg" width="220" alt="52dfcc1061794670770006c5_MT_V5_Benefits_Answers.jpg">
-          <h3 class="h3-feature">Expert guidance</h3>
-          <p class="p-feature-description">24/7 assistance and expert advice from your course trainer.</p>
-        </div>
-        <div class="w-col w-col-4 cln_benefits">
-          <img src="images/MT_V5_Benefits_Track.jpg" width="220" alt="52deb21a1b42bfc243000a74_MT_V5_Benefits_Track.jpg">
-          <h3 class="h3-feature">Daily motivation</h3>
-          <p class="p-feature-description">Progress tracking to keep you motivated and focussed on success.</p>
-        </div>
-        <div class="w-col w-col-4 cln_benefits">
-          <img src="images/MT_V5_Benefits_Videos.jpg" width="220" alt="52deb2251b42bfc243000a76_MT_V5_Benefits_Videos.jpg">
-          <h3 class="h3-feature">Video demonstrations</h3>
-          <p class="p-feature-description">Instructional videos&nbsp;demonstrate all exercises clearly.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="call-out call-out-gray">
-    <div class="w-container ctn_register" id="trainerbio">
-      <p class="p-call-to-action">Get notified when course opens</p><a class="button button-hero" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'notify me');">Notify Me!</a>
-      <p class="p-info-under-button">Course begins 31st March 2014</p>
-    </div>
-  </div>
   <div class="section section-white" id="outline">
     <div class="w-container">
-      <h2>Course Outline</h2>
+      <h2>Program Outline</h2>
     </div>
     <div class="w-container ctr_courseoutline">
       <div class="course-outline-item">
@@ -180,6 +131,52 @@ include('inc/header.php'); ?>
       </div>
     </div>
   </div>
+  <div class="call-out call-out-gray">
+    <div class="w-container" id="trainerbio">
+      <p class="p-call-to-action">Get notified when program opens</p><a class="button button-hero button-hero-orange" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga(&apos;send&apos;, &apos;event&apos;, &apos;button&apos;, &apos;click&apos;, &apos;notify me&apos;);">Notify Me!</a>
+      <p
+      class="p-info-under-button">Program begins 31st March 2014</p>
+    </div>
+  </div>
+  <div class="section section-white" id="benefits">
+    <div class="w-container">
+      <h2>The Ultimate Strength Program</h2>
+      <div class="w-row row_benefits_1">
+        <div class="w-col w-col-4">
+          <img src="images/Time-2.png" width="220" alt="532775dc02cb4e943300021b_Time-2.png">
+          <h3 class="h3-feature">Time efficient&nbsp;</h3>
+          <p class="p-feature-description">Simple exercise and nutritional plans guide you to your goal.</p>
+        </div>
+        <div class="w-col w-col-4">
+          <img class="features-images" src="images/Community_Strength.png" width="220" alt="53299c00817883c1490005db_Community_Strength.png">
+          <h3 class="h3-feature">Supportive community</h3>
+          <p class="p-feature-description">A private&nbsp;community, for support &amp; help from anyone on your program.</p>
+        </div>
+        <div class="w-col w-col-4">
+          <img class="features-images" src="images/Actions.png" width="220" alt="5327393865ce23851300016e_Actions.png">
+          <h3 class="h3-feature">Steps &amp; milestones</h3>
+          <p class="p-feature-description">Weekly steps and milestones&nbsp;make progress manageable.&nbsp;</p>
+        </div>
+      </div>
+      <div class="w-row row_benefits">
+        <div class="w-col w-col-4">
+          <img class="features-images" src="images/Coaching_Strength.png" width="220" alt="53299bed9642b2bf4900055d_Coaching_Strength.png">
+          <h3 class="h3-feature">Expert guidance</h3>
+          <p class="p-feature-description">24/7 assistance and expert advice from your course trainer.</p>
+        </div>
+        <div class="w-col w-col-4">
+          <img class="features-images" src="images/Tracking_Strength.png" width="220" alt="53299bdd817883c1490005d8_Tracking_Strength.png">
+          <h3 class="h3-feature">Daily motivation</h3>
+          <p class="p-feature-description">Progress tracking to keep you motivated and focussed on success.</p>
+        </div>
+        <div class="w-col w-col-4">
+          <img class="features-images" src="images/Videos_Strength.png" width="220" alt="53299bcb9642b2bf49000559_Videos_Strength.png">
+          <h3 class="h3-feature">Video demos</h3>
+          <p class="p-feature-description">Instructional videos&nbsp;demonstrate all exercises clearly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="section section-gray" id="josh-bio">
     <div class="w-container ctr_trainer">
       <div class="trainer-summary">
@@ -209,9 +206,22 @@ include('inc/header.php'); ?>
     </div>
   </div>
   <div class="call-out call-out-gray">
-    <div class="w-container ctn_register" id="trainerbio">
-      <p class="p-call-to-action">Get notified when course opens</p><a class="button button-hero" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga('send', 'event', 'button', 'click', 'notify me');">Notify Me!</a>
-      <p class="p-info-under-button">Course begins 31st March 2014</p>
+    <div class="w-container" id="trainerbio">
+      <p class="p-call-to-action">Get notified when program opens</p><a class="button button-hero button-hero-orange" href="https://confirmsubscription.com/h/d/FD8602C3FEA606C1" onclick="ga(&apos;send&apos;, &apos;event&apos;, &apos;button&apos;, &apos;click&apos;, &apos;notify me&apos;);">Notify Me!</a>
+      <p
+      class="p-info-under-button">Program begins 31st March 2014</p>
+    </div>
+  </div>
+  <div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
+    <div class="w-container">
+      <a class="w-nav-brand" href="index.html">
+        <img class="logo" src="images/MT_logo.png" width="160" alt="53206da2c9fb842365000dac_MT_logo.png">
+      </a>
+      <nav class="w-nav-menu" role="navigation"><a class="w-nav-link nav-link" href="index.html">Home</a><a class="w-nav-link nav-link" href="#benefits">How it works</a><a class="w-nav-link nav-link" href="about-us.html">About</a><a class="w-nav-link nav-link" href="http://blog.joinmyteam.co">Blog</a>
+      </nav>
+      <div class="w-nav-button menu-button">
+        <div class="w-icon-nav-menu"></div>
+      </div>
     </div>
   </div>
 
