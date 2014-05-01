@@ -1,12 +1,9 @@
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^www\.joinmyteam\.co [NC]
-RewriteRule (.*) http://joinmyteam.co/$1 [R=301,L]   
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteRule (.*) http://joinmyteam.co/$1 [R=301,L]
 
 #redirect .html to .php
-#RedirectMatch 301 (.*)\.php$ http://www.joinmyteam.co$1.html
+RedirectMatch 301 (.*)\.php$ http://www.joinmyteam.co$1.html
 
 # browser requests PHP
 #RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.php
