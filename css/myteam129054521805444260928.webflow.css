@@ -211,7 +211,7 @@ p {
   z-index: 1;
   border-top: 5px solid #00ccd9;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 0px 0px;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 3px 0px 0px;
 }
 .nav-link {
   margin-top: 5px;
@@ -384,7 +384,7 @@ p {
   padding-top: 0px;
 }
 .footer {
-  box-shadow: rgba(0, 0, 0, 0.12) 0px -3px 0px 0px;
+  box-shadow: rgba(0, 0, 0, 0.11) 0px -3px 0px 0px;
   font-weight: 400;
   text-align: left;
 }
@@ -741,6 +741,7 @@ p {
     min-width: 0px;
   }
   .container-padding-content {
+    padding-right: 20px;
     padding-left: 20px;
   }
 }
