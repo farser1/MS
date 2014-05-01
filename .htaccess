@@ -2,6 +2,11 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^www\.joinmyteam\.co [NC]
 RewriteRule (.*) http://joinmyteam.co/$1 [R=301,L]   
 
+#strip html from url
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)\.html$ /$1 [L,R=301]
+
 #redirect .html to .php
 #RedirectMatch 301 (.*)\.php$ http://www.joinmyteam.co$1.html
 
@@ -12,10 +17,6 @@ RewriteRule (.*) http://joinmyteam.co/$1 [R=301,L]
 # check to see if the request is for a PHP file:
 #RewriteCond %{REQUEST_FILENAME}\.php -f
 #RewriteRule ^/?(.*)$ /$1.php [L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)\.html$ /$1 [L,R=301]
 
 #Themato soup
 <IfModule mod_deflate.c>
