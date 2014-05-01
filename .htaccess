@@ -2,11 +2,6 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^www\.joinmyteam\.co [NC]
 RewriteRule (.*) http://joinmyteam.co/$1 [R=301,L]   
 
-#strip html from url
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)\.html$ /$1 [L,R=301]
-
 #redirect .html to .php
 #RedirectMatch 301 (.*)\.php$ http://www.joinmyteam.co$1.html
 
@@ -35,6 +30,8 @@ Redirect /blog http://blog.joinmyteam.co/
 Redirect /weight-loss-made-simple http://joinmyteam.co/weight-loss-programme.html
 Redirect /strength-size http://joinmyteam.co/
 Redirect /weight-loss-made-simple.php http://joinmyteam.co/weight-loss-programme.html
+Redirect /index.html http://joinmyteam.co/
+
 
 
 
