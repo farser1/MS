@@ -3,36 +3,37 @@ RewriteCond %{HTTP_HOST} ^www\.joinmyteam\.co [NC]
 RewriteRule (.*) http://joinmyteam.co/$1 [R=301,L]   
 
 #redirect .html to .php
-RedirectMatch 301 (.*)\.html$ http://www.joinmyteam.co$1.php
-
+#RedirectMatch 301 (.*)\.php$ http://www.joinmyteam.co$1.html
 
 # browser requests PHP
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.php
-RewriteRule ^/?(.*)\.php$ /$1 [L,R=301]
+#RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.php
+#RewriteRule ^/?(.*)\.php$ /$1 [L,R=301]
 
 # check to see if the request is for a PHP file:
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^/?(.*)$ /$1.php [L]
+#RewriteCond %{REQUEST_FILENAME}\.php -f
+#RewriteRule ^/?(.*)$ /$1.php [L]
 
 
 #Themato soup
-
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
 </IfModule>
 
 # Redirect old file path to new file path
-Redirect /landing/index.html http://joinmyteam.co/weight-loss-made-simple.php
-Redirect /landing/ http://joinmyteam.co/weight-loss-made-simple.php
-Redirect /landing http://joinmyteam.co/weight-loss-made-simple.php
-Redirect /benefits http://joinmyteam.co/#how-it-works
-Redirect /courses http://joinmyteam.co/#current-course
+Redirect /landing/index.html http://joinmyteam.co/weight-loss-programme
+Redirect /landing/ http://joinmyteam.co/weight-loss-programme
+Redirect /landing http://joinmyteam.co/weight-loss-programme
+Redirect /benefits http://joinmyteam.co/
+Redirect /courses http://joinmyteam.co/
 Redirect /womens-tone-at-home http://joinmyteam.co/
 Redirect /pilot http://joinmyteam.co/
 Redirect /blog http://blog.joinmyteam.co/
+Redirect /weight-loss-made-simple http://joinmyteam.co/weight-loss-programme
+Redirect /strength-size http://joinmyteam.co/
+
 
 #Error documents list
-ErrorDocument 404 /404.php
+ErrorDocument 404 /404.html
 
 # BEGIN Expire headers
 <IfModule mod_expires.c>

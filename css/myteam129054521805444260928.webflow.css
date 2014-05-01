@@ -1,0 +1,743 @@
+body {
+  font-family:'Open Sans', sans-serif;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+}
+h1 {
+  margin-top: 0px;
+  margin-bottom: 31px;
+  color: white;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  text-align: left;
+}
+h2 {
+  padding-bottom: 20px;
+  color: #667;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+h3 {
+  margin-bottom: 15px;
+  font-family:'Open Sans', sans-serif;
+  color: #667;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: left;
+}
+h4 {
+  margin: 50px 0px 10px;
+  color: #667;
+  font-size: 29px;
+  line-height: 46px;
+  font-weight: 300;
+}
+h5 {
+  padding-top: 25px;
+  padding-left: 20px;
+  color: white;
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: 300;
+  text-align: left;
+}
+h6 {
+  margin: 10px 0px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+p {
+  margin-bottom: 30px;
+  font-family:'Open Sans', sans-serif;
+  color: #667;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: left;
+}
+.button {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  padding: 12px 15px;
+  border: 2px solid white;
+  border-radius: 7px;
+  background-color: #00ccd9;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 4px 0px -1px;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+}
+.button.button-hero {
+  display: inline-block;
+  padding: 15px 40px;
+  border-style: none;
+  font-size: 24px;
+  font-weight: 400;
+}
+.button.button-hero:hover {
+  background-color: #1adae8;
+}
+.button.button-hero.button-hero-orange {
+  background-color: #ffbd42;
+}
+.button.button-hero.button-hero-orange:hover {
+  background-color: #fcc868;
+}
+.button.button-subscribe {
+  margin-top: 0px;
+  border-color: #ffbd42;
+  background-color: #ffbd42;
+}
+.button.button-team {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-style: none;
+  background-color: #f0f0f2;
+  color: #667;
+  font-size: 14px;
+  font-weight: 300;
+}
+.logo {
+  display: block;
+  width: 160px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 0px;
+}
+.trainer-summary {
+  padding-top: 20px;
+}
+.hero {
+  padding-top: 70px;
+  padding-bottom: 0px;
+  background-color: #00ccd9;
+}
+.hero.hero-home {
+  background-image: url('../images/MT_Home_BG.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.hero.hero-weight-loss {
+  background-image: url('../images/MT_WeightLoss_BG_BLUR.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.read-more {
+  margin-top: 10px;
+  padding-left: 0px;
+  color: #667;
+  font-size: 16px;
+  text-decoration: underline;
+}
+.txt_trainerbio {
+  margin-top: 5px;
+  border-radius: 0px;
+  color: #667;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+}
+.txt_trainerbio.ipad-trainer-bio {
+  margin-left: -15px;
+  padding-left: 0px;
+}
+.row_courseintro {
+  margin-top: 80px;
+  margin-bottom: 90px;
+}
+.block_trainer {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+}
+.block_trainer.keypoints {
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.block_trainer.block_trainer-grey {
+  background-color: #ededf2;
+}
+.divblk_trainername {
+  padding-top: 0px;
+  padding-left: 5px;
+}
+.list_item {
+  padding-bottom: 7px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.list_item.list-no-border {
+  padding-bottom: 5px;
+  border-bottom-style: none;
+}
+.column_title {
+  height: auto;
+  text-align: center;
+}
+.trainer-name {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #667;
+  font-size: 23px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.trainer-name.bio {
+  margin-top: 0px;
+}
+.row_benefits_1 {
+  text-align: center;
+}
+.navbar {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+  border-top: 5px solid #00ccd9;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 3px 0px 0px;
+}
+.nav-link {
+  margin-top: 5px;
+  color: #667;
+  font-size: 17px;
+}
+.nav-link:hover {
+  color: #00ccd9;
+}
+.nav-link.w--current {
+  color: #00ccd9;
+  font-weight: 400;
+}
+.nav-link.nav-link-special {
+  text-decoration: underline;
+}
+.menu-button {
+  margin-top: 5px;
+  padding: 10px;
+  color: #667;
+  font-size: 46px;
+}
+.menu-button.w--open {
+  background-color: white;
+  color: #00ccd9;
+}
+.call-out {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.call-out.call-out-teal {
+  background-color: #00ccd9;
+  text-align: center;
+}
+.call-out.call-out-aqua {
+  padding-bottom: 50px;
+  background-color: #00ccd9;
+}
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.section.section-white {
+  background-color: white;
+  text-align: center;
+}
+.section.section-white.section-home {
+  padding-bottom: 40px;
+}
+.section.section-gray {
+  background-color: #ededf2;
+  color: #333;
+}
+.section.section-title {
+  padding-top: 120px;
+  padding-bottom: 30px;
+  background-color: #00ccd9;
+}
+.hero-title {
+  margin-bottom: 15px;
+  font-size: 51px;
+  line-height: 59px;
+  text-align: center;
+}
+.page-title {
+  margin-bottom: 20px;
+  padding-right: 0px;
+  padding-left: 0px;
+  font-size: 58px;
+  line-height: 66px;
+  font-weight: 600;
+  text-align: center;
+}
+.paragraph-subtitle {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  text-align: center;
+}
+.h3-feature {
+  margin-top: 10px;
+  color: #667;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+}
+.p-feature-description {
+  margin-bottom: 0px;
+  padding-top: 0px;
+  color: #667;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+}
+.p-feature-description.left-aligned {
+  padding-top: 12px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  text-align: left;
+}
+.p-info-under-button {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  text-align: center;
+}
+.p-info-under-button.p-info-under-button-white {
+  color: white;
+  text-decoration: none;
+}
+.p-call-to-action {
+  margin-bottom: 10px;
+  color: #667;
+  font-size: 29px;
+  line-height: 35px;
+  text-align: center;
+}
+.p-call-to-action.p-call-to-action-on-teal {
+  color: white;
+}
+.p-call-to-action.white {
+  color: white;
+}
+.input-text {
+  width: 100%;
+  height: auto;
+  padding: 12px 15px;
+  border: 2px solid #9e9ead;
+  border-radius: 7px;
+  background-color: white;
+  color: #667;
+  font-size: 17px;
+}
+.column-about {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.h3-team-name {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 27px;
+  text-align: center;
+}
+.p-team-job {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.p-course-description {
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 27px;
+}
+.open-menu {
+  background-color: white;
+}
+.p-faq-text {
+  margin-bottom: 20px;
+  padding: 17px 20px;
+  border-radius: 5px;
+  background-color: white;
+  line-height: 27px;
+}
+.features-images {
+  margin-bottom: 10px;
+}
+.team-row {
+  padding-top: 0px;
+}
+.footer {
+  box-shadow: rgba(0, 0, 0, 0.13) 0px -3px 0px 0px;
+  font-weight: 400;
+  text-align: left;
+}
+.image-team {
+  border-radius: 200px;
+}
+.image-team.second-row {
+  margin-top: 40px;
+}
+.image-small-circle-62 {
+  border-radius: 200px;
+}
+.p-contact {
+  text-align: center;
+}
+.footer-headline {
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d5d5e3;
+  color: #667;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 700;
+}
+.footer-text {
+  color: #667;
+  font-size: 16px;
+  line-height: 25px;
+}
+.link-footer {
+  display: block;
+  float: none;
+  color: #667;
+  font-size: 16px;
+  line-height: 27px;
+  text-decoration: none;
+}
+.feature-icons {
+  margin-right: 15px;
+  float: left;
+}
+.key-feature-block {
+  padding-top: 120px;
+}
+.key-feature-text-column {
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+.paul-video {
+  margin-bottom: 20px;
+}
+.privacy {
+  text-align: left;
+}
+.h2-left {
+  padding-bottom: 15px;
+  text-align: left;
+}
+.a-read-more {
+  color: #667;
+  font-size: 16px;
+  line-height: 2px;
+}
+.column-benefit {
+  padding-bottom: 50px;
+}
+.p-thanks-links {
+  text-align: center;
+}
+.a-blue {
+  color: #00ccd9;
+}
+@media (max-width: 991px) {
+  h1 {
+    font-size: 39px;
+  }
+  h4 {
+    margin-top: 40px;
+    font-size: 26px;
+    line-height: 41px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .button.button-hero {
+    padding-top: 14px;
+    padding-bottom: 16px;
+  }
+  .button.button-subscribe {
+    margin-top: 15px;
+  }
+  .hero {
+    margin-top: 32px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+  .txt_trainerbio {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .txt_trainerbio.ipad-spacing {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .txt_trainerbio.ipad-trainer-bio {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .row_courseintro {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .divblk_trainername {
+    padding-top: 5px;
+    padding-left: 8px;
+  }
+  .trainer-name {
+    font-size: 21px;
+  }
+  .nav-link.nav-link-special {
+    text-decoration: underline;
+  }
+  .menu-button {
+    margin-top: 5px;
+    padding: 10px;
+    color: #667;
+    font-size: 46px;
+  }
+  .hero-title {
+    font-size: 44px;
+  }
+  .p-feature-description.left-aligned {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .p-course-description {
+    font-size: 16px;
+  }
+  .p-faq-text {
+    font-size: 16px;
+  }
+  .image-small-circle-62 {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    text-align: center;
+  }
+  h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+  }
+  h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  h5 {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .hero {
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .read-more {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 16px;
+  }
+  .block_trainer.block_trainer-grey {
+    margin-bottom: 40px;
+  }
+  .video {
+    display: block;
+    max-width: 380px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .h3-feature {
+    line-height: 31px;
+  }
+  .input-text {
+    margin-top: 20px;
+  }
+  .p-team-job {
+    margin-top: 0px;
+  }
+  .p-course-description {
+    font-size: 16px;
+  }
+  .p-faq-text {
+    font-size: 16px;
+  }
+  .footer {
+    text-align: center;
+  }
+  .image-small-circle-62 {
+    width: 62px;
+    height: 62px;
+  }
+  .key-feature-block {
+    padding-top: 60px;
+  }
+  .privacy {
+    text-align: center;
+  }
+  .h2-left {
+    text-align: center;
+  }
+  .column-footer {
+    margin-bottom: 30px;
+  }
+  .column-programme-description {
+    margin-top: 40px;
+  }
+  .image-feature {
+    margin-bottom: 30px;
+  }
+  .div-feature-outer {
+    display: inline-block;
+    min-width: 400px;
+  }
+  .container-padding-content {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 479px) {
+  h1 {
+    margin-top: 20px;
+    font-size: 31px;
+    line-height: 35px;
+  }
+  h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+  }
+  .button.button-hero {
+    font-weight: 400;
+  }
+  .button.button-subscribe {
+    border-color: #ffbd42;
+    background-color: #ffbd42;
+  }
+  .hero {
+    padding-top: 24px;
+    padding-bottom: 0px;
+  }
+  .read-more {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .txt_trainerbio {
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+  }
+  .ctr_trainer {
+    padding-top: 0px;
+  }
+  .block_trainer {
+    margin-bottom: 20px;
+  }
+  .column_title {
+    margin-top: 9px;
+  }
+  .video {
+    margin-bottom: -17px;
+  }
+  .section.section-white {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .section.section-gray {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .hero-title {
+    font-size: 43px;
+    line-height: 48px;
+  }
+  .page-title {
+    margin-top: 0px;
+    font-size: 43px;
+    line-height: 48px;
+  }
+  .paragraph-subtitle {
+    line-height: 33px;
+  }
+  .p-feature-description.left-aligned {
+    margin-bottom: 5px;
+    padding-top: 5px;
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .p-info-under-button.p-info-under-button-white {
+    font-size: 15px;
+  }
+  .p-call-to-action.p-call-to-action-on-teal {
+    display: block;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .p-course-description {
+    margin-top: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .p-faq-text {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .privacy {
+    text-align: center;
+  }
+  .a-read-more {
+    font-size: 15px;
+  }
+  .div-feature-outer {
+    min-width: 0px;
+  }
+  .container-padding-content {
+    padding-left: 20px;
+  }
+}
