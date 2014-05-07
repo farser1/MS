@@ -69,7 +69,7 @@ p {
   border: 2px solid white;
   border-radius: 7px;
   background-color: #00ccd9;
-  box-shadow: rgba(0, 0, 0, 0.14) 0px 4px 0px -1px;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 4px 0px -1px;
   color: white;
   font-size: 17px;
   font-weight: 400;
@@ -131,7 +131,7 @@ p {
   background-attachment: fixed;
 }
 .hero.hero-weight-loss {
-  background-image: url('../images/MT_WeightLoss_BG_BLUR.jpg');
+  background-image: url('../images/MT_Home_BG-BLUR-2.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -212,7 +212,7 @@ p {
   z-index: 1;
   border-top: 5px solid #00ccd9;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 0px 0px;
+  box-shadow: rgba(0, 0, 0, 0.11) 0px 3px 0px 0px;
 }
 .nav-link {
   margin-top: 5px;
@@ -386,7 +386,7 @@ p {
   padding-top: 0px;
 }
 .footer {
-  box-shadow: rgba(0, 0, 0, 0.10) 0px -3px 0px 0px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px -3px 0px 0px;
   font-weight: 400;
   text-align: left;
 }
