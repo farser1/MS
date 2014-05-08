@@ -561,6 +561,11 @@ textarea.w-select {
   .w-col-medium-offset-11 {
     margin-left: 91.66666666666666%;
   }
+  .w-col-stack {
+    width: 100%;
+    left: auto;
+    right: auto;
+  }
 }
 @media screen and (max-width: 767px) {
   .w-hidden-main {
@@ -582,14 +587,41 @@ textarea.w-select {
     left: auto;
     right: auto;
   }
+  .w-col-small-1 {
+    width: 8.333333333333332%;
+  }
+  .w-col-small-2 {
+    width: 16.666666666666664%;
+  }
   .w-col-small-3 {
     width: 25%;
   }
   .w-col-small-4 {
     width: 33.33333333333333%;
   }
+  .w-col-small-5 {
+    width: 41.66666666666667%;
+  }
   .w-col-small-6 {
     width: 50%;
+  }
+  .w-col-small-7 {
+    width: 58.333333333333336%;
+  }
+  .w-col-small-8 {
+    width: 66.66666666666666%;
+  }
+  .w-col-small-9 {
+    width: 75%;
+  }
+  .w-col-small-10 {
+    width: 83.33333333333334%;
+  }
+  .w-col-small-11 {
+    width: 91.66666666666666%;
+  }
+  .w-col-small-12 {
+    width: 100%;
   }
   .w-col-small-push-1 {
     left: 8.333333333333332%;
@@ -710,14 +742,41 @@ textarea.w-select {
   .w-col {
     width: 100%;
   }
+  .w-col-tiny-1 {
+    width: 8.333333333333332%;
+  }
+  .w-col-tiny-2 {
+    width: 16.666666666666664%;
+  }
   .w-col-tiny-3 {
     width: 25%;
   }
   .w-col-tiny-4 {
     width: 33.33333333333333%;
   }
+  .w-col-tiny-5 {
+    width: 41.66666666666667%;
+  }
   .w-col-tiny-6 {
     width: 50%;
+  }
+  .w-col-tiny-7 {
+    width: 58.333333333333336%;
+  }
+  .w-col-tiny-8 {
+    width: 66.66666666666666%;
+  }
+  .w-col-tiny-9 {
+    width: 75%;
+  }
+  .w-col-tiny-10 {
+    width: 83.33333333333334%;
+  }
+  .w-col-tiny-11 {
+    width: 91.66666666666666%;
+  }
+  .w-col-tiny-12 {
+    width: 100%;
   }
   .w-col-tiny-push-1 {
     left: 8.333333333333332%;
