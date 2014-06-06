@@ -19,17 +19,17 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml appl
 </IfModule>
 
 # Redirect old file path to new file path
-Redirect /landing/index.html http://joinmyteam.co/weight-loss-programme.html
-Redirect /landing/ http://joinmyteam.co/weight-loss-programme.html
-Redirect /landing http://joinmyteam.co/weight-loss-programme.html
+Redirect /landing/index.html http://joinmyteam.co/
+Redirect /landing/ http://joinmyteam.co/
 Redirect /benefits http://joinmyteam.co/
 Redirect /courses http://joinmyteam.co/
 Redirect /womens-tone-at-home http://joinmyteam.co/
 Redirect /pilot http://joinmyteam.co/
 Redirect /blog http://blog.joinmyteam.co/
-Redirect /weight-loss-made-simple http://joinmyteam.co/weight-loss-programme.html
+Redirect /weight-loss-made-simple http://joinmyteam.co/
 Redirect /strength-size http://joinmyteam.co/
-Redirect /weight-loss-made-simple.php http://joinmyteam.co/weight-loss-programme.html
+Redirect /weight-loss-made-simple.php http://joinmyteam.co/
+Redirect /weight-loss-programme.html http://joinmyteam.co/
 
 
 

@@ -1,0 +1,210 @@
+.channel {
+	font-size: 17px;
+	line-height: 24px;
+	text-align: left;
+	margin-bottom: 20px;
+}
+.h3-channel-title {
+	text-align: left;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 140px;
+	padding-bottom: 0px;
+	font-size: 44px;
+	line-height: 50px;
+	font-weight: 600;
+}
+.channel-subtitle {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+
+}
+.image-channel-trainer {
+	margin-left: 20px;
+	width: 50px;
+	float: left;
+}
+.channel-trainer-info {
+	padding-left: 80px;
+	font-weight: 600;
+}
+.channel-info {
+	color: white;
+	background-color: #00ccd9;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+.soon {
+	font-weight: 600;
+}
+.channel-subscribe {
+	color: #667;
+	background-color: #ededf2;
+	padding-top: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+}
+
+.number-left {
+	font-weight: 600;
+	text-align: center;
+}
+
+.channel-image {
+	background-image: url('../images/fitness4fatloss.jpg');
+	  background-size: cover;
+}
+
+.channel-image-none {
+	background-color: #00869D;
+}
+
+.channel-trainer {
+	background-color: #00ccd9;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	height: 70px;
+}
+
+.button-channel-subscribe {
+	font-size: 17px!important;
+	width: 100%!important;
+	padding-top: 8px!important;
+	padding-bottom: 8px!important;
+	margin-bottom: 15px;
+}
+
+.channel-field {
+	border-radius: 5px;
+	font-size: 17px;
+	width: 100%;
+	margin-top: 15px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border: 1px solid #677;
+	text-align: center;
+}
+
+
+/*Add in media queries for channel blocks*/
+
+/*Testimonials*/
+
+.testimonial {
+	border-radius: 999px;
+	margin-bottom: 20px;
+	width: 100px;
+}
+
+.p-testimonial {
+	color: white;
+	text-align: left;
+	font-size: 17px;
+}
+/*Social Buttons*/
+
+.twitter {
+  color: #00ACED!important;
+  background-color: white!important;
+    margin-bottom: 10px!important;
+    border:1px solid  #00ACED!important;
+    width: 180px!important;
+        margin-left: 3px!important;
+    margin-right: 3px!important;
+}
+
+.twitter:hover {
+  color: white!important;
+    margin-bottom: 10px;
+    border:1px solid  #00ACED!important;
+    background-color: #00ACED!important;
+}
+
+
+.facebook {
+  color: #3B5998!important;
+  margin-bottom: 10px!important;
+    background-color: white!important;
+
+      border:1px solid  #3B5998!important;
+width: 180px!important;
+    margin-left: 3px!important;
+    margin-right: 3px!important;
+}
+
+.facebook:hover {
+  color: white!important;
+  background-color: #3B5998!important;
+  margin-bottom: 10px;
+      border:1px solid  #3B5998!important;
+
+}
+
+.h2-home {
+	color: #00869D;
+	padding-bottom: 20px;
+	margin-bottom: 0px;
+}
+
+.p-home-sub {
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.h2-home-container {
+	max-width: 800px!important;
+}
+
+
+@media (max-width: 991px) {
+	.channel {
+	font-size: 14px;
+	line-height: 18px;
+	}
+	.h3-channel-title {
+	text-align: left;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 140px;
+	padding-bottom: 0px;
+	font-size: 30px;
+	line-height: 36px;
+	}
+	.button-channel-subscribe {
+	font-size: 14px!important;
+	}
+	.channel-field {
+			font-size: 14px;
+		}
+}
+
+@media (max-width: 767px) {
+	.channel {
+	font-size: 17px;
+	line-height: 24px;
+	}
+	.h3-channel-title {
+	text-align: left;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 140px;
+	padding-bottom: 0px;
+	font-size: 44px;
+	line-height: 50px;
+	}
+	.button-channel-subscribe {
+	font-size: 17px!important;
+	}
+	.channel-field {
+			font-size: 17px;
+		}
+}

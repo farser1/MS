@@ -14,7 +14,7 @@ h1 {
   text-align: left;
 }
 h2 {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   color: #667;
   font-size: 30px;
   line-height: 35px;
@@ -124,18 +124,16 @@ p {
   background-color: #00ccd9;
 }
 .hero.hero-home {
-  background-image: url('../images/MT_Home_BG.jpg');
+  background-image: url('../images/blurred_bg.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 .hero.hero-weight-loss {
-  background-image: url('../images/MT_Home_BG-BLUR-2.jpg');
-  background-position: 50% 50%;
+  background-image: url('../images/blurred_bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 .read-more {
   margin-top: 10px;
@@ -187,7 +185,7 @@ p {
 }
 .column_title {
   height: auto;
-  margin-top: 30px;
+  margin-top: 0px;
   text-align: center;
 }
 .trainer-name {
